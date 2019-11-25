@@ -1,0 +1,22 @@
+﻿[Run Information]
+Version=CSPro 7.2
+AppType=Entry
+Description=PHIA 2 Survey Template
+[DataEntryInit]
+StartMode=Modify
+Lock=Verify, Add
+AutoAdd=No
+ShowInApplicationListing=Never
+Interactive=Ask
+[Files]
+Application=.\surveyHhInt.ent
+InputData=.\surveyHhInt.csdb|CSPRODB
+Paradata=.\surveyHhInt.cslog
+[ExternalFiles]
+TM_SURV_GEOVARS_DICT=..\shared\tmSurveyGeovars.csdb|CSPRODB
+TM_SURV_DATA_HUB_DICT=..\shared\tmSurveyDataHub.csdb|CSPRODB
+TM_IND_INT_DICT=..\surveyIndInt\surveyIndInt.csdb|CSPRODB
+TM_SURVEYSIG_DICT=..\shared\tmSurveySignatures.csdb|CSPRODB
+TM_HH_MEM_PASS_DICT=..\shared\tmHhMemPass.csdb|CSPRODB
+[Parameters]
+OnExit=..\surveyMenu\surveyMenu.pff

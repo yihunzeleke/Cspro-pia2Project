@@ -1,0 +1,29 @@
+﻿[Run Information]
+Version=CSPro 7.2
+AppType=Entry
+Description=Household Roster
+[DataEntryInit]
+StartMode=Modify
+Lock=Verify
+AutoAdd=No
+ShowInApplicationListing=Never
+CaseListingFilter=^111011011010101100134801.*
+[Files]
+Application=.\surveyHhRstr.ent
+InputData=.\surveyHhRstr.csdb|CSPRODB
+Paradata=.\surveyHhRstr.cslog
+[ExternalFiles]
+TM_HH_RSTR_MIN_DICT=..\surveyHhRstrMin\surveyHhRstrMin.csdb|CSPRODB
+TM_IND_INT_DICT=..\surveyIndInt\surveyIndInt.csdb|CSPRODB
+TM_SURV_DATA_HUB_DICT=..\shared\tmSurveyDataHub.csdb|CSPRODB
+[Parameters]
+OnExit=..\surveyHhInt\surveyHhInt.pff
+HHI_PROVINCE_PASS=1
+HHI_DISTRICT_PASS=110
+HHI_VILLAGE_PASS=110110
+HHI_EACODE_PASS=101011001
+HHI_SHH_PASS=348
+HHI_TEAM_ID_PASS=01
+HHI_STRTDT_PASS=20190819 22:13:06
+HHI_EA_UUID_PASS=acb124ee-b1b4-45bd-a69f-023a09ee0bd0
+HHI_EA_DEVICEID_PASS=3ca82a8608f9    

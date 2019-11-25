@@ -1,0 +1,54 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Survey Signatures
+Name=TM_SURVEYSIG_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Survey Signatures Level
+Name=TM_SURVEYSIG_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Record ID
+Name=SS_RECID
+Start=2
+Len=36
+DataType=Alpha
+
+[Record]
+Label=Signatures
+Name=TM_SURVEYSIG_REC
+RecordTypeValue='1'
+RecordLen=174
+
+[Item]
+Label=Case UUID
+Name=SS_CASEID
+Start=38
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Signature Image Name
+Name=SIGIMGNAME
+Start=74
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Sync Status
+Name=SIGSYNCSTATUS
+Start=174
+Len=1
+
+[ValueSet]
+Label=Sync Status
+Name=SIGSYNCSTATUS_VS1
+Value=1;Not Synced
+Value=2;Synced 
