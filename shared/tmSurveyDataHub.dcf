@@ -178,7 +178,7 @@ DataType=Alpha
 Label=Data Hub
 Name=SURVEYDATAHUB_REC
 RecordTypeValue='1'
-RecordLen=222
+RecordLen=223
 
 [Item]
 Label=CALC - HHI Start Date Passdown
@@ -212,19 +212,32 @@ DataType=Alpha
 Label=Individual Interview Status
 Name=SURV_HUB_STATUS
 Start=114
-Len=1
+Len=2
+
+[ValueSet]
+Label=Individual Interview Status
+Name=SURV_HUB_STATUS_VS1
+Value=1;TRANSFER NEVER ATTEMPTED
+Value=21;FLAGGED FOR TRANSFER - PREV NEVER ATTEMPTED
+Value=23;FLAGGED FOR TRANSFER - PREV ATTEMPTED
+Value=3;TRANSFER PREVIOUSLY ATTEMPTED
+Value=4;NOT ELIGIBLE
+Value=5;ELIGIBLE / RECEIVED COMPLETE
+Value=6;ELIGIBLE / RECEIVED INCOMPLETE
+Value=7;ELIGIBILE / MISSING
+Value=8;ELIGIBLE / REASSIGNED
 
 [Item]
 Label=Individual Name
 Name=SURV_HUB_NAME
-Start=115
+Start=116
 Len=100
 DataType=Alpha
 
 [Item]
 Label=Individual Sex
 Name=SURV_HUB_SEX
-Start=215
+Start=216
 Len=1
 
 [ValueSet]
@@ -236,19 +249,19 @@ Value=2;FEMALE
 [Item]
 Label=Individual Age in Years
 Name=SURV_HUB_AGE_YRS
-Start=216
+Start=217
 Len=3
 
 [Item]
 Label=Individual Age in Months
 Name=SURV_HUB_AGE_MNTHS
-Start=219
+Start=220
 Len=2
 
 [Item]
 Label=Individual Emancipiated Status
 Name=SURV_HUB_EMAN
-Start=221
+Start=222
 Len=2
 
 [ValueSet]

@@ -1,7 +1,7 @@
 ﻿[Run Information]
 Version=CSPro 7.2
 AppType=Entry
-Description=PHIA 2 Survey Template - v110
+Description=PHIA 2 Survey Template - v112
 
 [DataEntryInit]
 StartMode=Add
@@ -17,13 +17,13 @@ Paradata=.\surveyMenu.cslog
 
 [ExternalFiles]
 TM_HH_INT_DICT=..\surveyHhInt\surveyHhInt.csdb|CSPRODB
+TM_HH_MEM_PASS_DICT=..\shared\tmHhMemPass.csdb|CSPRODB
 TM_HH_RSTR_DICT=..\surveyHhRstr\surveyHhRstr.csdb|CSPRODB
 TM_HH_RSTR_MIN_DICT=..\surveyHhRstrMin\surveyHhRstrMin.csdb|CSPRODB
 TM_IND_INT_DICT=..\surveyIndInt\surveyIndInt.csdb|CSPRODB
-TM_SURV_GEOVARS_DICT=..\shared\tmSurveyGeovars.csdb|CSPRODB
-TM_SURV_DATA_HUB_DICT=..\shared\tmSurveyDataHub.csdb|CSPRODB
-TM_HH_MEM_PASS_DICT=..\shared\tmHhMemPass.csdb|CSPRODB
 TM_SURVEYSIG_DICT=..\shared\tmSurveySignatures.csdb|CSPRODB
+TM_SURV_DATA_HUB_DICT=..\shared\tmSurveyDataHub.csdb|CSPRODB
+TM_SURV_GEOVARS_DICT=..\shared\tmSurveyGeovars.csdb|CSPRODB
 
 [Parameters]
 
