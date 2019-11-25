@@ -1,0 +1,54 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Barcode Scans
+Name=TM_BARCODES_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Barcode Scans Level
+Name=TM_BARCODES_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Record ID
+Name=BC_RECID
+Start=2
+Len=36
+DataType=Alpha
+
+[Record]
+Label=Barcodes
+Name=TM_BARCODES_REC
+RecordTypeValue='1'
+RecordLen=174
+
+[Item]
+Label=Case UUID
+Name=BC_CASEID
+Start=38
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Barcode Result
+Name=BARCODE_DATA
+Start=74
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Sync Status
+Name=BCSYNCSTATUS
+Start=174
+Len=1
+
+[ValueSet]
+Label=Sync Status
+Name=BCSYNCSTATUS_VS1
+Value=1;Not Synced
+Value=2;Synced

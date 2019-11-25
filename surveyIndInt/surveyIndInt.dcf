@@ -1,0 +1,7841 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Individual Interview
+Name=TM_IND_INT_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Individual Interview Level
+Name=TM_IND_INT_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province Code (Province Name)
+Name=IND_PROVINCE
+Start=2
+Len=1
+DataType=Alpha
+
+[Item]
+Label=District Code (District Name)
+Name=IND_DISTRICT
+Start=3
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Village Code (Village Name)
+Name=IND_VILLAGE
+Start=6
+Len=6
+DataType=Alpha
+
+[Item]
+Label=EA Code
+Name=IND_EACODE
+Start=12
+Len=9
+DataType=Alpha
+
+[Item]
+Label=Household ID
+Name=IND_SHH
+Start=21
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Team ID
+Name=IND_TEAM_ID
+Start=24
+Len=2
+DataType=Alpha
+
+[Item]
+Label=Household Member ID
+Name=IND_HHMEM_ID
+Start=26
+Len=2
+DataType=Alpha
+
+[Record]
+Label=Start of Individual Interview
+Name=IND_START
+RecordTypeValue='1'
+RecordLen=318
+
+[Item]
+Label=CALC - HHI Start Date Passdown
+Name=IND_LISTINGFORMSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=CALC - HHI Level UUID Capture
+Name=IND_HHI_UUID
+Start=45
+Len=36
+DataType=Alpha
+
+[Item]
+Label=CALC - Device ID Capture
+Name=IND_DEVICEID
+Start=81
+Len=16
+DataType=Alpha
+
+[Item]
+Label=IND FORM START DATE AND TIME
+Name=INDFORMSDT
+Start=97
+Len=17
+DataType=Alpha
+
+[Item]
+Label=participant name (HIDDEN)
+Name=INNAME
+Start=114
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Individual Information
+Name=INDIVHHRCOLL
+Start=214
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INDIVHHRCOLL_VS1
+Value='A';OK
+
+[Item]
+Label=Start Individual Interview
+Name=STRTINSTR
+Start=215
+Len=1
+
+[ValueSet]
+Label=Start Individual Interview
+Name=STRTINSTR_VS1
+Value=1;START INTERVIEW
+Value=2;CANNOT COLLECT DATA
+Value=3;INDIVIDUAL RECORD WILL BE REASSIGNED TO ANOTHER TABLET
+Value=4;INITIATE WITHDRAWAL
+
+[Item]
+Label=calc - Ind Int DE Started Flag
+Name=IND_DE_START_FLAG
+Start=216
+Len=1
+
+[ValueSet]
+Label=calc - Ind Int DE Started Flag
+Name=IND_DE_START_FLAG_VS1
+Value=1;Ind Int Data Entry Started
+
+[Item]
+Label=Cannot Start Individual Interview: Reason
+Name=IND0040
+Start=217
+Len=2
+
+[ValueSet]
+Label=Cannot Start Individual Interview: Reason
+Name=IND0040_VS1
+Value=1;NOT AVAILABLE AFTER ALL VISIT ATTEMPTS
+Value=2;REFUSED
+Value=3;INCAPACITATED
+Value=96;OTHER(SPECIFY)
+
+[Item]
+Label=Cannot Start Individual Interview: Reason  ̶  Other (Specify)
+Name=IND0042
+Start=219
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Adult Eligibility
+Name=ELIGIBILITY_ADULT
+RecordTypeValue='2'
+RecordLen=93
+
+[Item]
+Label=ADULT ELIGIBILITY START DATE AND TIME
+Name=AELIGSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=INDIVIDUAL ELIGIBILITY - ADULT
+Name=INESTART
+Start=45
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=INDIVIDUAL ELIGIBILITY - ADULT
+Name=INESTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(1) Adult Eligibility: Gender
+Name=INEGEND
+Start=46
+Len=1
+
+[ValueSet]
+Label=(1) Adult Eligibility: Gender
+Name=INEGEND_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(1) Adult Eligibility: Gender (Confirm)
+Name=INEGENDC
+Start=47
+Len=1
+
+[ValueSet]
+Label=(1) Adult Eligibility: Gender (Confirm)
+Name=INEGENDC_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=(2) Adult Eligibility: Age
+Name=AGECHECKYN
+Start=48
+Len=1
+
+[ValueSet]
+Label=(2) Adult Eligibility: Age
+Name=AGECHECKYN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=ADULT ELIGIBILITY AGE CHANGE DATE AND TIME
+Name=AEAGECHANGETS
+Start=49
+Len=17
+DataType=Alpha
+
+[Item]
+Label=(2) Adult Eligibility: Age (Confirm)
+Name=AGEELIGY
+Start=66
+Len=3
+
+[Item]
+Label=(3) Adult Eligibility: Emancipation Status
+Name=INEEMAN
+Start=69
+Len=1
+
+[ValueSet]
+Label=(3) Adult Eligibility: Emancipation Status
+Name=INEEMAN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(4) Adult Eligibility: Hearing
+Name=ACCHEAR
+Start=70
+Len=1
+
+[ValueSet]
+Label=(4) Adult Eligibility: Hearing
+Name=ACCHEAR_VS1
+Value=1;HEARING GOOD
+Value=2;HEARING BAD
+
+[Item]
+Label=(4) Adult Eligibility: Hearing (Accommodate)
+Name=ACCOM1
+Start=71
+Len=1
+
+[ValueSet]
+Label=(4) Adult Eligibility: Hearing (Accommodate)
+Name=ACCOM1_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(5) Adult Eligibility: Survey Language
+Name=ACCLANG
+Start=72
+Len=1
+
+[ValueSet]
+Label=(5) Adult Eligibility: Survey Language
+Name=ACCLANG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(6) Adult Eligibility: Cognitive Ability (Read Paragraph)
+Name=INEPARAG
+Start=73
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=(6) Adult Eligibility: Cognitive Ability (Read Paragraph)
+Name=INEPARAG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(6) Adult Eligibility: Cognitive Ability (Assess)
+Name=ACCCOGNITIVE
+Start=74
+Len=1
+
+[ValueSet]
+Label=(6) Adult Eligibility: Cognitive Ability (Assess)
+Name=ACCCOGNITIVE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=ADULT ELIGIBILITY END DATE AND TIME
+Name=AELIGEDT
+Start=75
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Individual Age Change: Go to Parental Eligibility
+Name=INECHILD
+Start=92
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Individual Age Change: Go to Parental Eligibility
+Name=INECHILD_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=End of Adult Eligibility
+Name=INECONS
+Start=93
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INECONS_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Parent Eligibility
+Name=ELIGIBILITY_PARENT
+RecordTypeValue='3'
+RecordLen=128
+
+[Item]
+Label=PARENT ELIGIBILITY START DATE AND TIME
+Name=PPELIGSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=INDIVIDUAL ELIGIBILITY - PARENT
+Name=PPCHESTART
+Start=45
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=INDIVIDUAL ELIGIBILITY - PARENT
+Name=PPCHESTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Parental Eligibility: Select Adult
+Name=PPGUARD
+Start=46
+Len=2
+DataType=Alpha
+
+[Item]
+Label=Parental Eligibility: Adult's Relationship with Child
+Name=PPGUARDREL
+Start=48
+Len=1
+
+[ValueSet]
+Label=Parental Eligibility: Adult's Relationship with Child
+Name=PPGUARDREL_VS1
+Value=1;PARENT/GUARDIAN
+Value=2;STEP-PARENT
+Value=3;GRANDPARENT
+Value=4;OTHER (SPECIFY)
+
+[Item]
+Label=Parental Eligibility: Adult's Relationship with Adolescent  ̶  Other (Specify)
+Name=PPGUARDRELOTH
+Start=49
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(1) Parental Eligibility: Gender
+Name=PPCHEGEND
+Start=99
+Len=1
+
+[ValueSet]
+Label=(1) Parental Eligibility: Gender
+Name=PPCHEGEND_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(1) Parental Eligibility: Gender (Confirm)
+Name=PPCHEGENDC
+Start=100
+Len=1
+
+[ValueSet]
+Label=(1) Parental Eligibility: Gender (Confirm)
+Name=PPCHEGENDC_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=(2) Parental Eligibility: Age
+Name=PPCHEAGE
+Start=101
+Len=1
+
+[ValueSet]
+Label=(2) Parental Eligibility: Age
+Name=PPCHEAGE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=PARENTAL ELIGIBILITY AGE CHANGE DATE AND TIME
+Name=PEAGECHANGETS
+Start=102
+Len=1
+DataType=Alpha
+
+[Item]
+Label=(2) Parental Eligibility: Age (Confirm)
+Name=PPCHEAGEC
+Start=103
+Len=1
+
+[ValueSet]
+Label=(2) Parental Eligibility: Age (Confirm)
+Name=PPCHEAGEC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(3) Parental Eligibility: Adolescent Emancipation Status
+Name=PPCHEEMAN
+Start=104
+Len=1
+
+[ValueSet]
+Label=(3) Parental Eligibility: Adolescent Emancipation Status
+Name=PPCHEEMAN_VS1
+Value=1;CHILD IS AN EMANCIPATED MINOR
+Value=2;CHILD IS NOT AN EMANCIPATED MINOR
+
+[Item]
+Label=(4) Parental Eligibility: Hearing
+Name=PPCHEHEARING
+Start=105
+Len=1
+
+[ValueSet]
+Label=(4) Parental Eligibility: Hearing
+Name=PPCHEHEARING_VS1
+Value=1;HEARING GOOD
+Value=2;HEARING BAD
+
+[Item]
+Label=(4) Parental Eligibility: Hearing (Accommodate)
+Name=PPCHEHEARACM
+Start=106
+Len=1
+
+[ValueSet]
+Label=(4) Parental Eligibility: Hearing (Accommodate)
+Name=PPCHEHEARACM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(5) Parental Eligibility: Survey Language
+Name=PPCHELANGACC
+Start=107
+Len=1
+
+[ValueSet]
+Label=(5) Parental Eligibility: Survey Language
+Name=PPCHELANGACC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(6) Parental Eligibility: Cognitive Ability (Read Paragraph)
+Name=PPCHEPARAG
+Start=108
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=(6) Parental Eligibility: Cognitive Ability (Read Paragraph)
+Name=PPCHEPARAG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(6) Parental Eligibility: Cognitive Ability (Assess)
+Name=PPCHECOGN
+Start=109
+Len=1
+
+[ValueSet]
+Label=(6) Parental Eligibility: Cognitive Ability (Assess)
+Name=PPCHECOGN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=PARENT ELIGIBILITY END DATE AND TIME
+Name=PELIGEDT
+Start=110
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Age Change to Adult
+Name=PPCHADULT
+Start=127
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Age Change to Adult
+Name=PPCHADULT_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=End of Parental Eligibility
+Name=PPCHECONS
+Start=128
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=End of Parental Eligibility
+Name=PPCHECONS_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Child Eligibility
+Name=ELIGIBILITY_CHILD
+RecordTypeValue='4'
+RecordLen=110
+
+[Item]
+Label=CHILD ELIGIBILITY START DATE AND TIME
+Name=CELIGSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=INDIVIDUAL ELIGIBILITY - CHILD
+Name=CHESTART
+Start=45
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=INDIVIDUAL ELIGIBILITY - CHILD
+Name=CHESTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(1) Child Eligibility: Hearing
+Name=CHEHEARING
+Start=46
+Len=1
+
+[ValueSet]
+Label=(1) Child Eligibility: Hearing
+Name=CHEHEARING_VS1
+Value=1;HEARING GOOD
+Value=2;HEARING BAD
+
+[Item]
+Label=Hearing Confirm
+Name=CHEHEARACM
+Start=47
+Len=1
+
+[ValueSet]
+Label=Hearing Confirm
+Name=CHEHEARACM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(2) Child Eligibility: Language
+Name=CHELANGACC
+Start=48
+Len=1
+
+[ValueSet]
+Label=(2) Child Eligibility: Language
+Name=CHELANGACC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Language Confirm
+Name=CHELANGACM
+Start=49
+Len=1
+
+[ValueSet]
+Label=Language Confirm
+Name=CHELANGACM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Child Eligibility: Read Paragraph
+Name=CHEPARAG
+Start=50
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Child Eligibility: Read Paragraph
+Name=CHEPARAG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(3) Child Eligibility: Cognitive Ability
+Name=CHECOGN
+Start=51
+Len=1
+
+[ValueSet]
+Label=(3) Child Eligibility: Cognitive Ability
+Name=CHECOGN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(4) Child Eligibility: Gender Confirmation
+Name=CHEGEND
+Start=52
+Len=1
+
+[ValueSet]
+Label=(4) Child Eligibility: Gender Confirmation
+Name=CHEGEND_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Gender Confirm
+Name=CHEGENDC
+Start=53
+Len=1
+
+[ValueSet]
+Label=Gender Confirm
+Name=CHEGENDC_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=(5) Child Eligibility: Age Confirmation
+Name=CHEAGE
+Start=54
+Len=1
+
+[ValueSet]
+Label=(5) Child Eligibility: Age Confirmation
+Name=CHEAGE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Child Eligibility Timestamp Age Change
+Name=CEAGECHANGETS
+Start=55
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Age Confirm
+Name=CHEAGEC
+Start=72
+Len=3
+
+[Item]
+Label=Child Eligibility: Emancipated Minor
+Name=CHEEMAN
+Start=75
+Len=1
+
+[ValueSet]
+Label=Child Eligibility: Emancipated Minor
+Name=CHEEMAN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=CHILD ELIGIBILITY END DATE AND TIME
+Name=CELIGEDT
+Start=76
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Age Change to Adult
+Name=CCHADULT
+Start=93
+Len=17
+DataType=Alpha
+
+[Item]
+Label=(8) End of Child Eligibility
+Name=CHECONS
+Start=110
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=(8) End of Child Eligibility
+Name=CHECONS_VS1
+Value='A';OK. Please continue.
+
+[Record]
+Label=Adult Consent
+Name=CONSENT_ADULT
+RecordTypeValue='5'
+RecordLen=142
+
+[Item]
+Label=Appendix B2: Individual Consent for Adults 18+ and Emancipated Minors 15-17 Years: Interview, Contact for Future Research, Blood Testing, and Blood Storage
+Name=INSTART
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Appendix B2: Individual Consent for Adults 18+ and Emancipated Minors 15-17 Years: Interview, Contact for Future Research, Blood Testing, and Blood Storage
+Name=INSTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Adult Consent: Language
+Name=INLANGRAD
+Start=29
+Len=1
+
+[ValueSet]
+Label=Adult Consent: Language
+Name=INLANGRAD_VS1
+Value=1;ENGLISH
+Value=2;LANGUAGE 2
+Value=3;LANGUAGE 3
+
+[Item]
+Label=1. Individual Interview
+Name=INAGREEIN
+Start=30
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview
+Name=INAGREEIN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=1. Individual Interview (Agree)
+Name=INAGREEINST1
+Start=31
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview (Agree)
+Name=INAGREEINST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=1. Individual Interview (Refuse)
+Name=INAGREEINST2
+Start=32
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview (Refuse)
+Name=INAGREEINST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=2. Blood Testing
+Name=INCONBIO
+Start=33
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing
+Name=INCONBIO_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=2. Blood Testing (Agree)
+Name=INCONBIOST1
+Start=34
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing (Agree)
+Name=INCONBIOST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=2. Blood Testing (Refuse)
+Name=INCONBIOST2
+Start=35
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing (Refuse)
+Name=INCONBIOST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=3. Blood Storage for Future Research
+Name=INCONBLST
+Start=36
+Len=1
+
+[ValueSet]
+Label=3. Blood Storage for Future Research
+Name=INCONBLST_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=3. Blood Storage for Future Research (Agree)
+Name=INCONBLSTST1
+Start=37
+Len=1
+
+[ValueSet]
+Label=3. Blood Storage for Future Research (Agree)
+Name=INCONBLSTST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=3. Blood Storage for Future Research (Refuse)
+Name=INCONBLSTST2
+Start=38
+Len=1
+
+[ValueSet]
+Label=3. Blood Storage for Future Research (Refuse)
+Name=INCONBLSTST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=4. Contact for Future Research
+Name=INFUTCON
+Start=39
+Len=1
+
+[ValueSet]
+Label=4. Contact for Future Research
+Name=INFUTCON_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=4. Contact for Future Research (Agree)
+Name=INFUTCONST1
+Start=40
+Len=1
+
+[ValueSet]
+Label=4. Contact for Future Research (Agree)
+Name=INFUTCONST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=4. Contact for Future Research (Refuse)
+Name=INFUTCONST2
+Start=41
+Len=1
+
+[ValueSet]
+Label=4. Contact for Future Research (Refuse)
+Name=INFUTCONST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=Individual Adult Consent Confirmation
+Name=INCONCONFIRM
+Start=42
+Len=1
+
+[ValueSet]
+Label=Individual Adult Consent Confirmation
+Name=INCONCONFIRM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Printed name of participant
+Name=INCONNM
+Start=43
+Len=75
+DataType=Alpha
+
+[Item]
+Label=Signature of person obtaining consent
+Name=INCONSTFSIG
+Start=118
+Len=1
+DataType=Alpha
+
+[Item]
+Label=Date - Adult Consent Signature Date
+Name=INDCONSTFDT
+Start=119
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Study staff ID number
+Name=INCONSTAFFID
+Start=136
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Overall Consent Status
+Name=INCONSTAT
+Start=142
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INCONSTAT_VS1
+Value='A';OK
+
+[Record]
+Label=Parent Permission
+Name=PERMISSION_PARENT
+RecordTypeValue='6'
+RecordLen=136
+
+[Item]
+Label=Appendix B3: Parental or Guardian Permission for Participants 15-17 Years: Allow Interview, Blood Testing, Blood Storage, Contact for Future Research, and Share Contact Information for Linkage to Care
+Name=PPRMSTART
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Appendix B3: Parental or Guardian Permission for Participants 15-17 Years: Allow Interview, Blood Testing, Blood Storage, Contact for Future Research, and Share Contact Information for Linkage to Care
+Name=PPRMSTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Parental Permission: Language
+Name=PPRMLANG
+Start=29
+Len=1
+
+[ValueSet]
+Label=Parental Permission: Language
+Name=PPRMLANG_VS1
+Value=1;ENGLISH
+Value=2;(ENTER SECOND LANGUAGE)
+Value=3;(ENTER THIRD LANGAUGE)
+
+[Item]
+Label=1. Individual Interview
+Name=PPRMAGREE
+Start=30
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview
+Name=PPRMAGREE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=1. Individual Interview (Agree)
+Name=PPRMAGREEST1
+Start=31
+Len=1
+
+[ValueSet]
+Label=OK. PLEASE CONTINUE -- NUM
+Name=OKRADBUTTON
+Link=123852896
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=1. Individual Interview (Refuse)
+Name=PPRMAGREEST2
+Start=32
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview (Refuse)
+Name=PPRMAGREEST2_VS1
+Link=123852896
+
+[Item]
+Label=2. Blood Testing
+Name=PPRMBIO
+Start=33
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing
+Name=PPRMBIO_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=2. Blood Testing (Agree)
+Name=PPRMBIOST1
+Start=34
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing (Agree)
+Name=PPRMBIOST1_VS1
+Link=123852896
+
+[Item]
+Label=2. Blood Testing (Agree)
+Name=PPRMBIOST2
+Start=35
+Len=1
+
+[ValueSet]
+Label=2. Blood Testing (Agree)
+Name=PPRMBIOST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=3. Share Contact Information
+Name=PPRMCONTACT
+Start=36
+Len=1
+
+[ValueSet]
+Label=3. Share Contact Information
+Name=PPRMCONTACT_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=3. Share Contact Information (Agree)
+Name=PPRMCONTACTST1
+Start=37
+Len=1
+
+[ValueSet]
+Label=3. Share Contact Information (Agree)
+Name=PPRMCONTACTST1_VS1
+Link=123852896
+
+[Item]
+Label=3. Share Contact Information (Refuse)
+Name=PPRMCONTACTST2
+Start=38
+Len=1
+
+[ValueSet]
+Label=3. Share Contact Information (Refuse)
+Name=PPRMCONTACTST2_VS1
+Link=123852896
+
+[Item]
+Label=4. Blood Storage for Future Research
+Name=PPRMBLST
+Start=39
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research
+Name=PPRMBLST_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=4. Blood Storage for Future Research (Agree)
+Name=PPRMBLSTST1
+Start=40
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research (Agree)
+Name=PPRMBLSTST1_VS1
+Link=123852896
+
+[Item]
+Label=4. Blood Storage for Future Research (Refuse)
+Name=PPRMBLSTST2
+Start=41
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research (Refuse)
+Name=PPRMBLSTST2_VS1
+Link=123852896
+
+[Item]
+Label=5. Contact for Future Research
+Name=PPRMFUTR
+Start=42
+Len=1
+
+[ValueSet]
+Label=5. Contact for Future Research
+Name=PPRMFUTR_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=5. Contact for Future Research (Agree)
+Name=PPRMFUTRST1
+Start=43
+Len=1
+
+[ValueSet]
+Label=5. Contact for Future Research (Agree)
+Name=PPRMFUTRST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=5. Contact for Future Research (Refuse)
+Name=PPRMFUTRST2
+Start=44
+Len=1
+
+[ValueSet]
+Label=5. Contact for Future Research (Refuse)
+Name=PPRMFUTRST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=Parental Permission Confirmation
+Name=PPRMCONCONFIRM
+Start=45
+Len=1
+
+[ValueSet]
+Label=Parental Permission Confirmation
+Name=PPRMCONCONFIRM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Printed name of parent/guardian
+Name=PPCHPGNM
+Start=46
+Len=75
+DataType=Alpha
+
+[Item]
+Label=Signature of person obtaining consent
+Name=PPCHSTFSIG
+Start=121
+Len=1
+
+[ValueSet]
+Label=Signature of person obtaining consent
+Name=PPCHSTFSIG_VS1
+Value=1;OK
+
+[Item]
+Label=Date - Parental Permission Signature Date
+Name=PPCHSTFDT
+Start=122
+Len=8
+DataType=Alpha
+
+[Item]
+Label=Study staff ID number
+Name=PPCHSTAFFID
+Start=130
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Overall Permission Status
+Name=PPCHCONSTAT
+Start=136
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=PPCHCONSTAT_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Assent
+Name=ASSENT
+RecordTypeValue='7'
+RecordLen=232
+
+[Item]
+Label=B4: Individual Assent
+Name=ASOSTART
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=B4: Individual Assent
+Name=ASOSTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Child Language
+Name=ASOLANG
+Start=29
+Len=1
+
+[ValueSet]
+Label=Child Language
+Name=ASOLANG_VS1
+Value=1;ENGLISH
+Value=2;LANGUAGE 2
+Value=3;LANGUAGE 3
+
+[Item]
+Label=Title of Study:
+Name=ASOTITLE
+Start=30
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Title of Study:
+Name=ASOTITLE_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Interviewer reads:
+Name=ASOINTRO
+Start=31
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Interviewer reads:
+Name=ASOINTRO_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Why are we doing this study?
+Name=ASOPRPS
+Start=32
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Why are we doing this study?
+Name=ASOPRPS_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=What would happen if you join this study?
+Name=ASOPROC
+Start=33
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=What would happen if you join this study?
+Name=ASOPROC_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Could bad things happen if you join this study?
+Name=ASORISK
+Start=34
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Could bad things happen if you join this study?
+Name=ASORISK_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Could the study help me?
+Name=ASOBEN
+Start=35
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Could the study help me?
+Name=ASOBEN_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Alternatives to taking part
+Name=ASOALT
+Start=36
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Alternatives to taking part
+Name=ASOALT_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Costs for being in the study
+Name=ASOCOST
+Start=37
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Costs for being in the study
+Name=ASOCOST_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Use of study findings
+Name=ASOUSE
+Start=38
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Use of study findings
+Name=ASOUSE_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=What else should you know about this study?
+Name=ASOCONF1
+Start=39
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=What else should you know about this study?
+Name=ASOCONF1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Confidentiality
+Name=ASOCONF2
+Start=40
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Confidentiality
+Name=ASOCONF2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Is there anything else?
+Name=ASOELSE
+Start=41
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Is there anything else?
+Name=ASOELSE_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Whom should you contact if you have questions?
+Name=ASOCONF4
+Start=42
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Whom should you contact if you have questions?
+Name=ASOCONF4_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Do you want to ask me anything about:
+Name=ASOQST
+Start=43
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Do you want to ask me anything about:
+Name=ASOQST_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Assent statement
+Name=ASOVRBL
+Start=44
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Assent statement
+Name=ASOVRBL_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=1. Individual Interview
+Name=ASOAGREE
+Start=45
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview
+Name=ASOAGREE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=1. Individual Interview (Agree)
+Name=ASOAGREEST1
+Start=46
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview (Agree)
+Name=ASOAGREEST1_VS1
+Link=123852896
+
+[Item]
+Label=1. Individual Interview (Refuse)
+Name=ASOAGREEST2
+Start=47
+Len=1
+
+[ValueSet]
+Label=1. Individual Interview (Refuse)
+Name=ASOAGREEST2_VS1
+Link=123852896
+
+[Item]
+Label=2. Contact for Future Research
+Name=ASYFUTR
+Start=48
+Len=1
+
+[ValueSet]
+Label=2. Contact for Future Research
+Name=ASYFUTR_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=2. Contact for Future Research (Agree)
+Name=ASYFUTRST1
+Start=49
+Len=1
+
+[ValueSet]
+Label=2. Contact for Future Research (Agree)
+Name=ASYFUTRST1_VS1
+Link=123852896
+
+[Item]
+Label=2. Contact for Future Research (Refuse)
+Name=ASYFUTRST2
+Start=50
+Len=1
+
+[ValueSet]
+Label=2. Contact for Future Research (Refuse)
+Name=ASYFUTRST2_VS1
+Link=123852896
+
+[Item]
+Label=3. Blood Testing
+Name=ASYBIOGT
+Start=51
+Len=1
+
+[ValueSet]
+Label=3. Blood Testing
+Name=ASYBIOGT_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=3. Blood Testing (Agree)
+Name=ASYBIOGTST1
+Start=52
+Len=1
+
+[ValueSet]
+Label=3. Blood Testing (Agree)
+Name=ASYBIOGTST1_VS1
+Link=123852896
+
+[Item]
+Label=3. Blood Testing (Refuse)
+Name=ASYBIOGTST2
+Start=53
+Len=1
+
+[ValueSet]
+Label=3. Blood Testing (Refuse)
+Name=ASYBIOGTST2_VS1
+Link=123852896
+
+[Item]
+Label=4. Blood Storage for Future Research
+Name=ASYBLST
+Start=54
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research
+Name=ASYBLST_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=4. Blood Storage for Future Research (Agree)
+Name=ASYBLSTST1
+Start=55
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research (Agree)
+Name=ASYBLSTST1_VS1
+Link=123852896
+
+[Item]
+Label=4. Blood Storage for Future Research (Refuse)
+Name=ASYBLSTST2
+Start=56
+Len=1
+
+[ValueSet]
+Label=4. Blood Storage for Future Research (Refuse)
+Name=ASYBLSTST2_VS1
+Link=123852896
+
+[Item]
+Label=Individual Adult Consent Confirmation
+Name=ASYASCONFIRM
+Start=57
+Len=1
+
+[ValueSet]
+Label=yesno
+Name=ASYASCONFIRM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Printed name of child
+Name=ASONM
+Start=58
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Printed name of parent/guardian
+Name=ASOPRNT
+Start=108
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Signature of person obtaining consent
+Name=ASOSTFSIG
+Start=158
+Len=1
+
+[Item]
+Label=Assent date and time
+Name=ASOSTFDT
+Start=159
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Printed name of person obtaining consent
+Name=ASOSTFNM
+Start=176
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Study staff ID number
+Name=ASOSTAFFID
+Start=226
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Overall Assent Status
+Name=ASOCONSTAT
+Start=232
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=ASOCONSTAT_VS1
+Value='A';OK
+
+[Record]
+Label=End of Consent
+Name=END_CONSENT
+RecordTypeValue='8'
+RecordLen=51
+
+[Item]
+Label=CALC - Consent Status
+Name=CONSTAT
+Start=28
+Len=2
+
+[Item]
+Label=Consent Status
+Name=CONSTATD
+Start=30
+Len=2
+
+[ValueSet]
+Label=Consent Status
+Name=CONSTATD_VS1
+Value=1;CONSENTED
+Value=2;NOT CONSENTED
+Value=99;INELIGIBLE
+
+[Item]
+Label=Enrollment
+Name=ENROLL
+Start=32
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=ENROLL_VS1
+Value='A';OK
+
+[Item]
+Label=PTID Barcode Scan
+Name=PTIDSCAN
+Start=33
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=yesno
+Name=PTIDSCAN_VS1
+Value='1       ';YES
+Value='2       ';NO
+
+[Item]
+Label=PTID Barcode Scan: Confirmation
+Name=PTIDCOMF
+Start=41
+Len=1
+
+[Item]
+Label=PTID Manual Entry
+Name=PTIDMAN
+Start=42
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=YESNO
+Name=PTIDMAN_VS1
+Value='1       ';YES
+Value='2       ';NO
+
+[Item]
+Label=PTID Scan Complete
+Name=INPAPER
+Start=50
+Len=1
+
+[ValueSet]
+Label=PTID Scan Complete
+Name=INPAPER_VS1
+Value=1;PAPER CONSENT WAS GIVEN TO PARTICIPANT
+Value=2;PARTICIPANT REFUSED TO RECEIVE PAPER CONSENT
+
+[Item]
+Label=Ineligible Participant
+Name=ENELIGTHX
+Start=51
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Ineligible Participant
+Name=ENELIGTHX_VS1
+Value='A';OK
+
+[Record]
+Label=Adult Questionnaire Start
+Name=ADULTQX_START
+RecordTypeValue='9'
+RecordLen=48
+
+[Item]
+Label=ADULT QX START DATE AND TIME
+Name=ADQXSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=L1
+Name=LNGVQX_LNG
+Start=45
+Len=1
+
+[ValueSet]
+Label=L1
+Name=LNGVQX_LNG_VS1
+Value=1;[LANGUAGE A]
+Value=2;[LANGUAGE B]
+Value=3;[LANGUAGE C]
+
+[Item]
+Label=L2
+Name=LNGVINT_LNG
+Start=46
+Len=1
+
+[ValueSet]
+Label=L2
+Name=LNGVINT_LNG_VS1
+Value=1;[LANGUAGE A]
+Value=2;[LANGUAGE B]
+Value=3;[LANGUAGE C]
+
+[Item]
+Label=L3
+Name=LNGNAT_LNG
+Start=47
+Len=1
+
+[ValueSet]
+Label=L3
+Name=LNGNAT_LNG_VS1
+Value=1;[LANGUAGE A]
+Value=2;[LANGUAGE B]
+Value=3;[LANGUAGE C]
+
+[Item]
+Label=L4
+Name=TRNSLUSE
+Start=48
+Len=1
+
+[ValueSet]
+Label=L4
+Name=TRNSLUSE_VS1
+Value=1;YES
+Value=2;NO
+
+[Record]
+Label=Background
+Name=BACKGROUND
+RecordTypeValue='A'
+RecordLen=270
+
+[Item]
+Label=MODULE 1: RESPONDENT BACKGROUND
+Name=INSTR1
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INSTR1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(101) Background
+Name=SCHLAT
+Start=29
+Len=2
+
+[ValueSet]
+Label=(101) Background
+Name=SCHLAT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(102) Background
+Name=SCHLCUR
+Start=31
+Len=2
+
+[ValueSet]
+Label=(102) Background
+Name=SCHLCUR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(103) Background
+Name=SCHCOM
+Start=33
+Len=2
+
+[ValueSet]
+Label=(103) Background
+Name=SCHCOM_VS1
+Value=1;(CLASS 1)
+Value=2;(CLASS 2)
+Value=3;(CLASS 3)
+Value=4;(FORM 1)
+Value=5;(FORM 2)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Length of Time
+Name=LIVETIMENUM
+Start=35
+Len=2
+
+[Item]
+Label=Units
+Name=LIVETIME
+Start=37
+Len=2
+
+[ValueSet]
+Label=Units
+Name=LIVETIME_VS1
+Value=1;MONTHS
+Value=2;YEARS
+
+[Item]
+Label=(104) Background: Always Lived Here/Don't Know/Refused
+Name=LIVETIMEDK
+Start=39
+Len=2
+
+[ValueSet]
+Label=(104) Background: Always Lived Here/Don't Know/Refused
+Name=LIVETIMEDK_VS1
+Value=3;I HAVE ALWAYS LIVED HERE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(105) Background
+Name=OUTREGIONTYPE
+Start=41
+Len=2
+
+[ValueSet]
+Label=(105) Background
+Name=OUTREGIONTYPE_VS1
+Value=1;CITY
+Value=2;TOWN
+Value=3;RURAL AREA
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(106) Background
+Name=OUTREGIONWHR
+Start=43
+Len=2
+
+[ValueSet]
+Label=(106) Background
+Name=OUTREGIONWHR_VS1
+Value=1;[DISTRICT 1]
+Value=2;[DISTRICT 2]
+Value=3;[COUNTRY 1]
+Value=4;[COUNTRY 2]
+Value=96;OTHER (SPECIFY)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(106) Background: Other (Specify)
+Name=OUTREGIONWHROTH
+Start=45
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(107) Background
+Name=MONTHOUTEVER
+Start=95
+Len=2
+
+[ValueSet]
+Label=(107) Background
+Name=MONTHOUTEVER_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=MONTHWHENM
+Start=97
+Len=2
+
+[ValueSet]
+Label=Month
+Name=MONTHWHENM_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=-8;DON’T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=MONTHWHENY
+Start=99
+Len=4
+
+[Item]
+Label=(108) Background: Don't Know/Refused Year
+Name=MONTHWHENDK
+Start=103
+Len=2
+
+[ValueSet]
+Label=(108) Background: Don't Know/Refused Year
+Name=MONTHWHENDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(109) Background
+Name=MONTHTIMES
+Start=105
+Len=2
+
+[Item]
+Label=(109) Background: Don't Know/Refused
+Name=MONTHTIMESDK
+Start=107
+Len=2
+
+[ValueSet]
+Label=(109) Background: Don't Know/Refused
+Name=MONTHTIMESDK_VS1
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(110) Background
+Name=WHEREOUT
+Start=109
+Len=2
+
+[ValueSet]
+Label=(110) Background
+Name=WHEREOUT_VS1
+Value=1;ANOTHER COMMUNITY IN THIS DISTRICT
+Value=2;ANOTHER DISTRICT IN THIS REGION
+Value=3;[REGION 1]
+Value=4;[REGION 2]
+Value=5;[COUNTRY 1]
+Value=6;[COUNTRY 2]
+Value=96;OTHER (SPECIFY)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(110) Background: Other (Specify)
+Name=WHEREOUTOTH
+Start=111
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(111) Background
+Name=REASONAWAY
+Start=161
+Len=2
+
+[ValueSet]
+Label=(111) Background
+Name=REASONAWAY_VS1
+Value=1;WORK
+Value=2;SCHOOL/UNIVERSITY
+Value=3;FAMILY/MARRIAGE
+Value=4;ACCESS HEALTH OR OTHER SERVICES
+Value=5;CONFLICT OR NATURAL DISASTER (FLOODS, CYCLONE, DROUGHT)
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(111) Background: Other (Specify)
+Name=REASONAWATOTH
+Start=163
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(112) Background
+Name=WORK12MO
+Start=213
+Len=2
+
+[ValueSet]
+Label=(112) Background
+Name=WORK12MO_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(113) Background
+Name=WORK7DAYS
+Start=215
+Len=2
+
+[ValueSet]
+Label=(113) Background
+Name=WORK7DAYS_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(114) Background
+Name=WORKIND
+Start=217
+Len=2
+
+[ValueSet]
+Label=(114) Background
+Name=WORKIND_VS1
+Value=1;MINING
+Value=2;AGRICULTURE/FARMING
+Value=3;TRANSPORT
+Value=4;CONSTRUCTION
+Value=5;UNIFORMED PERSONNEL
+Value=6;INFORMAL TRADE
+Value=7;GARMENT INDUSTRIES
+Value=8;HOUSEKEEPER
+Value=9;SEX WORKER
+Value=10;STUDENT
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(114) Background: Other (Specify)
+Name=WORKINDOTH
+Start=219
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(115) Background
+Name=NORMWORK
+Start=269
+Len=2
+
+[ValueSet]
+Label=(115) Background
+Name=NORMWORK_VS1
+Value=1;HOME COMMUNITY
+Value=2;SAME COUNTRY, DIFFERENT COMMUNITY
+Value=3;OUTSIDE THE COUNTRY
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Marriage
+Name=MARRIAGE
+RecordTypeValue='B'
+RecordLen=113
+
+[Item]
+Label=MODULE 2: MARRIAGE
+Name=INSTR2
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INSTR2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(201) Marriage
+Name=EVERMAR
+Start=29
+Len=2
+
+[ValueSet]
+Label=(201) Marriage
+Name=EVERMAR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(202) Marriage
+Name=AGEMAR
+Start=31
+Len=2
+
+[Item]
+Label=(202) Marriage: Don't Know/Refused
+Name=AGEMARDK
+Start=33
+Len=2
+
+[ValueSet]
+Label=(202) Marriage: Don't Know/Refused
+Name=AGEMARDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(203) Marriage
+Name=CURMAR
+Start=35
+Len=2
+
+[ValueSet]
+Label=(203) Marriage
+Name=CURMAR_VS1
+Value=1;MARRIED
+Value=2;LIVING TOGETHER
+Value=3;WIDOWED
+Value=4;DIVORCED
+Value=5;SEPARATED/SINGLE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR2A
+Start=37
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INSTR2A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(204) Marriage
+Name=NUMWIF
+Start=38
+Len=2
+
+[Item]
+Label=(204) Marriage: Don't Know/Refused
+Name=NUMWIFDK
+Start=40
+Len=2
+
+[ValueSet]
+Label=(204) Marriage: Don't Know/Refused
+Name=NUMWIFDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(205) Marriage
+Name=QXA1205
+Start=42
+Len=1
+
+[ValueSet]
+Label=(205) Marriage
+Name=QXA1205_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(206) Marriage
+Name=NPNUM
+Start=43
+Len=1
+
+[Item]
+Label=(206) Marriage
+Name=WIFLIVEEW
+Start=44
+Len=2
+
+[Item]
+Label=(206) Marriage: Don't Know/Refused
+Name=WIFLIVEEWDK
+Start=46
+Len=2
+
+[ValueSet]
+Label=(206) Marriage: Don't Know/Refused
+Name=WIFLIVEEWDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(207) Marriage
+Name=WIFEWHERE
+Start=48
+Len=2
+
+[ValueSet]
+Label=(207) Marriage
+Name=WIFEWHERE_VS1
+Value=1;STAYING IN A DIFFERENT HOUSEHOLD, SAME COMMUNITY
+Value=2;STAYING IN A DIFFERENT COMMUNITY, SAME REGION/PROVINCE
+Value=3;STAYING IN A DIFFERENT REGION/PROVINCE
+Value=4;STAYING IN A DIFFERENT COUNTRY
+Value=5;LIVING ELSEWHERE, DON’T KNOW OR REFUSED TO ANSWER WHERE
+Value=-8;DON’T KNOW
+Value=-9;REFUSE TO ANSWER
+
+[Item]
+Label=(208) Marriage
+Name=HUSLIVEW
+Start=50
+Len=2
+
+[ValueSet]
+Label=(208) Marriage
+Name=HUSLIVEW_VS1
+Value=0;LIVING IN THE HOUSEHOLD
+Value=1;STAYING IN A DIFFERENT HOUSEHOLD, SAME COMMUNITY
+Value=2;STAYING IN A DIFFERENT COMMUNITY, SAME REGION/PROVINCE
+Value=3;STAYING IN A DIFFERENT REGION/PROVINCE
+Value=4;STAYING IN A DIFFERENT COUNTRY
+Value=5;LIVING ELSEWHERE, DON’T KNOW OR REFUSED TO ANSWER WHERE
+Value=-8;DON’T KNOW
+Value=-9;REFUSE TO ANSWER
+
+[Item]
+Label=Partner in Household
+Name=HHQXHUS2
+Start=52
+Len=2
+
+[ValueSet]
+Label=Partner in Household
+Name=HHQXHUS2_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSE TO ANSWER
+
+[Item]
+Label=(209) Marriage
+Name=NEWHSELECT
+Start=54
+Len=2
+
+[ValueSet]
+Label=(209) Marriage
+Name=NEWHSELECT_VS1
+Value=96;NOT LISTED IN HOUSEHOLD
+
+[Item]
+Label=(210) Marriage
+Name=NEWHNAME
+Start=56
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(210) Marriage: Don't Know/Refused
+Name=NEWHNAMEDK
+Start=106
+Len=2
+
+[ValueSet]
+Label=(210) Marriage: Don't Know/Refused
+Name=NEWHNAMEDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(211) Marriage
+Name=HUSOTWIF
+Start=108
+Len=2
+
+[ValueSet]
+Label=(211) Marriage
+Name=HUSOTWIF_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSE TO ANSWER
+
+[Item]
+Label=(212) Marriage
+Name=HUSNWIF
+Start=110
+Len=2
+
+[Item]
+Label=(212) Marriage: Don't Know/Refused
+Name=HUSNWIFDK
+Start=112
+Len=2
+
+[ValueSet]
+Label=(212) Marriage: Don't Know/Refused
+Name=HUSNWIFDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSE TO ANSWER
+
+[Record]
+Label=Marriage - Wives/Partners
+Name=MARRIAGE_WIVES
+RecordTypeValue='M'
+MaxRecords=50
+RecordLen=81
+
+[Item]
+Label=Partner
+Name=REVWIFENM
+Start=28
+Len=1
+
+[ValueSet]
+Label=Partner
+Name=REVWIFENM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Partner in Household
+Name=REVWIFEHH
+Start=29
+Len=1
+
+[ValueSet]
+Label=Partner in Household
+Name=REVWIFEHH_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(207) Marriage
+Name=NEWNAME
+Start=30
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(207) Marriage
+Name=NEWNAMEDK
+Start=80
+Len=2
+
+[ValueSet]
+Label=(207) Marriage
+Name=NEWNAMEDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Reproduction
+Name=REPRODUCTION
+RecordTypeValue='C'
+RecordLen=240
+
+[Item]
+Label=MODULE 3: REPRODUCTION
+Name=INSTR3A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR3A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(301) Reproduction
+Name=LIVEB
+Start=29
+Len=2
+
+[ValueSet]
+Label=(301) Reproduction
+Name=LIVEB_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(301) Reproduction: Don't Know/Refused
+Name=LIVEBDK
+Start=31
+Len=2
+
+[ValueSet]
+Label=(301) Reproduction: Don't Know/Refused
+Name=LIVEBDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(302) Reproduction
+Name=CHILDA2012
+Start=33
+Len=2
+
+[ValueSet]
+Label=(301) Reproduction
+Name=CHILDA2012_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(302) Reproduction: Don't Know/Refused
+Name=CHILDA2012DK
+Start=35
+Len=2
+
+[ValueSet]
+Label=(302) Reproduction: Don't Know/Refused
+Name=CHILDA2012DK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR3B
+Start=37
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR3B_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(303) Reproduction
+Name=PRGTWIN
+Start=38
+Len=2
+
+[ValueSet]
+Label=(303) Reproduction
+Name=PRGTWIN_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(305) Reproduction
+Name=CHILDLAST
+Start=40
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(306) Reproduction
+Name=PRGCARE
+Start=90
+Len=2
+
+[ValueSet]
+Label=(306) Reproduction
+Name=PRGCARE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR3C
+Start=92
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR3C_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(307) Reproduction
+Name=HIVTSBP
+Start=93
+Len=2
+
+[ValueSet]
+Label=(307) Reproduction
+Name=HIVTSBP_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(308) Reproduction
+Name=HIVPSBP
+Start=95
+Len=2
+
+[ValueSet]
+Label=(308) Reproduction
+Name=HIVPSBP_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(309) Reproduction
+Name=ARVFVST
+Start=97
+Len=2
+
+[ValueSet]
+Label=(309) Reproduction
+Name=ARVFVST_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(310) Reproduction
+Name=HIVTPRG
+Start=99
+Len=2
+
+[ValueSet]
+Label=(310) Reproduction
+Name=HIVTPRG_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(311) Reproduction
+Name=HIVRTPG
+Start=101
+Len=2
+
+[ValueSet]
+Label=(311) Reproduction
+Name=HIVRTPG_VS1
+Value=1;POSITIVE
+Value=2;NEGATIVE
+Value=3;UNKNOWN/INDETERMINATE
+Value=4;DID NOT RECEIVE RESULTS
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(312) Reproduction
+Name=ARVTKPG
+Start=103
+Len=2
+
+[ValueSet]
+Label=(312) Reproduction
+Name=ARVTKPG_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(313) Reproduction
+Name=ARVNRPG
+Start=105
+Len=2
+
+[ValueSet]
+Label=(313) Reproduction
+Name=ARVNRPG_VS1
+Value=1;WAS NOT PRESCRIBED
+Value=2;I FELT HEALTHY/NOT SICK
+Value=3;COST OF MEDICATIONS
+Value=4;COST OF TRANSPORT
+Value=5;RELIGIOUS REASONS
+Value=6;WAS TAKING TRADITIONAL MEDICATIONS
+Value=7;MEDICATIONS OUT OF STOCK
+Value=8;DID NOT WANT PEOPLE TO KNOW HIV STATUS
+Value=9;DID NOT RECEIVE PERMISSION FROM SPOUSE/FAMILY
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(313) Reproduction: Other (Specify)
+Name=ARVNRPGOTH
+Start=107
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(314) Reproduction
+Name=HIVTSAD
+Start=157
+Len=2
+
+[ValueSet]
+Label=(314) Reproduction
+Name=HIVTSAD_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(315) Reproduction
+Name=HIVRTAD
+Start=159
+Len=2
+
+[ValueSet]
+Label=(315) Reproduction
+Name=HIVRTAD_VS1
+Value=1;POSITIVE
+Value=2;NEGATIVE
+Value=3;UNKNOWN/INDETERMINATE
+Value=4;DID NOT RECEIVE RESULTS
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Day
+Name=BIRTHDAY
+Start=161
+Len=2
+
+[ValueSet]
+Label=Day
+Name=BIRTHDAY_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=-8;DON'T KNOW DAY
+Value=-9;REFUSED DAY
+
+[Item]
+Label=Month
+Name=BIRTHMON
+Start=163
+Len=2
+
+[ValueSet]
+Label=Month
+Name=BIRTHMON_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=BIRTHYR
+Start=165
+Len=4
+
+[ValueSet]
+Label=Year
+Name=BIRTHYR_VS1
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+
+[Item]
+Label=(316)  Reproduction: Don't Know/Refused Year
+Name=BIRTHDK
+Start=169
+Len=2
+
+[ValueSet]
+Label=(316)  Reproduction: Don't Know/Refused Year
+Name=BIRTHDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=Instructions
+Name=INSTR3D
+Start=171
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR3D_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(329) Reproduction
+Name=PREGNANT
+Start=172
+Len=2
+
+[ValueSet]
+Label=(329) Reproduction
+Name=PREGNANT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW/UNSURE
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR3E
+Start=174
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR3E_VS1
+Value='A';OK
+
+[Item]
+Label=(330) Reproduction
+Name=AVOIDPREG
+Start=175
+Len=2
+
+[ValueSet]
+Label=(330) Reproduction
+Name=AVOIDPREG_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(331) Reproduction
+Name=CMETHOD
+Start=177
+Len=14
+DataType=Alpha
+
+[ValueSet]
+Label=(331) Reproduction
+Name=CMETHOD_VS1
+Value='A             ';FEMALE STERILIZATION
+Value='B             ';MALE STERILIZATION
+Value='C             ';PILL
+Value='D             ';IUD/"COIL"
+Value='E             ';INJECTIONS
+Value='F             ';IMPLANT
+Value='G             ';CONDOM
+Value='H             ';FEMALE CONDOM
+Value='I             ';RHYTHM/NATURAL METHODS/CYCLE BEADS/STANDARD DAYS
+Value='J             ';WITHDRAWAL
+Value='K             ';NOT HAVING SEX
+Value='X             ';OTHER (SPECIFY)
+Value='Y             ';DON’T KNOW
+Value='Z             ';REFUSED
+
+[Item]
+Label=Other (Specify)
+Name=CMETHODOTH
+Start=191
+Len=50
+DataType=Alpha
+
+[Record]
+Label=Reproduction - Children
+Name=REPRODUCTION_CHLDRN
+RecordTypeValue='N'
+MaxRecords=5
+RecordLen=126
+
+[Item]
+Label=(304) Reproduction
+Name=PRGTWINNAME
+Start=28
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(304a) Reproduction
+Name=PRGTWINPLUS
+Start=78
+Len=1
+
+[ValueSet]
+Label=(304a) Reproduction
+Name=PRGTWINPLUS_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(317) Reproduction
+Name=CHILDALIVE
+Start=79
+Len=2
+
+[ValueSet]
+Label=(317) Reproduction
+Name=CHILDALIVE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(318) Reproduction
+Name=DEATHAGEYR
+Start=81
+Len=4
+
+[ValueSet]
+Label=(329) Reproduction
+Name=DEATHAGEYR_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+Value=60;60
+Value=61;61
+Value=62;62
+Value=63;63
+Value=64;64
+Value=65;65
+Value=66;66
+Value=67;67
+Value=68;68
+Value=69;69
+Value=70;70
+Value=71;71
+Value=72;72
+Value=73;73
+Value=74;74
+Value=75;75
+Value=76;76
+Value=77;77
+Value=78;78
+Value=79;79
+Value=80;80
+Value=81;81
+Value=82;82
+Value=83;83
+Value=84;84
+Value=85;85
+Value=86;86
+Value=87;87
+Value=88;88
+Value=89;89
+Value=90;90
+Value=91;91
+Value=92;92
+Value=93;93
+Value=94;94
+Value=95;95
+Value=96;96
+Value=97;97
+Value=98;98
+Value=99;99
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(318) Reproduction: Don't Know/Refused
+Name=DEATHAGEYRDK
+Start=85
+Len=2
+
+[ValueSet]
+Label=(318) Reproduction: Don't Know/Refused
+Name=DEATHAGEYRDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(319) Reproduction
+Name=DEATHAGEMO
+Start=87
+Len=4
+
+[ValueSet]
+Label=(319) Reproduction
+Name=DEATHAGEMO_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(319) Reproduction: Don't Know/Refused
+Name=DEATHAGEMODK
+Start=91
+Len=2
+
+[ValueSet]
+Label=(319) Reproduction: Don't Know/Refused
+Name=DEATHAGEMODK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(320) Reproduction
+Name=CHILDBRSTFD
+Start=93
+Len=2
+
+[ValueSet]
+Label=(320) Reproduction
+Name=CHILDBRSTFD_VS1
+Value=1;YES
+Value=2;NO, NEVER BREASTFED
+Value=3;NO, CHILD NOT ALIVE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(321) Reproduction
+Name=CHILDBRSTFDNOW
+Start=95
+Len=2
+
+[ValueSet]
+Label=(321) Reproduction
+Name=CHILDBRSTFDNOW_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(322) Reproduction
+Name=CHTSTHIVBIRTH
+Start=97
+Len=2
+
+[ValueSet]
+Label=(322) Reproduction
+Name=CHTSTHIVBIRTH_VS1
+Value=1;YES
+Value=2;NO, NOT TESTED FOR HIV
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Age
+Name=CHTSTHIVAGENUM
+Start=99
+Len=2
+
+[ValueSet]
+Label=Age
+Name=CHTSTHIVAGENUM_VS1
+Value=1;WEEKS
+Value=2;MONTHS
+Value=3;YEARS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Units
+Name=CHTSTHIVAGE
+Start=101
+Len=4
+
+[ValueSet]
+Label=Units
+Name=CHTSTHIVAGE_VS1
+Value=1;WEEKS
+Value=2;MONTHS
+Value=3;YEARS
+
+[Item]
+Label=(323) Reproduction: MONTHS
+Name=CHTSTHIVAGEM
+Start=105
+Len=4
+
+[Item]
+Label=(323) Reproduction: YEARS
+Name=CHTSTHIVAGEY
+Start=109
+Len=2
+
+[Item]
+Label=(323) Reproduction: Don't Know/Refused
+Name=CHTSTHIVAGEDK
+Start=111
+Len=2
+
+[ValueSet]
+Label=(323) Reproduction: Don't Know/Refused
+Name=CHTSTHIVAGEDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(324) Reproduction
+Name=CHTSTHIVRESULT
+Start=113
+Len=2
+
+[ValueSet]
+Label=(324) Reproduction
+Name=CHTSTHIVRESULT_VS1
+Value=1;POSITIVE; CHILD HAS HIV
+Value=2;NEGATIVE; CHILD DOES NOT HAVE HIV
+Value=3;UNKNOWN/INDETERMINATE
+Value=4;DID NOT RECEIVE RESULTS
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(325) Reproduction
+Name=CHTSTHIVBRSTFD
+Start=115
+Len=2
+
+[ValueSet]
+Label=(325) Reproduction
+Name=CHTSTHIVBRSTFD_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Age
+Name=CHTSTHIVAGELASTNUM
+Start=117
+Len=2
+
+[ValueSet]
+Label=Age
+Name=CHTSTHIVAGELASTNUM_VS1
+Value=1;WEEKS
+Value=2;MONTHS
+Value=3;YEARS
+Value=4;CHILD ONLY TESTED ONCE FOR HIV (FIRST TEST IS THE SAME AS LAST TEST)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Units
+Name=CHTSTHIVAGELAST
+Start=119
+Len=3
+
+[ValueSet]
+Label=Units
+Name=CHTSTHIVAGELAST_VS1
+Value=1;WEEKS
+Value=2;MONTHS
+Value=3;YEARS
+
+[Item]
+Label=(326) Reproduction
+Name=CHTSTHIVAGELASTDK
+Start=122
+Len=2
+
+[ValueSet]
+Label=(326) Reproduction
+Name=CHTSTHIVAGELASTDK_VS1
+Value=4;CHILD ONLY TESTED ONCE FOR HIV (FIRST TEST IS THE SAME AS LAST TEST)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(327) Reproduction
+Name=CHTSTHIVRESULTLAST
+Start=124
+Len=2
+
+[ValueSet]
+Label=(327) Reproduction
+Name=CHTSTHIVRESULTLAST_VS1
+Value=1;POSITIVE; CHILD HAS HIV
+Value=2;NEGATIVE; CHILD DOES NOT HAVE HIV
+Value=3;UNKNOWN/INDETERMINATE
+Value=4;DID NOT RECEIVE RESULTS
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(328) Reproduction
+Name=CHILDMORE
+Start=126
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=CHILDMORE_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Male Circumcision
+Name=MALECIRC
+RecordTypeValue='D'
+RecordLen=41
+
+[Item]
+Label=MODULE 4: MALE CIRCUMCISION
+Name=INSTR4A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=MODULE 4: MALE CIRCUMCISION
+Name=INSTR4A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(401) Male Circumcision
+Name=MCSTATUS
+Start=29
+Len=2
+
+[ValueSet]
+Label=(401) Male Circumcision
+Name=MCSTATUS_VS1
+Value=1;YES, FULLY CIRCUMCISED
+Value=2;YES, PARTIALLY CIRCUMCISED
+Value=3;NOT CIRCUMCISED
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(402) Male Circumcision
+Name=MCPLANS
+Start=31
+Len=2
+
+[ValueSet]
+Label=(402) Male Circumcision
+Name=MCPLANS_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR4B
+Start=33
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=MODULE 4: MALE CIRCUMCISION
+Name=INSTR4B_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(403) Male Circumcision
+Name=MCWHOTRAD
+Start=34
+Len=2
+
+[ValueSet]
+Label=(403) Male Circumcision
+Name=MCWHOTRAD_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(404) Male Circumcision
+Name=MCWHOMED
+Start=36
+Len=2
+
+[ValueSet]
+Label=(404) Male Circumcision
+Name=MCWHOMED_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(405) Male Circumcision
+Name=MCAGE
+Start=38
+Len=2
+
+[ValueSet]
+Label=(405) Male Circumcision
+Name=MCAGE_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+Value=60;60
+Value=61;61
+Value=62;62
+Value=63;63
+Value=64;64
+Value=65;65
+Value=66;66
+Value=67;67
+Value=68;68
+Value=69;69
+Value=70;70
+Value=71;71
+Value=72;72
+Value=73;73
+Value=74;74
+Value=75;75
+Value=76;76
+Value=77;77
+Value=78;78
+Value=79;79
+Value=80;80
+Value=81;81
+Value=82;82
+Value=83;83
+Value=84;84
+Value=85;85
+Value=86;86
+Value=87;87
+Value=88;88
+Value=89;89
+Value=90;90
+Value=91;91
+Value=92;92
+Value=93;93
+Value=94;94
+Value=95;95
+Value=96;96
+Value=97;97
+Value=98;98
+Value=99;99
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(405) Male Circumcision: Don't Know/Refused
+Name=MCAGEDK
+Start=40
+Len=2
+
+[ValueSet]
+Label=(405) Male Circumcision: Don't Know/Refused
+Name=MCAGEDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Sexual Activity
+Name=SXAC
+RecordTypeValue='E'
+RecordLen=43
+
+[Item]
+Label=MODULE 5: SEXUAL ACTIVITY
+Name=INSTR5A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Checkbox
+Name=INSTR5A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(501) Sexual Activity
+Name=FIRSTSXAGE
+Start=29
+Len=2
+
+[Item]
+Label=(501) Sexual Activity: Don't Know/Refused
+Name=FIRSTSXAGEDK
+Start=31
+Len=2
+
+[ValueSet]
+Label=(501) Sexual Activity: Don't Know/Refused
+Name=FIRSTSXAGEDK_VS1
+Value=96;NEVER HAD SEX
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(501) Sexual Activity: Confirm age at first sex
+Name=FIRSTSXAGEC
+Start=33
+Len=1
+
+[ValueSet]
+Label=(501) Sexual Activity: Confirm age at first sex
+Name=FIRSTSXAGEC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(502) Sexual Activity
+Name=LIFETIMESEX
+Start=34
+Len=3
+
+[Item]
+Label=(502) Sexual Activity: Don't Know/Refused
+Name=LIFETIMESEXDK
+Start=37
+Len=2
+
+[ValueSet]
+Label=(502) Sexual Activity: Don't Know/Refused
+Name=LIFETIMESEXDK_VS1
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(503) Sexual Activity
+Name=PART12MONUM
+Start=39
+Len=3
+
+[ValueSet]
+Label=(503) Sexual Activity
+Name=PART12MONUM_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+Value=60;60
+Value=61;61
+Value=62;62
+Value=63;63
+Value=64;64
+Value=65;65
+Value=66;66
+Value=67;67
+Value=68;68
+Value=69;69
+Value=70;70
+Value=71;71
+Value=72;72
+Value=73;73
+Value=74;74
+Value=75;75
+Value=76;76
+Value=77;77
+Value=78;78
+Value=79;79
+Value=80;80
+Value=81;81
+Value=82;82
+Value=83;83
+Value=84;84
+Value=85;85
+Value=86;86
+Value=87;87
+Value=88;88
+Value=89;89
+Value=90;90
+Value=91;91
+Value=92;92
+Value=93;93
+Value=94;94
+Value=95;95
+Value=96;96
+Value=97;97
+Value=98;98
+Value=99;99
+Value=100;100
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(503) Sexual Activity: Don't Know/Refused
+Name=PART12MONUMDK
+Start=42
+Len=2
+
+[ValueSet]
+Label=(503) Sexual Activity: Don't Know/Refused
+Name=PART12MONUMDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Sexual Activity - Last 12 Months
+Name=SXAC_L12MO
+RecordTypeValue='O'
+MaxRecords=3
+RecordLen=100
+
+[Item]
+Label=Instructions
+Name=INSTR5B
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=CHECKBOX
+Value='A';CONTINUE
+
+[Item]
+Label=(504) Sexual Activity
+Name=PARTLIVEW
+Start=29
+Len=1
+
+[ValueSet]
+Label=(504) Sexual Activity
+Name=PARTLIVEW_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(505) Sexual Activity
+Name=PARTHHLINE
+Start=30
+Len=1
+
+[ValueSet]
+Label=(505) Sexual Activity
+Name=PARTHHLINE_VS1
+Value=6;NOT LISTED IN HOUSEHOLD
+
+[Item]
+Label=(506) Sexual Activity
+Name=PARTINIT
+Start=31
+Len=2
+
+[Item]
+Label=(507) Sexual Activity
+Name=PARTRELATION
+Start=33
+Len=2
+
+[ValueSet]
+Label=(507) Sexual Activity
+Name=PARTRELATION_VS1
+Value=1;HUSBAND/WIFE
+Value=2;LIVE-IN PARTNER
+Value=3;PARTNER, NOT LIVE-IN
+Value=4;EX-SPOUSE/EX-PARTNER
+Value=5;FRIEND/ACQUAINTANCE
+Value=6;SEX WORKER
+Value=7;SEX WORKER CLIENT
+Value=8;STRANGER
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(507) Sexual Activity: Other (Specify)
+Name=PARTRELATIONOTH
+Start=35
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(508) Sexual Activity
+Name=PARTGEND
+Start=85
+Len=2
+
+[ValueSet]
+Label=(508) Sexual Activity
+Name=PARTGEND_VS1
+Value=1;MALE
+Value=2;FEMALE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(509) Sexual Activity
+Name=PARTAGE
+Start=87
+Len=3
+
+[ValueSet]
+Label=(509) Sexual Activity
+Name=PARTAGE_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+Value=60;60
+Value=61;61
+Value=62;62
+Value=63;63
+Value=64;64
+Value=65;65
+Value=66;66
+Value=67;67
+Value=68;68
+Value=69;69
+Value=70;70
+Value=71;71
+Value=72;72
+Value=73;73
+Value=74;74
+Value=75;75
+Value=76;76
+Value=77;77
+Value=78;78
+Value=79;79
+Value=80;80
+Value=81;81
+Value=82;82
+Value=83;83
+Value=84;84
+Value=85;85
+Value=86;86
+Value=87;87
+Value=88;88
+Value=89;89
+Value=90;90
+Value=91;91
+Value=92;92
+Value=93;93
+Value=94;94
+Value=95;95
+Value=96;96
+Value=97;97
+Value=98;98
+Value=99;99
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(509) Sexual Activity: Don't Know/Refused
+Name=PARTAGEDK
+Start=90
+Len=2
+
+[ValueSet]
+Label=(509) Sexual Activity: Don't Know/Refused
+Name=PARTAGEDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(510) Sexual Activity
+Name=PARTLASTCNDM
+Start=92
+Len=2
+
+[ValueSet]
+Label=(510) Sexual Activity
+Name=PARTLASTCNDM_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(511) Sexual Activity
+Name=PARTLASTETOH
+Start=94
+Len=2
+
+[ValueSet]
+Label=(511) Sexual Activity
+Name=PARTLASTETOH_VS1
+Value=1;ONLY I WAS DRINKING
+Value=2;ONLY PARTNER WAS DRINKING
+Value=3;BOTH WERE DRINKING
+Value=4;NEITHER
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(512) Sexual Activity
+Name=PARTKNOWHIV
+Start=96
+Len=2
+
+[ValueSet]
+Label=(512) Sexual Activity
+Name=PARTKNOWHIV_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(513) Sexual Activity
+Name=PARTHIVSAT
+Start=98
+Len=2
+
+[ValueSet]
+Label=(513) Sexual Activity
+Name=PARTHIVSAT_VS1
+Value=1;He/she is positive (did not test together)
+Value=2;He/she is positive, tested together
+Value=3;He/she is negative (did not test together)
+Value=4;He/she is negative, tested together
+Value=-8;DON’T KNOW STATUS
+Value=-9;REFUSED
+
+[Item]
+Label=(514) Sexual Activity
+Name=SXPREPS
+Start=100
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=SXPREPS_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=HIV Testing
+Name=HIVT
+RecordTypeValue='F'
+RecordLen=309
+
+[Item]
+Label=MODULE 6: HIV TESTING
+Name=INSTR6A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=CHECK
+Value='A';CONTINUE
+
+[Item]
+Label=(601) HIV Testing
+Name=HFLAST12MO
+Start=29
+Len=2
+
+[ValueSet]
+Label=(601) HIV Testing
+Name=HFLAST12MO_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(602) HIV Testing
+Name=HFHIVTSTOFFER
+Start=31
+Len=2
+
+[ValueSet]
+Label=(602) HIV Testing
+Name=HFHIVTSTOFFER_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(603) HIV Testing
+Name=HIVTSTEVER
+Start=33
+Len=2
+
+[ValueSet]
+Label=(603) HIV Testing
+Name=HIVTSTEVER_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(604) HIV Testing
+Name=HIVTSTNVRRSN
+Start=35
+Len=15
+DataType=Alpha
+
+[ValueSet]
+Label=(604) HIV Testing
+Name=HIVTSTNVRRSN_VS1
+Value='A              ';DON'T KNOW WHERE TO TEST
+Value='B              ';TEST COSTS TOO MUCH
+Value='C              ';TRANSPORT COSTS TOO MUCH
+Value='D              ';TOO FAR AWAY
+Value='E              ';AFRAID OTHERS WILL KNOW ABOUT TEST RESULTS
+Value='F              ';DON'T NEED TEST/LOW RISK
+Value='G              ';DID NOT RECEIVE PERMISSION FROM SPOUSE/FAMILY
+Value='H              ';AFRAID SPOUSE/PARTNER/FAMILY  WILL KNOW RESULTS
+Value='I              ';DON’T WANT TO KNOW I HAVE HIV
+Value='J              ';CANNOT GET TREATMENT FOR HIV
+Value='K              ';TEST KITS NOT AVAILABLE
+Value='L              ';RELIGIOUS REASONS
+Value='X              ';OTHER (SPECIFY)
+Value='Y              ';DON’T KNOW
+Value='Z              ';REFUSED
+
+[Item]
+Label=(604) HIV Testing: Other (Specify)
+Name=HIVTSTNVRRSNOTH
+Start=50
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Month
+Name=HIVTESTM
+Start=100
+Len=2
+
+[ValueSet]
+Label=Month
+Name=HIVTESTM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Year
+Name=HIVTESTY
+Start=102
+Len=4
+
+[ValueSet]
+Label=Year
+Name=HIVTESTY_VS1
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(605) HIV Testing: Don't Know/Refused Year
+Name=HIVTESTDK
+Start=106
+Len=2
+
+[Item]
+Label=(606) HIV Testing
+Name=HIVTSTLOCATION
+Start=108
+Len=2
+
+[ValueSet]
+Label=(606) HIV Testing
+Name=HIVTSTLOCATION_VS1
+Value=1;VCT FACILITY
+Value=2;MOBILE VCT
+Value=3;AT HOME
+Value=4;HEALTH CLINIC / FACILITY
+Value=5;HOSPITAL OUTPATIENT CLINIC
+Value=6;TB CLINIC
+Value=7;STI CLINIC
+Value=8;HOSPITAL INPATIENT WARDS
+Value=9;BLOOD DONATING CENTER
+Value=10;ANC CLINIC
+Value=11;VMMC CLINIC
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(606) HIV Testing: Other (Specify)
+Name=HIVTSTLOCATIONOTH
+Start=110
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(607) HIV Testing
+Name=HIVTSTRSN
+Start=160
+Len=2
+
+[ValueSet]
+Label=(607) HIV Testing
+Name=HIVTSTRSN_VS1
+Value=1;HEALTH CARE OR OUTREACH OFFERED TEST
+Value=2;WANTED TO KNOW MY HIV STATUS
+Value=3;FELT AT RISK OR SICK
+Value=4;NEW PARTNER
+Value=5;PREGNANCY
+Value=6;MY PARTNER TESTED POSITIVE
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(607) HIV Testing: Other (Specify)
+Name=HIVTSTRSNOTH
+Start=162
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(608) HIV Testing
+Name=HIVTSTRSLT
+Start=212
+Len=2
+
+[ValueSet]
+Label=(608) HIV Testing
+Name=HIVTSTRSLT_VS1
+Value=1;POSITIVE
+Value=2;NEGATIVE
+Value=3;UNCERTAIN/INDETERMINATE
+Value=4;DID NOT RECEIVE THE RESULT
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=HIVTFPOSM
+Start=214
+Len=2
+
+[ValueSet]
+Label=Month
+Name=HIVTFPOSM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Year
+Name=HIVTFPOSY
+Start=216
+Len=4
+
+[ValueSet]
+Label=Year
+Name=HIVTFPOSY_VS1
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(609) HIV Testing: Don't Know/Refused Year
+Name=HIVTFPOSDK
+Start=220
+Len=2
+
+[Item]
+Label=Month
+Name=HIVLASTNEGM
+Start=222
+Len=2
+
+[ValueSet]
+Label=Month
+Name=HIVLASTNEGM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Year
+Name=HIVLASTNEGY
+Start=224
+Len=4
+
+[ValueSet]
+Label=Year
+Name=HIVLASTNEGY_VS1
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(610) HIV Testing: No Previous HIV Negative Test or Don't Know/Refused Year
+Name=HIVLASTNEGDK
+Start=228
+Len=2
+
+[ValueSet]
+Label=(610) HIV Testing: No Previous HIV Negative Test or Don't Know/Refused Year
+Name=HIVLASTNEGDK_VS1
+Value=3;NO PREVIOUS HIV NEGATIVE TEST BEFORE THE POSITIVE TEST
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(611) HIV Testing
+Name=HIVPOSPROV
+Start=230
+Len=2
+
+[ValueSet]
+Label=(611) HIV Testing
+Name=HIVPOSPROV_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=HIVPOSPROVM
+Start=232
+Len=2
+
+[ValueSet]
+Label=Month
+Name=HIVPOSPROVM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Year
+Name=HIVPOSPROVY
+Start=234
+Len=4
+
+[ValueSet]
+Label=Year
+Name=HIVPOSPROVY_VS1
+Value=1950;1950
+Value=1951;1951
+Value=1952;1952
+Value=1953;1953
+Value=1954;1954
+Value=1955;1955
+Value=1956;1956
+Value=1957;1957
+Value=1958;1958
+Value=1959;1959
+Value=1960;1960
+Value=1961;1961
+Value=1962;1962
+Value=1963;1963
+Value=1964;1964
+Value=1965;1965
+Value=1966;1966
+Value=1967;1967
+Value=1968;1968
+Value=1969;1969
+Value=1970;1970
+Value=1971;1971
+Value=1972;1972
+Value=1973;1973
+Value=1974;1974
+Value=1975;1975
+Value=1976;1976
+Value=1977;1977
+Value=1978;1978
+Value=1979;1979
+Value=1980;1980
+Value=1981;1981
+Value=1982;1982
+Value=1983;1983
+Value=1984;1984
+Value=1985;1985
+Value=1986;1986
+Value=1987;1987
+Value=1988;1988
+Value=1989;1989
+Value=1990;1990
+Value=1991;1991
+Value=1992;1992
+Value=1993;1993
+Value=1994;1994
+Value=1995;1995
+Value=1996;1996
+Value=1997;1997
+Value=1998;1998
+Value=1999;1999
+Value=2000;2000
+Value=2001;2001
+Value=2002;2002
+Value=2003;2003
+Value=2004;2004
+Value=2005;2005
+Value=2006;2006
+Value=2007;2007
+Value=2008;2008
+Value=2009;2009
+Value=2010;2010
+Value=2011;2011
+Value=2012;2012
+Value=2013;2013
+Value=2014;2014
+Value=2015;2015
+Value=2016;2016
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(612) HIV Testing: Don't Know/Refused Year
+Name=HIVPOSPROVDK
+Start=238
+Len=2
+
+[Item]
+Label=Instructions
+Name=INSTR6B
+Start=240
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR6B_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(613) HIV Testing
+Name=HIVSELFTST
+Start=241
+Len=2
+
+[ValueSet]
+Label=(613) HIV Testing
+Name=HIVSELFTST_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(614) HIV Testing
+Name=DISCLOSE
+Start=243
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=(614) HIV Testing
+Name=DISCLOSE_VS1
+Value=' A      ';NO ONE
+Value=' B      ';SPOUSE/SEX PARTNER
+Value=' C      ';DOCTOR
+Value=' D      ';FRIEND
+Value=' E      ';FAMILY MEMBER
+Value=' X      ';OTHER (SPECIFY)
+Value=' Y      ';DON’T KNOW
+Value=' Z      ';REFUSED
+
+[Item]
+Label=(614) HIV Testing: Other (Specify)
+Name=DISCLOSEOTH
+Start=251
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Instructions
+Name=INSTR6C
+Start=301
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR6C_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(615) HIV Testing
+Name=PRPEVRHDR
+Start=302
+Len=2
+
+[ValueSet]
+Label=(615) HIV Testing
+Name=PRPEVRHDR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(616) HIV Testing
+Name=PREPEVER
+Start=304
+Len=2
+
+[ValueSet]
+Label=(616) HIV Testing
+Name=PREPEVER_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(617) HIV Testing
+Name=PREPCURNT
+Start=306
+Len=2
+
+[ValueSet]
+Label=(617) HIV Testing
+Name=PREPCURNT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(618) HIV Testing
+Name=PREPWDTK
+Start=308
+Len=2
+
+[ValueSet]
+Label=(618) HIV Testing
+Name=PREPWDTK_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=HIV Status, Care, and Treatment
+Name=HIVS
+RecordTypeValue='G'
+RecordLen=357
+
+[Item]
+Label=MODULE 7: HIV STATUS, CARE AND TREATMENT
+Name=INSTR7A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=INSTR7A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(701) HIV Status, Care and Treatment
+Name=HIVCARE
+Start=29
+Len=2
+
+[ValueSet]
+Label=(701) HIV Status, Care and Treatment
+Name=HIVCARE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(702) HIV Status, Care and Treatment
+Name=HIVCNOTRSN
+Start=31
+Len=2
+
+[ValueSet]
+Label=(702) HIV Status, Care and Treatment
+Name=HIVCNOTRSN_VS1
+Value=1;FACILITY IS TOO FAR AWAY
+Value=2;I DON’T KNOW WHERE TO GET HIV MEDICAL CARE
+Value=3;COST OF CARE
+Value=4;COST OF TRANSPORT
+Value=5;I DO NOT NEED IT/I FEEL HEALTHY/NOT SICK
+Value=6;I FEAR PEOPLE WILL KNOW THAT I HAVE HIV IF I GO TO A CLINIC
+Value=7;RELIGIOUS REASONS
+Value=8;I'M TAKING TRADITIONAL MEDICINE
+Value=9;DO NOT TRUST THE STAFF/QUALITY OF CARE
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(702) HIV Status, Care and Treatment: Other (Specify)
+Name=HIVCNOTRSNOTH
+Start=33
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(703) HIV Status, Care and Treatment
+Name=HIVCRLTC
+Start=83
+Len=2
+
+[ValueSet]
+Label=(703) HIV Status, Care and Treatment
+Name=HIVCRLTC_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(704) HIV Status, Care and Treatment
+Name=HIVCLINIC
+Start=85
+Len=2
+
+[ValueSet]
+Label=(704) HIV Status, Care and Treatment
+Name=HIVCLINIC_VS1
+Value=1;CLINIC A
+Value=2;CLINIC B
+Value=3;CLINIC C
+Value=96;OTHER (SPECIFY)
+
+[Item]
+Label=(704) HIV Status, Care and Treatment: Other (Specify)
+Name=HIVCLINICOTH
+Start=87
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(705) HIV Status, Care and Treatment
+Name=CLINCHANGE
+Start=137
+Len=2
+
+[ValueSet]
+Label=(705) HIV Status, Care and Treatment
+Name=CLINCHANGE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(706) HIV Status, Care and Treatment
+Name=TRAVELTIME
+Start=139
+Len=2
+
+[ValueSet]
+Label=(706) HIV Status, Care and Treatment
+Name=TRAVELTIME_VS1
+Value=1;LESS THAN HALF HOUR
+Value=2;HALF HOUR TO ONE HOUR
+Value=3;ONE TO TWO HOURS
+Value=4;MORE THAN TWO HOURS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(707) HIV Status, Care and Treatment
+Name=TRAVELDIFF
+Start=141
+Len=2
+
+[ValueSet]
+Label=(707) HIV Status, Care and Treatment
+Name=TRAVELDIFF_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=HIVCLM
+Start=143
+Len=2
+
+[ValueSet]
+Label=Month
+Name=HIVCLM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Year
+Name=HIVCLY
+Start=145
+Len=4
+
+[ValueSet]
+Label=Year
+Name=HIVCLY_VS1
+Value=2019;2019
+Value=2018;2018
+Value=2017;2017
+Value=2016;2016
+Value=2015;2015
+Value=2014;2014
+Value=2013;2013
+Value=2012;2012
+Value=2011;2011
+Value=2010;2010
+Value=2009;2009
+Value=2008;2008
+Value=2007;2007
+Value=2006;2006
+Value=2005;2005
+Value=2004;2004
+Value=2003;2003
+Value=2002;2002
+Value=2001;2001
+Value=2000;2000
+Value=1999;1999
+Value=1998;1998
+Value=1997;1997
+Value=1996;1996
+Value=1995;1995
+Value=1994;1994
+Value=1993;1993
+Value=1992;1992
+Value=1991;1991
+Value=1990;1990
+Value=1989;1989
+Value=1988;1988
+Value=1987;1987
+Value=1986;1986
+Value=1985;1985
+Value=1984;1984
+Value=1983;1983
+Value=1982;1982
+Value=1981;1981
+Value=1980;1980
+Value=1979;1979
+Value=1978;1978
+Value=1977;1977
+Value=1976;1976
+Value=1975;1975
+Value=1974;1974
+Value=1973;1973
+Value=1972;1972
+Value=1971;1971
+Value=1970;1970
+Value=1969;1969
+Value=1968;1968
+Value=1967;1967
+Value=1966;1966
+Value=1965;1965
+Value=1964;1964
+Value=1963;1963
+Value=1962;1962
+Value=1961;1961
+Value=1960;1960
+Value=1959;1959
+Value=1958;1958
+Value=1957;1957
+Value=1956;1956
+Value=1955;1955
+Value=1954;1954
+Value=1953;1953
+Value=1952;1952
+Value=1951;1951
+Value=1950;1950
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(708) HIV Status, Care and Treatment: Don't Know/Refused Year
+Name=HIVCLDK
+Start=149
+Len=2
+
+[ValueSet]
+Label=(708) HIV Status, Care and Treatment: Don't Know/Refused Year
+Name=HIVCLDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(709) HIV Status, Care and Treatment
+Name=ARVSTAKENEV
+Start=151
+Len=2
+
+[ValueSet]
+Label=(709) HIV Status, Care and Treatment
+Name=ARVSTAKENEV_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(710) HIV Status, Care and Treatment
+Name=ARVSNOTTAKE
+Start=153
+Len=2
+
+[ValueSet]
+Label=(710) HIV Status, Care and Treatment
+Name=ARVSNOTTAKE_VS1
+Value=1;NOT ELIGIBLE FOR TREATMENT
+Value=2;HEALTH CARE PROVIDER DID NOT PRESCRIBE
+Value=3;HIV MEDICINES NOT AVAILABLE
+Value=4;I FEEL HEALTHY/NOT SICK
+Value=5;COST OF CARE
+Value=6;RELIGIOUS REASONS
+Value=7;TAKING TRADITIONAL MEDICATIONS
+Value=8;NOT ATTENDING HIV CLINIC
+Value=9;CLINIC IS TOO FAR
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(710) HIV Status, Care and Treatment: Other (Specify)
+Name=ARVSNOTTAKEOTH
+Start=155
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Month
+Name=ARVFTM
+Start=205
+Len=2
+
+[ValueSet]
+Label=Month
+Name=ARVFTM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=ARVFTY
+Start=207
+Len=4
+
+[ValueSet]
+Label=Year
+Name=ARVFTY_VS1
+Value=2019;2019
+Value=2018;2018
+Value=2017;2017
+Value=2016;2016
+Value=2015;2015
+Value=2014;2014
+Value=2013;2013
+Value=2012;2012
+Value=2011;2011
+Value=2010;2010
+Value=2009;2009
+Value=2008;2008
+Value=2007;2007
+Value=2006;2006
+Value=2005;2005
+Value=2004;2004
+Value=2003;2003
+Value=2002;2002
+Value=2001;2001
+Value=2000;2000
+Value=1999;1999
+Value=1998;1998
+Value=1997;1997
+Value=1996;1996
+Value=1995;1995
+Value=1994;1994
+Value=1993;1993
+Value=1992;1992
+Value=1991;1991
+Value=1990;1990
+Value=1989;1989
+Value=1988;1988
+Value=1987;1987
+Value=1986;1986
+Value=1985;1985
+Value=1984;1984
+Value=1983;1983
+Value=1982;1982
+Value=1981;1981
+Value=1980;1980
+Value=1979;1979
+Value=1978;1978
+Value=1977;1977
+Value=1976;1976
+Value=1975;1975
+Value=1974;1974
+Value=1973;1973
+Value=1972;1972
+Value=1971;1971
+Value=1970;1970
+Value=1969;1969
+Value=1968;1968
+Value=1967;1967
+Value=1966;1966
+Value=1965;1965
+Value=1964;1964
+Value=1963;1963
+Value=1962;1962
+Value=1961;1961
+Value=1960;1960
+Value=1959;1959
+Value=1958;1958
+Value=1957;1957
+Value=1956;1956
+Value=1955;1955
+Value=1954;1954
+Value=1953;1953
+Value=1952;1952
+Value=1951;1951
+Value=1950;1950
+Value=-8;DON'T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(711) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVFTDK
+Start=211
+Len=2
+
+[ValueSet]
+Label=(711) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVFTDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED  YEAR
+
+[Item]
+Label=(712) HIV Status, Care and Treatment
+Name=ARVSCURRENT
+Start=213
+Len=2
+
+[ValueSet]
+Label=(712) HIV Status, Care and Treatment
+Name=ARVSCURRENT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(713) HIV Status, Care and Treatment
+Name=ARVSNOTCURRSN
+Start=215
+Len=2
+
+[ValueSet]
+Label=(713) HIV Status, Care and Treatment
+Name=ARVSNOTCURRSN_VS1
+Value=1;I HAVE TROUBLE TAKING A TABLET EVERYDAY
+Value=2;I HAD SIDE EFFECTS
+Value=3;FACILITY TOO FAR AWAY FOR ME TO GET MEDICINE REGULARLY
+Value=4;COST OF CARE
+Value=5;I FEEL HEALTHY/NOT SICK
+Value=6;FACILITY WAS OUT OF STOCK
+Value=7;RELIGIOUS REASONS
+Value=8;TAKING TRADITIONAL MEDICATIONS
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(713) HIV Status, Care and Treatment: Other (Specify)
+Name=ARVSNOTCURRSNOTH
+Start=217
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(714) HIV Status, Care and Treatment
+Name=ARVLOC
+Start=267
+Len=2
+
+[ValueSet]
+Label=(714) HIV Status, Care and Treatment
+Name=ARVLOC_VS1
+Value=1;PICK UP AT THE LOCAL CLINIC
+Value=2;PICK UP AT THE HOSPITAL
+Value=3;FROM THE COMMUNITY SUPPORT GROUP/ADHERENCE CLUB
+Value=4;THEY ARE DELIVERED TO MY HOME
+Value=5;A FAMILY MEMBER/FRIEND COLLECTS THEM
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Number of Weeks or Months of Supply
+Name=ARVAMTNUM
+Start=269
+Len=2
+
+[Item]
+Label=Units
+Name=ARVAMT
+Start=271
+Len=1
+
+[Item]
+Label=(715) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVAMDK
+Start=272
+Len=2
+
+[ValueSet]
+Label=(715) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVAMDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(716) HIV Status, Care and Treatment
+Name=ARVSWITCH
+Start=274
+Len=2
+
+[ValueSet]
+Label=(716) HIV Status, Care and Treatment
+Name=ARVSWITCH_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(717) HIV Status, Care and Treatment
+Name=ARVSWITCHWHY
+Start=276
+Len=2
+
+[ValueSet]
+Label=(717) HIV Status, Care and Treatment
+Name=ARVSWITCHWHY_VS1
+Value=1;I WAS NOT RESPONDING TO MY FIRST TREATMENT
+Value=2;MY VIRAL LOAD WASN’T SUPPRESSED
+Value=3;I WANTED TO GET PREGNANT OR WAS PREGNANT
+Value=4;I WAS HAVING/WORRIED ABOUT SERIOUS SIDE EFFECTS
+Value=96;OTHER (SPECIFY)
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(717) HIV Status, Care and Treatment: Other (Specify)
+Name=ARVSWITCHWHYOTH
+Start=278
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(718) HIV Status, Care and Treatment
+Name=ARVINTERR
+Start=328
+Len=2
+
+[ValueSet]
+Label=(718) HIV Status, Care and Treatment
+Name=ARVINTERR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(719) HIV Status, Care and Treatment
+Name=ARVSMISSDAYS
+Start=330
+Len=2
+
+[ValueSet]
+Label=(719) HIV Status, Care and Treatment
+Name=ARVSMISSDAYS_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(719) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVSMISSDAYSDK
+Start=332
+Len=2
+
+[ValueSet]
+Label=(719) HIV Status, Care and Treatment: Don't Know/Refused
+Name=ARVSMISSDAYSDK_VS1
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(720) HIV Status, Care and Treatment
+Name=VLTEST
+Start=334
+Len=2
+
+[ValueSet]
+Label=(720) HIV Status, Care and Treatment
+Name=VLTEST_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=VLTESTLSTM
+Start=336
+Len=2
+
+[ValueSet]
+Label=Month
+Name=VLTESTLSTM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=VLTESTLSTY
+Start=338
+Len=4
+
+[ValueSet]
+Label=Year
+Name=VLTESTLSTY_VS1
+Value=2019;2019
+Value=2018;2018
+Value=2017;2017
+Value=2016;2016
+Value=2015;2015
+Value=2014;2014
+Value=2013;2013
+Value=2012;2012
+Value=2011;2011
+Value=2010;2010
+Value=2009;2009
+Value=2008;2008
+Value=2007;2007
+Value=2006;2006
+Value=2005;2005
+Value=2004;2004
+Value=2003;2003
+Value=2002;2002
+Value=2001;2001
+Value=2000;2000
+Value=1999;1999
+Value=1998;1998
+Value=1997;1997
+Value=1996;1996
+Value=1995;1995
+Value=1994;1994
+Value=1993;1993
+Value=1992;1992
+Value=1991;1991
+Value=1990;1990
+Value=1989;1989
+Value=1988;1988
+Value=1987;1987
+Value=1986;1986
+Value=1985;1985
+Value=1984;1984
+Value=1983;1983
+Value=1982;1982
+Value=1981;1981
+Value=1980;1980
+Value=1979;1979
+Value=1978;1978
+Value=1977;1977
+Value=1976;1976
+Value=1975;1975
+Value=1974;1974
+Value=1973;1973
+Value=1972;1972
+Value=1971;1971
+Value=1970;1970
+Value=1969;1969
+Value=1968;1968
+Value=1967;1967
+Value=1966;1966
+Value=1965;1965
+Value=1964;1964
+Value=1963;1963
+Value=1962;1962
+Value=1961;1961
+Value=1960;1960
+Value=1959;1959
+Value=1958;1958
+Value=1957;1957
+Value=1956;1956
+Value=1955;1955
+Value=1954;1954
+Value=1953;1953
+Value=1952;1952
+Value=1951;1951
+Value=1950;1950
+Value=-8;DON'T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(721) HIV Status, Care and Treatment: Don't Know/Refused Year
+Name=VLTESTLSTDK
+Start=342
+Len=2
+
+[ValueSet]
+Label=(721) HIV Status, Care and Treatment: Don't Know/Refused Year
+Name=VLTESTLSTDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(722) HIV Status, Care and Treatment
+Name=TBSYMPASSESS
+Start=344
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=(722) HIV Status, Care and Treatment
+Name=TBSYMPASSESS_VS1
+Value='A     ';Persistent cough?
+Value='B     ';Fever?
+Value='C     ';Night sweats?
+Value='D     ';Weight loss?
+Value='E     ';NONE OF THE ABOVE
+Value='Y     ';DON'T KNOW
+Value='Z     ';REFUSED
+
+[Item]
+Label=(723) HIV Status, Care and Treatment
+Name=TBTPT
+Start=350
+Len=2
+
+[ValueSet]
+Label=(723) HIV Status, Care and Treatment
+Name=TBTPT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(724) HIV Status, Care and Treatment
+Name=MEDINHCURR
+Start=352
+Len=2
+
+[ValueSet]
+Label=(724) HIV Status, Care and Treatment
+Name=MEDINHCURR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(725) HIV Status, Care and Treatment
+Name=MEDINHMONTHS
+Start=354
+Len=2
+
+[Item]
+Label=(725) HIV Status, Care and Treatment
+Name=MEDINHMONTHSDK
+Start=356
+Len=2
+
+[ValueSet]
+Label=(725) HIV Status, Care and Treatment
+Name=MEDINHMONTHSDK_VS1
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Tuberculosis and Other Health Issues
+Name=TBOHI
+RecordTypeValue='H'
+RecordLen=288
+
+[Item]
+Label=MODULE 8: TUBERCULOSIS AND OTHER HEALTH ISSUES
+Name=INSTR8A
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=INSTR8A_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(801) TB and Other Health Issues
+Name=TBCLINVISIT
+Start=29
+Len=2
+
+[ValueSet]
+Label=(801) TB and Other Health Issues
+Name=TBCLINVISIT_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(802) TB and Other Health Issues
+Name=TBCLINHIVTST
+Start=31
+Len=2
+
+[ValueSet]
+Label=(802) TB and Other Health Issues
+Name=TBCLINHIVTST_VS1
+Value=1;YES
+Value=2;NO, WAS NOT TESTED FOR HIV
+Value=3;NO, ALREADY KNOW I AM HIV POSITIVE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(803) TB and Other Health Issues
+Name=TBDIAGN
+Start=33
+Len=2
+
+[ValueSet]
+Label=(803) TB and Other Health Issues
+Name=TBDIAGN_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(804) TB and Other Health Issues
+Name=TBTREATED
+Start=35
+Len=2
+
+[ValueSet]
+Label=(804) TB and Other Health Issues
+Name=TBTREATED_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(805) TB and Other Health Issues
+Name=TBTTREATCURR
+Start=37
+Len=2
+
+[ValueSet]
+Label=(805) TB and Other Health Issues
+Name=TBTTREATCURR_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(806) TB and Other Health Issues
+Name=TBTREAT6MOFULL
+Start=39
+Len=2
+
+[ValueSet]
+Label=(806) TB and Other Health Issues
+Name=TBTREAT6MOFULL_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR8B
+Start=41
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=INSTR8B_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(807) TB and Other Health Issues
+Name=CERVCNTST
+Start=42
+Len=2
+
+[ValueSet]
+Label=(807) TB and Other Health Issues
+Name=CERVCNTST_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=CERVCNTSM
+Start=44
+Len=2
+
+[ValueSet]
+Label=Month
+Name=CERVCNTSM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=CERVCNTSY
+Start=46
+Len=2
+
+[ValueSet]
+Label=Year
+Name=CERVCNTSY_VS1
+Value=19;2019
+Value=18;2018
+Value=17;2017
+Value=16;2016
+Value=15;2015
+Value=14;2014
+Value=13;2013
+Value=12;2012
+Value=11;2011
+Value=10;2010
+Value=9;2009
+Value=8;2008
+Value=7;2007
+Value=6;2006
+Value=5;2005
+Value=4;2004
+Value=3;2003
+Value=2;2002
+Value=1;2001
+Value=0;2000
+Value=99;1999
+Value=98;1998
+Value=97;1997
+Value=96;1996
+Value=95;1995
+Value=94;1994
+Value=93;1993
+Value=92;1992
+Value=91;1991
+Value=90;1990
+Value=89;1989
+Value=88;1988
+Value=87;1987
+Value=86;1986
+Value=85;1985
+Value=84;1984
+Value=83;1983
+Value=82;1982
+Value=81;1981
+Value=80;1980
+Value=79;1979
+Value=78;1978
+Value=77;1977
+Value=76;1976
+Value=75;1975
+Value=74;1974
+Value=73;1973
+Value=72;1972
+Value=71;1971
+Value=70;1970
+Value=69;1969
+Value=68;1968
+Value=67;1967
+Value=66;1966
+Value=65;1965
+Value=64;1964
+Value=63;1963
+Value=62;1962
+Value=61;1961
+Value=60;1960
+Value=59;1959
+Value=58;1958
+Value=57;1957
+Value=56;1956
+Value=55;1955
+Value=54;1954
+Value=53;1953
+Value=52;1952
+Value=51;1951
+Value=50;1950
+Value=-8;DON'T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(808) TB and Other Health Issues: Don't Know/Refused Year
+Name=CERVCNTSDK
+Start=48
+Len=2
+
+[ValueSet]
+Label=(808) TB and Other Health Issues: Don't Know/Refused Year
+Name=CERVCNTSDK_VS1
+Value=-8;DON’T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(809) Tuberculosis and Other Health Issues
+Name=CERNCNRSLT
+Start=50
+Len=2
+
+[ValueSet]
+Label=(809) Tuberculosis and Other Health Issues
+Name=CERNCNRSLT_VS1
+Value=1;NORMAL/NEGATIVE
+Value=2;ABNORMAL/POSITIVE
+Value=3;SUSPECT CANCER
+Value=4;UNCLEAR/INCONCLUSIVE
+Value=5;DID NOT RECEIVE RESULTS
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(810) TB and Other Health Issues
+Name=CERNCNTRT
+Start=52
+Len=2
+
+[ValueSet]
+Label=(810) TB and Other Health Issues
+Name=CERNCNTRT_VS1
+Value=1;YES, I WAS TREATED ON THE SAME DAY
+Value=2;YES, I RECEIVED TREATMENT ON A DIFFERENT DAY
+Value=3;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(811) TB and Other Health Issues
+Name=HPVVACC
+Start=54
+Len=2
+
+[ValueSet]
+Label=(811) TB and Other Health Issues
+Name=HPVVACC_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Instructions
+Name=INSTR8C
+Start=56
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=INSTR8C_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(812) TB and Other Health Issues
+Name=LITTLEINTEREST
+Start=57
+Len=2
+
+[ValueSet]
+Label=(812) TB and Other Health Issues
+Name=LITTLEINTEREST_VS1
+Value=1;NOT AT ALL
+Value=2;1 – 7 DAYS
+Value=3;8 – 11 DAYS
+Value=4;12 – 14 DAYS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(813) TB and Other Health Issues
+Name=DEPRESSED
+Start=59
+Len=2
+
+[ValueSet]
+Label=(813) TB and Other Health Issues
+Name=DEPRESSED_VS1
+Value=1;NOT AT ALL
+Value=2;1 – 7 DAYS
+Value=3;8 – 11 DAYS
+Value=4;12 – 14 DAYS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(814) TB and Other Health Issues
+Name=ANXIETY
+Start=61
+Len=2
+
+[ValueSet]
+Label=(814) TB and Other Health Issues
+Name=ANXIETY_VS1
+Value=1;NOT AT ALL
+Value=2;1 – 7 DAYS
+Value=3;8 – 11 DAYS
+Value=4;12 – 14 DAYS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(815) TB and Other Health Issues
+Name=WORRY
+Start=63
+Len=2
+
+[ValueSet]
+Label=(815) TB and Other Health Issues
+Name=WORRY_VS1
+Value=1;NOT AT ALL
+Value=2;1 – 7 DAYS
+Value=3;8 – 11 DAYS
+Value=4;12 – 14 DAYS
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(816) TB and Other Health Issues
+Name=CHRONICCOND
+Start=65
+Len=12
+DataType=Alpha
+
+[ValueSet]
+Label=(816) TB and Other Health Issues
+Name=CHRONICCOND_VS1
+Value='A           ';HIGH BLOOD SUGAR OR DIABETES
+Value='B           ';HIGH BLOOD PRESSURE OR HYPERTENSION
+Value='C           ';HEART DISEASE OR CHRONIC HEART CONDITION
+Value='D           ';KIDNEY DISEASE
+Value='E           ';CANCER OR TUMOR
+Value='F           ';LUNG DISEASE OR CHRONIC LUNG CONDITION
+Value='G           ';DEPRESSION OR MENTAL HEALTH CONDITION
+Value='H           ';OTHER COMMON CHRONIC DISEASE (COUNTRY CONTEXT)
+Value='I           ';NONE OF THE ABOVE
+Value='X           ';OTHER (SPECIFY)
+Value='Y           ';DON’T KNOW
+Value='Z           ';REFUSED
+
+[Item]
+Label=(816) TB and Other Health Issues: Other (Specify)
+Name=CHRONICCOND_OTH
+Start=77
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(817) TB and Other Health Issues
+Name=CHRONICMED
+Start=177
+Len=12
+DataType=Alpha
+
+[ValueSet]
+Label=(817) TB and Other Health Issues
+Name=CHRONICMED_VS1
+Value='0           ';HIGH BLOOD SUGAR OR DIABETES
+Value='0           ';HIGH BLOOD PRESSURE OR HYPERTENSION
+Value='0           ';HEART DISEASE OR CHRONIC HEART CONDITION
+Value='0           ';KIDNEY DISEASE
+Value='0           ';CANCER OR TUMOR
+Value='0           ';LUNG DISEASE OR CHRONIC LUNG CONDITION
+Value='0           ';DEPRESSION OR MENTAL HEALTH CONDITION
+Value='0           ';OTHER COMMON CHRONIC DISEASE (COUNTRY CONTEXT)
+Value='0           ';NONE OF THE ABOVE
+Value='0           ';OTHER (SPECIFY)
+Value='0           ';DON’T KNOW
+Value='0           ';REFUSED
+
+[Item]
+Label=(817) TB and Other Health Issues: Other (Specify)
+Name=CHRONICMED_OTH
+Start=189
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Alcohol Use
+Name=ALCOHOL
+RecordTypeValue='I'
+RecordLen=34
+
+[Item]
+Label=Instructions
+Name=INSTR9
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=INSTR9_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(901) Alcohol Use
+Name=ALCFREQ
+Start=29
+Len=2
+
+[ValueSet]
+Label=(901) Alcohol Use
+Name=ALCFREQ_VS1
+Value=0;NEVER
+Value=1;MONTHLY OR LESS
+Value=2;2-4 TIMES A MONTH
+Value=3;2-3 TIMES A WEEK
+Value=4;4 OR MORE TIMES A WEEK
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(902) Alcohol Use
+Name=ALCNUMDAY
+Start=31
+Len=2
+
+[ValueSet]
+Label=(902) Alcohol Use
+Name=ALCNUMDAY_VS1
+Value=0;1 OR 2
+Value=1;3 OR 4
+Value=2;5 OR 6
+Value=3;7 TO 9
+Value=4;10 OR MORE
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(903) Alcohol Use
+Name=ALCSIXMORE
+Start=33
+Len=2
+
+[ValueSet]
+Label=(903) Alcohol Use
+Name=ALCSIXMORE_VS1
+Value=0;NEVER
+Value=1;LESS THAN MONTHLY
+Value=2;MONTHLY
+Value=3;WEEKLY
+Value=4;DAILY OR ALMOST DAILY
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Exposure to Dreams
+Name=EXPDREAM
+RecordTypeValue='J'
+RecordLen=210
+
+[Item]
+Label=Instructions
+Name=INSTR10
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=check
+Name=INSTR10_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(1001) Prevention Intervention
+Name=CONDOMWHERE
+Start=29
+Len=9
+DataType=Alpha
+
+[ValueSet]
+Label=(1001) Prevention Intervention
+Name=CONDOMWHERE_VS1
+Value='A        ';CLINIC/HOSPITAL
+Value='B        ';KIOSK/SHOP
+Value='C        ';PHARMACY
+Value='D        ';LOCAL FREE DISPENSER
+Value='E        ';FRIENDS/PEERS
+Value='F        ';SEXUAL PARTNER(S)
+Value='X        ';OTHER (SPECIFY)
+Value='Y        ';DON’T KNOW
+Value='Z        ';REFUSED
+
+[Item]
+Label=(1001) Prevention Intervention: Other (Specify)
+Name=CONDOMWHEREOTH
+Start=38
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(1002) Prevention Intervention
+Name=CONDOMGET
+Start=88
+Len=2
+
+[ValueSet]
+Label=(1002) Prevention Intervention
+Name=CONDOMGET_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(1003) Prevention Intervention
+Name=CONDOMNOTEASYRSN
+Start=90
+Len=9
+DataType=Alpha
+
+[ValueSet]
+Label=(1003) Prevention Intervention
+Name=CONDOMNOTEASYRSN_VS1
+Value='A        ';CONDOMS NOT AVAILABLE/TOO FAR
+Value='B        ';NOT CONVENIENT
+Value='C        ';COSTS TOO MUCH
+Value='D        ';EMBARASSED TO GET CONDOMS
+Value='E        ';DO NOT WANT OTHERS TO KNOW
+Value='F        ';DO NOT KNOW WHERE TO GET CONDOMS
+Value='X        ';OTHER (SPECIFY)
+Value='Y        ';DON’T KNOW
+Value='Z        ';REFUSED
+
+[Item]
+Label=(1003) Prevention Intervention: Other (Specify)
+Name=CONDOMNOTEASYRSNOTH
+Start=99
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(1004) Prevention Intervention
+Name=ADTPSX
+Start=149
+Len=2
+
+[ValueSet]
+Label=(1004) Prevention Intervention
+Name=ADTPSX_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(1005) Prevention Intervention
+Name=ADDISHIV
+Start=151
+Len=2
+
+[ValueSet]
+Label=(1005) Prevention Intervention
+Name=ADDISHIV_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(1006) Prevention Intervention
+Name=ADHIVPREV
+Start=153
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=(1006) Prevention Intervention
+Name=ADHIVPREV_VS1
+Value='A     ';[PROGRAM A]
+Value='B     ';[PROGRAM B]
+Value='C     ';[PROGRAM C]
+Value='X     ';OTHER (SPECIFY)
+Value='Y     ';DON’T KNOW
+Value='Z     ';REFUSED
+
+[Item]
+Label=(1006) Prevention Intervention: Other (Specify)
+Name=ADHIVPREVOTH
+Start=159
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(1007) Prevention Intervention
+Name=ADHIVSCHMTG
+Start=209
+Len=2
+
+[ValueSet]
+Label=(1007) Prevention Intervention
+Name=ADHIVSCHMTG_VS1
+Value=0;NONE
+Value=1;1-4 TIMES
+Value=2;5-9 TIMES
+Value=3;10 OR MORE TIMES
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=Adult Questionnaire End
+Name=ADULTQX_END
+RecordTypeValue='K'
+RecordLen=295
+
+[Item]
+Label=END OF INDIVIDUAL QUESTIONNAIRE
+Name=ENDMSG1
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=checkbox
+Name=ENDMSG1_VS1
+Value='A';OK
+
+[Item]
+Label=COMMENTS FROM INTERVIEWER
+Name=INCOMMENTS
+Start=29
+Len=250
+DataType=Alpha
+
+[Item]
+Label=ADULT QX END DATE AND TIME
+Name=ADQXEDT
+Start=279
+Len=17
+DataType=Alpha
+
+[Record]
+Label=Locator
+Name=LOCATOR
+RecordTypeValue='L'
+RecordLen=1333
+
+[Item]
+Label=STAFF ID
+Name=LOCSTAFFID
+Start=28
+Len=6
+DataType=Alpha
+
+[Item]
+Label=SCANNED PTID
+Name=LOCPTID
+Start=34
+Len=1
+
+[ValueSet]
+Label=SCANNED PTID
+Name=LOCPTID_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=GPS COORDINATES
+Name=LOCGPS
+Start=35
+Len=1
+
+[Item]
+Label=Thank you again for agreeing earlier to be contacted for possible future research.
+Name=LOCINSTR1
+Start=36
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=LOCINSTR1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=After the HIV test, we will discuss whether certain additional tests related to HIV will be done.
+Name=LOCINSTR2
+Start=37
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=LOCINSTR2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Health Facility Confirmation
+Name=HIVCLINICC
+Start=38
+Len=1
+
+[ValueSet]
+Label=Health Facility Confirmation
+Name=HIVCLINICC_VS1
+Value=1;SEND TO HEALTH FACILITY SHOWN HERE
+Value=2;SEND TO ANOTHER HEALTH FACILITY
+
+[Item]
+Label=Select Different Health Facility
+Name=HIVCLINIC2
+Start=39
+Len=1
+
+[Item]
+Label=[GEOLEVEL 1]
+Name=LOCPROV
+Start=40
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Health Facility Name
+Name=LOCFAC
+Start=60
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Participant’s Legal First Name
+Name=LOCLFNM
+Start=160
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Participant’s Legal Family Name
+Name=LOCLLN
+Start=260
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Participant’s Name Known in Community / Nickname [OPTIONAL]:
+Name=LOCNKNM
+Start=360
+Len=100
+DataType=Alpha
+
+[Item]
+Label=[If Participant  is 15-17 years] Parent/Guardian Name
+Name=LOCPRNTGRNM
+Start=460
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Address
+Name=LOCADDRS
+Start=560
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Reach by Telephone
+Name=LOCCNTPH
+Start=660
+Len=1
+
+[ValueSet]
+Label=Reach by Telephone
+Name=LOCCNTPH_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Mobile Number
+Name=LOCMOBNO
+Start=661
+Len=15
+
+[Item]
+Label=Belongs to
+Name=LOCMOBONR
+Start=676
+Len=1
+
+[ValueSet]
+Label=Belongs to
+Name=LOCMOBONR_VS1
+Value=1;PARTICIPANT
+Value=2;PARENT/GUARDIAN
+Value=3;OTHER
+
+[Item]
+Label=Landline
+Name=LOCLANDNO
+Start=677
+Len=15
+
+[Item]
+Label=Belongs to
+Name=LOCLANDONR
+Start=692
+Len=1
+
+[ValueSet]
+Label=Belongs to
+Name=LOCLANDONR_VS1
+Value=1;PARTICIPANT
+Value=2;PARENT/GUARDIAN
+Value=3;OTHER
+
+[Item]
+Label=Work
+Name=LOCOTHNO
+Start=693
+Len=15
+
+[Item]
+Label=Belongs to
+Name=LOCOTHONR
+Start=708
+Len=1
+
+[ValueSet]
+Label=Belongs to
+Name=LOCOTHONR_VS1
+Value=1;PARTICIPANT
+Value=2;PARENT/GUARDIAN
+Value=3;OTHER
+
+[Item]
+Label=Preferred Number
+Name=LOCPHPRF
+Start=709
+Len=1
+
+[ValueSet]
+Label=Preferred Number
+Name=LOCPHPRF_VS1
+Value=1;MOBILE
+Value=2;LANDLINE
+Value=3;WORK
+
+[Item]
+Label=Test Preferred Number
+Name=LOCINSTR
+Start=710
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=LOCINSTR_VS1
+Value='A';OK
+
+[Item]
+Label=Best Time to Contact Participant
+Name=LOCPHTM
+Start=711
+Len=1
+
+[ValueSet]
+Label=Best Time to Contact Participant
+Name=LOCPHTM_VS1
+Value=1;MORNING
+Value=2;AFTERNOON
+Value=3;EVENING
+
+[Item]
+Label=Who should we ask for?
+Name=LOCPHNM
+Start=712
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Is it OK to leave a message?
+Name=LOCPHMSG
+Start=812
+Len=1
+
+[ValueSet]
+Label=Is it OK to leave a message?
+Name=LOCPHMSG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Is it OK to visit home address if we have difficults contacting you?
+Name=LOCVISIT
+Start=813
+Len=1
+
+[ValueSet]
+Label=Is it OK to visit home address if we have difficults contacting you?
+Name=LOCVISIT_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Security Questions
+Name=LOCINSTR3
+Start=814
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Security Questions
+Name=LOCINSTR3_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Security Question (1)
+Name=LOCSECPS
+Start=815
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Security Question (2)
+Name=LOCSECMM
+Start=915
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Other Contact
+Name=LOCOTHC
+Start=1015
+Len=1
+
+[ValueSet]
+Label=Other Contact
+Name=LOCOTHC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Name
+Name=LOCOTHCNM
+Start=1016
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Contact number
+Name=LOCOTHCMO
+Start=1116
+Len=100
+DataType=Alpha
+
+[Item]
+Label=What does this person call you?
+Name=LOCOTHCPNM
+Start=1216
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Locator End
+Name=LOCEND
+Start=1316
+Len=17
+DataType=Alpha
+
+[ValueSet]
+Label=Locator End
+Name=LOCEND_VS1
+Value='A                ';CONTINUE
+
+[Item]
+Label=[INTERVIEWER: CONTINUE TO THE NEXT ITEM?]
+Name=LOCCONT2
+Start=1333
+Len=1
+
+[ValueSet]
+Label=[INTERVIEWER: CONTINUE TO THE NEXT ITEM?]
+Name=LOCCONT2_VS1
+Value=1;YES
+Value=2;NO
+
+[Record]
+Label=Biomarker Start
+Name=BIOM_START
+RecordTypeValue='S'
+RecordLen=177
+
+[Item]
+Label=BIOMARKER START DATE AND TIME
+Name=BIOSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Pre-Biomarker Form: PTID Barcode Scan
+Name=PTIDINST
+Start=45
+Len=1
+
+[ValueSet]
+Label=OK
+Name=PTIDINST_VS1
+Value=1;OK
+
+[Item]
+Label=PTID BARCODE SCAN
+Name=PTIDS
+Start=46
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECK
+Name=PTIDS_VS1
+Value='A';OK
+
+[Item]
+Label=PTID Barcode Scan (Confirm)
+Name=CONFBC
+Start=47
+Len=1
+
+[ValueSet]
+Label=PTID Barcode Scan (Confirm)
+Name=CONFBC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=PTID MANUAL ENTRY
+Name=PTIDM
+Start=48
+Len=8
+DataType=Alpha
+
+[Item]
+Label=WARNING!!!
+Name=BIOPTIDMATCH
+Start=56
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=ok
+Name=BIOPTIDMATCH_VS1
+Value='A';OK
+
+[Item]
+Label=Assignment of New PTID: Reason
+Name=BIOPTIDMATCH2
+Start=57
+Len=100
+DataType=Alpha
+
+[Item]
+Label=SPECIMEN COLLECTION DATE
+Name=SPECDATE
+Start=157
+Len=8
+DataType=Alpha
+
+[Item]
+Label=Team ID
+Name=BIOTEAMID
+Start=165
+Len=2
+
+[Item]
+Label=Staff ID
+Name=BIOSTAFFID
+Start=167
+Len=6
+DataType=Alpha
+
+[Item]
+Label=HIV Rapid Tests Start
+Name=BIOHIVSTART
+Start=173
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=ok
+Name=BIOHIVSTART_VS1
+Value=1;OK
+
+[Item]
+Label=Blood Collection Type
+Name=COLTYPEAD
+Start=174
+Len=2
+
+[ValueSet]
+Label=Blood Collection Type
+Name=COLTYPEAD_VS1
+Value=10;10 mL tube (Venous)
+Value=4;4 mL tube (Venous)
+Value=1;1 mL (Finger Prick)
+Value=0;BLOOD COLLECTION NOT POSSIBLE
+
+[Item]
+Label=Blood Collection Not Possible (Confirm)
+Name=BIOCLCTFL
+Start=176
+Len=1
+
+[ValueSet]
+Label=Blood Collection Not Possible (Confirm)
+Name=BIOCLCTFL_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=HIV Rapid Testing Algorithm
+Name=HIVTESTALG
+Start=177
+Len=1
+
+[ValueSet]
+Label=HIV Rapid Testing Algorithm
+Name=HIVTESTALG_VS1
+Value=1;2-TEST ALGORITHM
+Value=2;3-TEST ALGORITHM
+
+[Record]
+Label=Biomarker-2 Tests
+Name=BIOMARKER2
+RecordTypeValue='T'
+RecordLen=311
+
+[Item]
+Label=HIV Rapid Tests (2-Test Algorithm)
+Name=BIO2RAPID
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2RAPID_VS1
+Link=84241136
+Value='A';CONTINUE
+
+[Item]
+Label=(TEST 1)
+Name=BIO2HIVTST1
+Start=29
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=(TEST 1)
+Name=BIO2HIVTST1_VS1
+Link=84241136
+
+[Item]
+Label=(TEST 1) Lot No.
+Name=BIO2HIVTST1LT
+Start=30
+Len=10
+DataType=Alpha
+
+[Item]
+Label=(TEST 1) Kit Expiration Date
+Name=BIO2HIVTST1EX
+Start=40
+Len=8
+
+[Item]
+Label=(TEST 1) Result
+Name=BIO2HIVTST1RS
+Start=48
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=BIO2HIVTST1RS_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=(TEST 1 Repeat)
+Name=BIO2HIVTST12
+Start=49
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=(TEST 1 Repeat)
+Name=BIO2HIVTST12_VS1
+Value=0;CONTINUE
+
+[Item]
+Label=(TEST 1 Repeat) Lot No.
+Name=BIO2HIVTST1LT2
+Start=50
+Len=10
+DataType=Alpha
+
+[Item]
+Label=(TEST 1 Repeat) Kit Expiration Date
+Name=BIO2HIVTST1EX2
+Start=60
+Len=8
+
+[Item]
+Label=(TEST 1 Repeat) Result
+Name=BIO2HIVTST1RS2
+Start=68
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=BIO2HIVTST1RS2_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=(TEST 2)
+Name=BIO2HIVTST2
+Start=69
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVTST2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(TEST 2) Lot No.
+Name=BIO2HIVTST2LT
+Start=70
+Len=10
+DataType=Alpha
+
+[Item]
+Label=(TEST 2) Kit Expiration Date
+Name=BIO2HIVTST2EX
+Start=80
+Len=8
+
+[Item]
+Label=(TEST 2) Result
+Name=BIO2HIVTST2RS
+Start=88
+Len=1
+
+[ValueSet]
+Label=(TEST 2) Result
+Name=BIO2HIVTST2RS_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=(TEST 2 Repeat)
+Name=BIO2HIVTST22
+Start=89
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVTST22_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(TEST 2 Repeat) Lot No.
+Name=BIO2HIVTST2LT2
+Start=90
+Len=10
+DataType=Alpha
+
+[Item]
+Label=(TEST 2 Repeat) Kit Expiration Date
+Name=BIO2HIVTST2EX2
+Start=100
+Len=8
+
+[Item]
+Label=(TEST 2 Repeat) Result
+Name=BIO2HIVTST2RS2
+Start=108
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=BIO2HIVTST2RS2_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1)
+Name=RRBIO2HIVTST1
+Start=109
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=RRBIO2HIVTST1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1) Lot No.
+Name=RRBIO2HIVTST1LT
+Start=110
+Len=10
+DataType=Alpha
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1) Kit Expiration Date
+Name=RRBIO2HIVTST1EX
+Start=120
+Len=8
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1) Result
+Name=RRBIO2HIVTST1RS
+Start=128
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=RRBIO2HIVTST1RS_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1 Repeat)
+Name=RRBIO2HIVTST12
+Start=129
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=RRBIO2HIVTST12_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=RALLEL TESTING: (TEST 1 Repeat) Lot No.
+Name=RRBIO2HIVTST1LT2
+Start=130
+Len=10
+DataType=Alpha
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1 Repeat) Kit Expiration Date
+Name=RRBIO2HIVTST1EX2
+Start=140
+Len=8
+
+[Item]
+Label=PARALLEL TESTING: (TEST 1 Repeat) Result
+Name=RRBIO2HIVTST1RS2
+Start=148
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=RRBIO2HIVTST1RS2_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2)
+Name=RRBIO2HIVTST2
+Start=149
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=RRBIO2HIVTST2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2) Lot No.
+Name=RRBIO2HIVTST2LT
+Start=150
+Len=10
+DataType=Alpha
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2) Kit Expiration Date
+Name=RRBIO2HIVTST2EX
+Start=160
+Len=8
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2) Result
+Name=RRBIO2HIVTST2RS
+Start=168
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=RRBIO2HIVTST2RS_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2 Repeat)
+Name=RRBIO2HIVTST22
+Start=169
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=RRBIO2HIVTST22_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2 Repeat) Lot No.
+Name=RRBIO2HIVTST2LT2
+Start=170
+Len=10
+DataType=Alpha
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2 Repeat) Kit Expiration Date
+Name=RRBIO2HIVTST2EX2
+Start=180
+Len=8
+
+[Item]
+Label=PARALLEL TESTING: (TEST 2 Repeat) Result
+Name=RRBIO2HIVTST2RS2
+Start=188
+Len=1
+
+[ValueSet]
+Label=(TEST 1) Result
+Name=RRBIO2HIVTST2RS2_VS1
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=HIV-POSITIVE
+Name=BIO2HIVPOS
+Start=189
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVPOS_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=INVALID
+Name=BIO2INVALID
+Start=190
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2INVALID_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=INDETERMINATE
+Name=BIO2HIVIND
+Start=191
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVIND_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=HIV-NEGATIVE
+Name=BIO2HIVNEG
+Start=192
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVNEG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=End of Biomarker-3 Tests
+Name=BIO2HIVEND
+Start=193
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2HIVEND_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=TEMP
+Name=BIO2_T2_TEMP
+Start=194
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO2_T2_TEMP_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=COMMENTS FROM TESTER
+Name=BIO2COMMENT
+Start=195
+Len=100
+DataType=Alpha
+
+[Item]
+Label=BIOMARKER 2-TEST END DATE AND TIME
+Name=BIO2EDT
+Start=295
+Len=17
+DataType=Alpha
+
+[Record]
+Label=Biomarker-3 Tests
+Name=BIOMARKER3
+RecordTypeValue='P'
+RecordLen=271
+
+[Item]
+Label=HIV Rapid Tests
+Name=BIORAPID
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIORAPID_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[Test 1] 1
+Name=BIOHIVTST1
+Start=29
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[Test 1]1 Lot NO.
+Name=BIOHIVTST1LT
+Start=30
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[Test 1] 1 Kit Expiration Date
+Name=BIOHIVTST1EX
+Start=40
+Len=8
+
+[Item]
+Label=[Test 1] 1 Result
+Name=BIOHIVTST1RS
+Start=48
+Len=1
+
+[ValueSet]
+Label=[Test 1] 1 Result
+Name=BIOHIVTST1RS_VS1
+Link=84244920
+Value=1;REACTIVE
+Value=2;NON-REACTIVE
+Value=3;INVALID
+
+[Item]
+Label=[Test 1] 2
+Name=BIOHIVTST12
+Start=49
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST12_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[Test 1] 2 Lot NO.
+Name=BIOHIVTST1LT2
+Start=50
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[Test 1] 2 Kit Expiration Date
+Name=BIOHIVTST1EX2
+Start=60
+Len=8
+
+[Item]
+Label=[Test 1] 2 Result
+Name=BIOHIVTST1RS2
+Start=68
+Len=1
+
+[ValueSet]
+Label=[Test 1] 2 Result
+Name=BIOHIVTST1RS2_VS1
+Link=84244920
+
+[Item]
+Label=[Test 2] 1
+Name=BIOHIVTST2
+Start=69
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST2_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[Test 2] 1 Lot NO.
+Name=BIOHIVTST2LT
+Start=70
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[Test 2] 1 Kit Expiration Date
+Name=BIOHIVTST2EX
+Start=80
+Len=8
+
+[Item]
+Label=[Test 2] 1 Result
+Name=BIOHIVTST2RS
+Start=88
+Len=1
+
+[ValueSet]
+Label=[Test 2] 1 Result
+Name=BIOHIVTST2RS_VS1
+Link=84244920
+
+[Item]
+Label=[Test 2] 2
+Name=BIOHIVTST22
+Start=89
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST22_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[Test 2] 2 Lot NO.
+Name=BIOHIVTST2LT2
+Start=90
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[Test 2] 2 Kit Expiration Date
+Name=BIOHIVTST2EX2
+Start=100
+Len=8
+
+[Item]
+Label=[Test 2] 2 Result
+Name=BIOHIVTST2RS2
+Start=108
+Len=1
+
+[ValueSet]
+Label=[Test 2] 2 Result
+Name=BIOHIVTST2RS2_VS1
+Link=84244920
+
+[Item]
+Label=[TEST 3] 1
+Name=BIOHIVTST3
+Start=109
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST3_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[TEST 3] 1 Lot NO.
+Name=BIOHIVTST3LT
+Start=110
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[TEST 3] 1 Kit Expiration Date
+Name=BIOHIVTST3EX
+Start=120
+Len=8
+
+[Item]
+Label=[Test 3] 1 Result
+Name=BIOHIVTST3RS
+Start=128
+Len=1
+
+[ValueSet]
+Label=[Test 3] 1 Result
+Name=BIOHIVTST3RS_VS1
+Link=84244920
+
+[Item]
+Label=[TEST 3] 2
+Name=BIOHIVTST32
+Start=129
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVTST32_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=[TEST 3] 2 Lot NO.
+Name=BIOHIVTST3LT2
+Start=130
+Len=10
+DataType=Alpha
+
+[Item]
+Label=[TEST 3] 2 Kit Expiration Date
+Name=BIOHIVTST3EX2
+Start=140
+Len=8
+
+[Item]
+Label=[Test 3] 2 Result
+Name=BIOHIVTST3RS2
+Start=148
+Len=1
+
+[ValueSet]
+Label=[Test 3] 2 Result
+Name=BIOHIVTST3RS2_VS1
+Link=84244920
+
+[Item]
+Label=HIV-POSITIVE
+Name=BIOHIVPOS
+Start=149
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVPOS_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=INVALID
+Name=BIOINVALID
+Start=150
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOINVALID_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=HIV-NEGATIVE
+Name=BIOHIVNEG
+Start=151
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVNEG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=HIV-NEGATIVE
+Name=BIOHIVNEGREF
+Start=152
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVNEGREF_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=End of Biomarker
+Name=BIOHIVEND
+Start=153
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIOHIVEND_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=TEMP
+Name=BIO_T3_TEMP
+Start=154
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=BIO_T3_TEMP_VS2
+Value='A';CONTINUE
+
+[ValueSet]
+Label=TEMP
+Name=BIO_T3_TEMP_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=COMMENTS FROM TESTER
+Name=BIOCOMMENT
+Start=155
+Len=100
+DataType=Alpha
+
+[Item]
+Label=BIOMARKER 3-TEST END DATE AND TIME
+Name=BIO3EDT
+Start=255
+Len=17
+DataType=Alpha
+
+[Record]
+Label=LTC Consent
+Name=LTC_CONSENT
+RecordTypeValue='Q'
+RecordLen=234
+
+[Item]
+Label=LTC Participant Information Confirmation
+Name=LTCPTID
+Start=28
+Len=1
+
+[ValueSet]
+Label=OK
+Name=LTCPTID_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=Appendix B5: Consent/Assent to Share Contact Information for Active Linkage to Care of Participants 15+ Years
+Name=LTCSTRT
+Start=29
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Appendix B5: Consent/Assent to Share Contact Information for Active Linkage to Care of Participants 15+ Years
+Name=LTCSTRT_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=LTC Consent/Assent: Language
+Name=LTCLANG
+Start=30
+Len=1
+
+[ValueSet]
+Label=LTC Consent/Assent: Language
+Name=LTCLANG_VS1
+Value=1;ENGLISH
+Value=2;(ENTER SECOND LANGUAGE)
+Value=3;(ENTER THIRD LANGUAGE)
+
+[Item]
+Label=1. Share Contact Information
+Name=LTCVRBL
+Start=31
+Len=1
+
+[ValueSet]
+Label=1. Share Contact Information
+Name=LTCVRBL_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=1. Share Contact Information (Agree)
+Name=LTCVRBLST1
+Start=32
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=1. Share Contact Information (Agree)
+Name=LTCVRBLST1_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=1. Share Contact Information (Refuse)
+Name=LTCVRBLST2
+Start=33
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=1. Share Contact Information (Refuse)
+Name=LTCVRBLST2_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=2. Contact Method
+Name=LTCHOW
+Start=34
+Len=1
+
+[ValueSet]
+Label=OK
+Name=LTCHOW_VS1
+Value=1;CONTINUE
+
+[Item]
+Label=SMS
+Name=LTCHOWSMS
+Start=35
+Len=1
+
+[ValueSet]
+Label=SMS
+Name=LTCHOWSMS_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=WhatsApp
+Name=LTCHOWWAPP
+Start=36
+Len=1
+
+[ValueSet]
+Label=WhatsApp
+Name=LTCHOWWAPP_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Phone call
+Name=LTCHOWPHN
+Start=37
+Len=1
+
+[ValueSet]
+Label=Phone call
+Name=LTCHOWPHN_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=In person
+Name=LTCHOWVST
+Start=38
+Len=1
+
+[ValueSet]
+Label=In person
+Name=LTCHOWVST_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=LTC Contact Confirmation
+Name=LTCNOCONFIRM
+Start=39
+Len=1
+
+[ValueSet]
+Label=LTC Contact Confirmation
+Name=LTCNOCONFIRM_VS1
+Value=1;ALL NUMBERS GOOD; NO ADDITIONAL NUMBER
+Value=2;ALL NUMBERS GOOD, BUT ADD ANOTHER NUMBER
+Value=3;NUMBERS ARE BAD; NEED TO PROVIDE NEW NUMBER
+
+[Item]
+Label=LTC New Number
+Name=LTCPHPRF
+Start=40
+Len=15
+
+[Item]
+Label=Summary Statement
+Name=LTCCONCONFIRM
+Start=55
+Len=1
+
+[ValueSet]
+Label=Summary Statement
+Name=LTCCONCONFIRM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Printed name of participant
+Name=LTCNM
+Start=56
+Len=75
+DataType=Alpha
+
+[Item]
+Label=CALC-LTC SIGNATURE DATE
+Name=LTCCONSTFDT
+Start=131
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Signature of person obtaining consent/assent
+Name=LTCCONSTFSIG
+Start=148
+Len=1
+
+[Item]
+Label=Printed name of person obtaining consent/assent
+Name=LTCCONSTFNM
+Start=149
+Len=75
+DataType=Alpha
+
+[Item]
+Label=Study staff ID number
+Name=LTCCONSTAFFID
+Start=224
+Len=6
+DataType=Alpha
+
+[Item]
+Label=CALC LTCCONSTAT
+Name=LTCCONSTATCALC
+Start=230
+Len=1
+
+[Item]
+Label=LTC Consent/Assent Status
+Name=LTCCONSTAT
+Start=231
+Len=1
+
+[ValueSet]
+Label=OK
+Name=LTCCONSTAT_VS1
+Value=1;OK
+
+[Item]
+Label=LTC: Self-Reported ARV Status
+Name=ARVSCURRENTC
+Start=232
+Len=1
+
+[ValueSet]
+Label=LTC: Self-Reported ARV Status
+Name=ARVSCURRENTC_VS1
+Value=1;CURRENTLY TAKING ARVS
+Value=2;NOT CURRENTLY TAKING ARVS
+
+[Item]
+Label=LTC: Self-Reported ARV Status (Confirm)
+Name=ARVSCURRENTINST1
+Start=233
+Len=1
+
+[ValueSet]
+Label=LTC: Self-Reported ARV Status (Confirm)
+Name=ARVSCURRENTINST1_VS1
+Value=1;OK. CONTINUE.
+
+[Item]
+Label=LTC: Self-Reported ARV Status
+Name=ARVSCURRENTINST2
+Start=234
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OK
+Name=ARVSCURRENTINST2_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=End of Individual Interview
+Name=IND_END
+RecordTypeValue='R'
+RecordLen=298
+
+[Item]
+Label=Withdrawal from Survey
+Name=WITHDRAWAL
+Start=28
+Len=1
+
+[ValueSet]
+Label=Withdrawal from Survey
+Name=WITHDRAWAL_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=IND FORM END DATE AND TIME
+Name=INDFORMEDT
+Start=29
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Thank you for your time.
+Name=ENDSURVEY
+Start=46
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=ENDSURVEY_VS1
+Value='A';OK
+
+[Item]
+Label=INDIVIDUAL COLLECTION: SUMMARY
+Name=ENDSUMMARY
+Start=47
+Len=1
+
+[ValueSet]
+Label=INDIVIDUAL COLLECTION: SUMMARY
+Name=ENDSUMMARY_VS1
+Value=1;SAVE FORM AND EXIT.
+
+[Item]
+Label=THANK YOU FOR COMPLETING COLLECTION
+Name=ENDTHANKS
+Start=48
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=CHECKBOX
+Name=ENDTHANKS_VS1
+Value='A';OK
+
+[Item]
+Label=COMMENTS FROM INTERVIEWER
+Name=ENDCOMMENT
+Start=49
+Len=250
+DataType=Alpha

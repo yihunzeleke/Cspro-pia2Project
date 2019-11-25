@@ -1,0 +1,44 @@
+﻿[CSPro Application]
+Version=CSPro 7.2
+Label=SURVEYMENU
+Name=SURVEYMENU
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+CAPI=Yes
+CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont1Color=0
+CAPIFont2Color=16711680
+CreateListing=No
+CreateLog=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\surveyHhInt\surveyHhInt.dcf
+File=..\surveyHhRstr\surveyHhRstr.dcf
+File=..\surveyHhRstrMin\surveyHhRstrMin.dcf
+File=..\surveyIndInt\surveyIndInt.dcf
+File=..\shared\tmSurveyGeovars.dcf
+File=..\shared\tmSurveyDataHub.dcf
+File=..\shared\tmHhMemPass.dcf
+File=..\shared\tmSurveySignatures.dcf
+[AppCode]
+File=.\surveyMenu.ent.apc
+[Message]
+File=.\surveyMenu.ent.mgf
+[Help]
+File=.\surveyMenu.ent.qsf
+[Forms]
+File=.\surveyMenu.fmf
+[Dictionary Types]
+Dict-Type=.\surveyMenu.dcf,Input,.\surveyMenu.fmf
+Dict-Type=..\surveyHhInt\surveyHhInt.dcf,External
+Dict-Type=..\surveyHhRstr\surveyHhRstr.dcf,External
+Dict-Type=..\surveyHhRstrMin\surveyHhRstrMin.dcf,External
+Dict-Type=..\surveyIndInt\surveyIndInt.dcf,External
+Dict-Type=..\shared\tmSurveyGeovars.dcf,External
+Dict-Type=..\shared\tmSurveyDataHub.dcf,External
+Dict-Type=..\shared\tmHhMemPass.dcf,External
+Dict-Type=..\shared\tmSurveySignatures.dcf,External

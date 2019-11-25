@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 7.2
+AppType=Entry
+
+[DataEntryInit]
+Interactive=Ask
+
+[Files]
+Application=.\surveyHhRstrMin.ent
+InputData=.\surveyHhRstrMin.csdb|CSPRODB
+Paradata=.\surveyHhRstrMin.cslog
+
+[ExternalFiles]
+TM_HH_RSTR_DICT=..\shared\tmSurveyGeovars.csdb|CSPRODB
+
+[Parameters]
+

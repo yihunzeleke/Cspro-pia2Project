@@ -1,0 +1,285 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Household Roster
+Name=TM_HH_RSTR_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Household Roster Level
+Name=TM_HH_RSTR_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province Code (Province Name)
+Name=HHR_PROVINCE
+Start=2
+Len=1
+DataType=Alpha
+
+[Item]
+Label=District Code (District Name)
+Name=HHR_DISTRICT
+Start=3
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Village Code (Village Name)
+Name=HHR_VILLAGE
+Start=6
+Len=6
+DataType=Alpha
+
+[Item]
+Label=EA Code
+Name=HHR_EACODE
+Start=12
+Len=9
+DataType=Alpha
+
+[Item]
+Label=Household ID
+Name=HHR_SHH
+Start=21
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Team ID
+Name=HHR_TEAM_ID
+Start=24
+Len=2
+DataType=Alpha
+
+[Item]
+Label=Household Member ID
+Name=HHR_HHMEM_ID
+Start=26
+Len=2
+DataType=Alpha
+
+[Record]
+Label=Household Roster
+Name=SURVEYHHRSTR
+RecordTypeValue='1'
+RecordLen=222
+
+[Item]
+Label=calc - HHI Start Date Passdown
+Name=HHR_LISTINGFORMSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=calc - HHI Level UUID Capture
+Name=HHR_HHI_UUID
+Start=45
+Len=36
+DataType=Alpha
+
+[Item]
+Label=calc - Device ID Capture
+Name=HHR_DEVICEID
+Start=81
+Len=16
+DataType=Alpha
+
+[Item]
+Label=(1) HH Roster
+Name=HHRNAME
+Start=97
+Len=100
+DataType=Alpha
+
+[Item]
+Label=calc - Household Roster DE Started Flag
+Name=HHR_DE_START_FLAG
+Start=197
+Len=1
+
+[ValueSet]
+Label=calc - Household Roster DE Started Flag
+Name=HHR_DE_START_FLAG_VS1
+Value=1;HH Roster Data Entry Started
+
+[Item]
+Label=(2) HH Roster
+Name=RELATTOHH
+Start=198
+Len=2
+
+[ValueSet]
+Label=(2) HH Roster
+Name=RELATTOHH_VS1
+Value=1;HEAD
+Value=2;WIFE/HUSBAND/PARTNER
+Value=3;SON OR DAUGHTER
+Value=4;SON-IN-LAW/DAUGHTER-IN-LAW
+Value=5;GRANDCHILD
+Value=6;PARENT
+Value=7;PARENT-IN-LAW
+Value=8;BROTHER/SISTER
+Value=9;CO-WIFE
+Value=10;OTHER RELATIVE
+Value=11;ADOPTED/FOSTER/STEPCHILD
+Value=12;NOT RELATED
+Value=-8;DON'T KNOW
+
+[Item]
+Label=(3) HH Roster
+Name=SEX
+Start=200
+Len=1
+
+[ValueSet]
+Label=(3) HH Roster
+Name=SEX_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=(4) HH Roster
+Name=LIVE_HERE
+Start=201
+Len=2
+
+[ValueSet]
+Label=(4) HH Roster
+Name=LIVE_HERE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(5) HH Roster
+Name=SLEEPHERE
+Start=203
+Len=1
+
+[ValueSet]
+Label=(5) HH Roster
+Name=SLEEPHERE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(6) HH Roster
+Name=AGEYEARS
+Start=204
+Len=3
+
+[ValueSet]
+Label=(6) HH Roster
+Name=AGEYEARS_VS1
+Value=0:120
+
+[Item]
+Label=(6) HH Roster
+Name=AGEMONTHS
+Start=207
+Len=2
+
+[ValueSet]
+Label=(6) HH Roster
+Name=AGEMONTHS_VS1
+Value=0:24
+
+[Item]
+Label=(7) HH Roster
+Name=EMANCIPATED
+Start=209
+Len=2
+
+[ValueSet]
+Label=(7) HH Roster
+Name=EMANCIPATED_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Month
+Name=LIVEAWAYM
+Start=211
+Len=2
+
+[ValueSet]
+Label=Month
+Name=LIVEAWAYM_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=-8;DON’T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=LIVEAWAYY
+Start=213
+Len=4
+
+[ValueSet]
+Label=Year
+Name=LIVEAWAYY_VS1
+Value=1900:2019
+Value=-8;DON'T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(9) HH Roster
+Name=LIVEAWAY
+Start=217
+Len=2
+
+[ValueSet]
+Label=(9) HH Roster
+Name=LIVEAWAY_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(10) HH Roster
+Name=LIVEREGION
+Start=219
+Len=2
+
+[ValueSet]
+Label=(10) HH Roster
+Name=LIVEREGION_VS1
+Value=1;[REGION 1]
+Value=2;[REGION 2]
+Value=3;[COUNTRY 1]
+Value=4;[COUNTRY 2]
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(11) HH Roster
+Name=SICK3MO
+Start=221
+Len=2
+
+[ValueSet]
+Label=(11) HH Roster
+Name=SICK3MO_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED

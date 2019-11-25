@@ -1,0 +1,190 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.2
+
+[LANGUAGES]
+EN=English
+
+[QUESTION]
+Field=BLOCK000
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 When was the last time %HHRNAME% slept the night in the household?\par
+EN=\par
+EN=(INTERVIEWER: SWIPE FORWARD IF DON'T KNOW OR REFUSED YEAR.)\par
+EN=}
+
+[QUESTION]
+Field=BLOCK001
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 How old is %HHRNAME%?\par
+EN=\par
+EN=\par
+EN=[INTERVIEWER: IF LESS THAN 2 YEARS, CODE '0'.] \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.AGEMONTHS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 AGE IN MONTHS\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.AGEYEARS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 AGE IN YEARS\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.EMANCIPATED
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Is %HHRNAME% emancipated?\par
+EN=[COUNTRY DEFINITION OF EMANCIPATED MINOR]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.F_SPOUSENAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 SELECT %HHRNAME%'S [# SPOUSE] OR PARTNER FROM THE LIST BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.F_SPOUSEYN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does %HHRNAME% have a spouse or co-habitating partner who usually lives in the household or was a guest last night?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.HHPCONT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 SELECT 'NO' ONLY IF THE PARTICIPANT HAS EXPRESSED HE/SHE DOES NOT WISH TO CONTINUE ON WITH THE SURVEY.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.HHRNAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 %HHR_HHMEM_ID% - Name\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.LIVE_HERE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does %HHRNAME% usually live here?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.LIVEAWAY
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Is %HHRNAME% in another region or country?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.LIVEAWAYM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 MONTH\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.LIVEAWAYY
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 YEAR\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.LIVEREGION
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Which region or country is %HHRNAME% in currently?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.M_SPOUSENAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 SELECT %HHRNAME%'S [# SPOUSE] OR PARTNER FROM THE LIST BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.M_SPOUSENUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 How many spouses or co-habitating partners (those who usually live in the household or stayed here last night) does %HHRNAME% have?\par
+EN=\par
+EN=NUMBER OF PARTNERS\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.M_SPOUSEYN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does %HHRNAME% have a spouse or co-habitating partner who usually lives in the household or was a guest last night?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.RELATTOHH
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 What is the relationship of %HHRNAME% to the head of the household?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.ROSTER_MENU
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Please give me the names of the persons who usually live in your household and guests of the household who stayed here last night, starting with the head of the household.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.SEX
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Is %HHRNAME% male or female?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.SICK3MO
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Has %HHRNAME% been very sick for at least 3 months during the past 12 months, that is  %HHRNAME% was too sick to work or do normal activities?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_DICT.SLEEPHERE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Did %HHRNAME% sleep here last night?\par
+EN=}
+

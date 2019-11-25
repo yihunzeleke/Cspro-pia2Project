@@ -1,0 +1,1204 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Household Interview
+Name=TM_HH_INT_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Household Interview Level
+Name=TM_HH_INT_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province Code (Province Name)
+Name=HHI_PROVINCE
+Start=2
+Len=1
+DataType=Alpha
+
+[Item]
+Label=District Code (District Name)
+Name=HHI_DISTRICT
+Start=3
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Village Code (Village Name)
+Name=HHI_VILLAGE
+Start=6
+Len=6
+DataType=Alpha
+
+[Item]
+Label=EA Code
+Name=HHI_EACODE
+Start=12
+Len=9
+DataType=Alpha
+
+[Item]
+Label=Household ID
+Name=HHI_SHH
+Start=21
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Team ID
+Name=HHI_TEAM_ID
+Start=24
+Len=2
+DataType=Alpha
+
+[Record]
+Label=Administrative Information
+Name=SURVEYHHINT_ADMIN
+RecordTypeValue='1'
+RecordLen=109
+
+[Item]
+Label=SURVEY FORM START DATE AND TIME
+Name=SURVEYFORMSDT
+Start=26
+Len=17
+DataType=Alpha
+
+[Item]
+Label=calc - HH Int Level UUID Capture
+Name=HHI_UUID
+Start=43
+Len=36
+DataType=Alpha
+
+[Item]
+Label=calc - Device ID Capture
+Name=HHI_DEVICEID
+Start=79
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Staff ID
+Name=STAFFIDHH
+Start=95
+Len=6
+DataType=Alpha
+
+[Item]
+Label=calc - Household Int DE Started Flag
+Name=HHI_DE_START_FLAG
+Start=101
+Len=1
+
+[ValueSet]
+Label=calc - Household Int DE Started Flag
+Name=HHI_DE_START_FLAG_VS1
+Value=1;Household Int Data Entry Started
+
+[Item]
+Label=HH ID Confirmation
+Name=HHCONF
+Start=102
+Len=1
+
+[ValueSet]
+Label=HH ID Confirmation
+Name=HHCONF_VS1
+Link=118060120
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=HH Data Collection
+Name=STARTINT
+Start=103
+Len=1
+
+[ValueSet]
+Label=HH Data Collection
+Name=STARTINT_VS1
+Link=118060120
+
+[Item]
+Label=HH Data Collection Not Possible: Reason
+Name=RESULTNDT
+Start=104
+Len=2
+
+[ValueSet]
+Label=HH Data Collection Not Possible: Reason
+Name=RESULTNDT_VS1
+Value=1;HOUSEHOLD NOT AVAILABLE AT ALL VISIT ATTEMPTS
+Value=2;REFUSED
+Value=3;DWELLING VACANT OR ADDRESS NOT A DWELLING
+Value=4;DWELLING DESTROYED
+Value=5;DWELLING NOT FOUND
+Value=6;HOUSEHOLD ABSENT FOR EXTENDED PERIOD OF TIME
+Value=96;OTHER
+
+[Item]
+Label=Other (Specify)
+Name=RESULTNDOTH
+Start=106
+Len=1
+
+[Item]
+Label=PLEASE PASS THE TABLET TO TEAM LEADER FOR UPLOAD.
+Name=HHSINSHH
+Start=107
+Len=1
+
+[Item]
+Label=HH Form Upload or Discard
+Name=HHSACT
+Start=108
+Len=1
+
+[ValueSet]
+Label=HH Form Upload or Discard
+Name=HHSACT_VS1
+Value=1;UPLOAD
+Value=2;DISCARD
+
+[Item]
+Label=THE FIRST STEP WILL BE TO DETERMINE ELIGIBILITY FOR THE HEAD OF THE HOUSEHOLD
+Name=HHCINST1
+Start=109
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=THE FIRST STEP WILL BE TO DETERMINE ELIGIBILITY FOR THE HEAD OF THE HOUSEHOLD
+Name=HHCINST1_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Household Eligibility
+Name=SURVEYHHINT_ELIGIBILITY
+RecordTypeValue='2'
+RecordLen=37
+
+[Item]
+Label=HOUSEHOLD HEAD ELIGIBILITY
+Name=HHESTART
+Start=26
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=HOUSEHOLD HEAD ELIGIBILITY
+Name=HHESTART_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(1) HH Head Eligibility: Hearing
+Name=HHEHEARING
+Start=27
+Len=1
+
+[ValueSet]
+Label=(1) HH Head Eligibility: Hearing
+Name=HHEHEARING_VS1
+Value=1;HEARING GOOD
+Value=2;HEARING BAD
+
+[Item]
+Label=Accommodate
+Name=HHEHEARACM
+Start=28
+Len=1
+
+[ValueSet]
+Label=Accommodate
+Name=HHEHEARACM_VS1
+Link=118060120
+
+[Item]
+Label=(2) HH Head Eligibility: Language
+Name=HHELANGACC
+Start=29
+Len=1
+
+[ValueSet]
+Label=(2) HH Head Eligibility: Language
+Name=HHELANGACC_VS1
+Link=118060120
+
+[Item]
+Label=Accommodate
+Name=HHELANGACM
+Start=30
+Len=1
+
+[ValueSet]
+Label=Accommodate
+Name=HHELANGACM_VS1
+Link=118060120
+
+[Item]
+Label=HH Head Eligibility: Read Paragraph
+Name=HHEPARAG
+Start=31
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=HH Head Eligibility: Read Paragraph
+Name=HHEPARAG_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(3) HH Head Eligibility: Cognitive Ability
+Name=HHECOGN
+Start=32
+Len=1
+
+[ValueSet]
+Label=(3) HH Head Eligibility: Cognitive Ability
+Name=HHECOGN_VS1
+Link=118060120
+
+[Item]
+Label=(4) HH Head Eligibility: Age
+Name=HHAGEYEARS
+Start=33
+Len=3
+
+[Item]
+Label=HH Head Eligibility: Emancipated Minor
+Name=HHEMANCMINOR
+Start=36
+Len=1
+
+[ValueSet]
+Label=HH Head Eligibility: Emancipated Minor
+Name=HHEMANCMINOR_VS1
+Link=118060120
+
+[Item]
+Label=End of HH Head Eligibility
+Name=HHECONS
+Start=37
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=End of HH Head Eligibility
+Name=HHECONS_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Household Consent
+Name=SURVEYHHINT_CONSENT
+RecordTypeValue='3'
+RecordLen=269
+
+[Item]
+Label=B1: Consent to Household Interview
+Name=HHSSTART
+Start=26
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=B1: Consent to Household Interview
+Name=HHSSTART_VS1
+Link=15618432
+Value='A';CONTINUE
+
+[Item]
+Label=HHQ Language
+Name=HHELANG
+Start=27
+Len=1
+
+[ValueSet]
+Label=HHQ Language
+Name=HHELANG_VS1
+Value=1;ENGLISH
+Value=2;LANGUAGE 2
+Value=3;LANGUAGE 3
+
+[Item]
+Label=Household Consent
+Name=HHCAGREE
+Start=28
+Len=1
+
+[ValueSet]
+Label=Household Consent
+Name=HHCAGREE_VS1
+Link=118060120
+
+[Item]
+Label=Agree to Household Interview
+Name=HHCAGRY
+Start=29
+Len=1
+
+[ValueSet]
+Label=Agree to Household Interview
+Name=HHCAGRY_VS1
+Link=117768176
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=Do Not Agree to Household Interview
+Name=HHCAGRN
+Start=30
+Len=1
+
+[ValueSet]
+Label=Do Not Agree to Household Interview
+Name=HHCAGRN_VS1
+Link=117768176
+
+[Item]
+Label=Household Consent Confirmation
+Name=HHCCONFIRM
+Start=31
+Len=1
+
+[ValueSet]
+Label=Household Consent Confirmation
+Name=HHCCONFIRM_VS1
+Link=118060120
+
+[Item]
+Label=Printed Name of Household Head
+Name=HHCONNM
+Start=32
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Signature of person obtaining consent
+Name=HHSTFSIG
+Start=132
+Len=31
+DataType=Alpha
+
+[Item]
+Label=Printed name of person obtaining consent
+Name=HHCONSTFNM
+Start=163
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Study staff ID number
+Name=HHCONSTFID
+Start=263
+Len=6
+DataType=Alpha
+
+[Item]
+Label=End of Household Consent
+Name=HHCEND
+Start=269
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=End of Household Consent
+Name=HHCEND_VS1
+Link=15618432
+
+[Record]
+Label=End of Household Consent
+Name=SURVEYHHINT_END_OF_CONSENT
+RecordTypeValue='4'
+RecordLen=27
+
+[Item]
+Label=HH CONSENT STATUS
+Name=HHCONSTAT
+Start=26
+Len=1
+
+[ValueSet]
+Label=HH CONSENT STATUS
+Name=HHCONSTAT_VS1
+Value=1;OK. PLEASE CONTINUE.
+
+[Item]
+Label=Ineligible household.
+Name=INELIGTHX
+Start=27
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Ineligible household.
+Name=INELIGTHX_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Household Roster
+Name=SURVEYHHINT_HH_RSTR
+RecordTypeValue='6'
+RecordLen=27
+
+[Item]
+Label=Begin HH Roster
+Name=ROSTER_MENU
+Start=26
+Len=1
+
+[ValueSet]
+Label=Begin HH Roster
+Name=ROSTER_MENU_VS1
+Value=1;ADD NEW HOUSEHOLD MEMBER
+Value=2;ADD EXISTING HOUSEHOLD MEMBER
+Value=3;COMPLETE HOUSEHOLD ROSTER
+
+[Item]
+Label=Thank you for completing the Household Roster.  The next step will be to ask some confirmation questions.
+Name=HHRINS3
+Start=27
+Len=1
+
+[ValueSet]
+Label=Thank you for completing the Household Roster.  The next step will be to ask some confirmation questions.
+Name=HHRINS3_VS1
+Value=1;OK
+
+[Record]
+Label=Household Roster For Minors
+Name=SURVEYHHINT_HH_RSTR_MIN
+RecordTypeValue='7'
+RecordLen=26
+
+[Item]
+Label=Thank you for confirming the Household Roster is complete.  The next step will be to answer some additional questions for the Household Members who are 0-17 years old.
+Name=HHRINS31
+Start=26
+Len=1
+
+[ValueSet]
+Label=Please give me the names of the persons who live in your household and guests of the household who stayed here last night, starting with the head of the household.
+Name=HHRINS31_VS1
+Value=2;ENTER CHILD ROSTER
+Value=3;CONTINUE HOUSEHOLD INTERVIEW
+
+[Record]
+Label=Household Questionnaire
+Name=SURVEYHHINT_HH_QNR
+RecordTypeValue='B'
+RecordLen=799
+
+[Item]
+Label=HH Deaths
+Name=HHQDTHSINS
+Start=26
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=HH Deaths
+Name=HHQDTHSINS_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(40) HH Deaths
+Name=DEATHS
+Start=27
+Len=2
+
+[ValueSet]
+Label=(40) HH Deaths
+Name=DEATHS_VS1
+Link=22962456
+Value=1;YES
+Value=2;NO
+Value=-8;DON''T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(41) HH Deaths
+Name=DEATHCOUNT
+Start=29
+Len=2
+
+[Item]
+Label=HHQ
+Name=HHQ
+Start=31
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=HHQ
+Name=HHQ_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=HOUSEHOLD CHARACTERISTICS
+Name=HHQINSHH
+Start=32
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=HOUSEHOLD CHARACTERISTICS
+Name=HHQINSHH_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(46) HH Characteristics
+Name=WATERSOURCE
+Start=33
+Len=2
+
+[ValueSet]
+Label=(46) HH Characteristics
+Name=WATERSOURCE_VS1
+Value=11;PIPED INTO DWELLING
+Value=12;PIPED TO YARD/PLOT
+Value=13;PUBLIC TAP/STANDPIPE
+Value=21;TUBE WELL OR BOREHOLE
+Value=31;PROTECTED WELL
+Value=32;UNPROTECTED WELL
+Value=41;PROTECTED SPRING
+Value=42;UNPROTECTED SPRING
+Value=51;RAINWATER
+Value=61;TANKER TRUCK
+Value=71;CART WITH SMALL TANK
+Value=81;SURFACE WATER (RIVER/DAM/LAKE/ POND/STREAM/CANAL)
+Value=91;BOTTLED WATER
+Value=96;OTHER (SPECIFY)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(46) HH Characteristics: Other (Specify)
+Name=WATERSOURCEOT
+Start=35
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(47) HH Characteristics
+Name=TOILETTYPE
+Start=135
+Len=2
+
+[ValueSet]
+Label=(47) HH Characteristics
+Name=TOILETTYPE_VS1
+Value=11;FLUSH OR POUR FLUSH TOILET
+Value=21;TRADITIONAL PIT LATRINE
+Value=22;VENTILATED IMPROVED PIT LATRINE (VIP)
+Value=61;NO FACILITY/BUSH/FIELD
+Value=96;OTHER (SPECIFY)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(47) HH Characteristics: Other (Specify)
+Name=TOILETTYPEOT
+Start=137
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(48) HH Characteristics
+Name=TOILETSHARE
+Start=237
+Len=2
+
+[ValueSet]
+Label=(48) HH Characteristics
+Name=TOILETSHARE_VS1
+Link=22962456
+
+[Item]
+Label=(49) HH Characteristics
+Name=HHQITEMS
+Start=239
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=(49) HH Characteristics
+Name=HHQITEMS_VS1
+Value='A       ';ELECTRICITY
+Value='B       ';A WORKING RADIO
+Value='C       ';A WORKING TELEVISION
+Value='D       ';A WORKING TELEPHONE/MOBILE TELEPHONE
+Value='E       ';A WORKING REFRIGERATOR
+Value='F       ';NONE OF THE ABOVE
+Value='Y       ';DON'T KNOW
+Value='Z       ';REFUSED
+
+[Item]
+Label=(50) HH Characteristics
+Name=COOKINGFUEL
+Start=247
+Len=2
+
+[ValueSet]
+Label=(50) HH Characteristics
+Name=COOKINGFUEL_VS1
+Value=1;ELECTRICITY
+Value=2;LPG / NATURAL GAS
+Value=3;BIOGAS
+Value=4;PARAFFIN / KEROSENE
+Value=5;COAL, LIGNITE
+Value=6;CHARCOAL FROM WOOD
+Value=7;FIREWOOD / STRAW
+Value=8;DUNG
+Value=95;NO FOOD COOKED IN HOUSEHOLD
+Value=96;OTHER (SPECIFY)
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(50) HH Characteristics: Other (Specify)
+Name=COOKINGFUELOT
+Start=249
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(51) HH Characteristics
+Name=MATFLOOR
+Start=349
+Len=2
+
+[ValueSet]
+Label=(51) HH Characteristics
+Name=MATFLOOR_VS1
+Value=11;EARTH / SAND
+Value=12;DUNG
+Value=21;WOOD PLANKS
+Value=22;PALM / BAMBOO
+Value=31;PARQUET OR POLISHED WOOD
+Value=32;VINYL OR ASPHALT STRIP
+Value=33;CERAMIC TILES
+Value=34;CEMENT/TERAZO
+Value=35;CARPET
+Value=96;OTHER (SPECIFY)
+
+[Item]
+Label=(51) HH Characteristics: Other (Specify)
+Name=MATFLOOROT
+Start=351
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(52) HH Characteristics
+Name=MATROOF
+Start=451
+Len=2
+
+[ValueSet]
+Label=(52) HH Characteristics
+Name=MATROOF_VS1
+Value=11;NO ROOF
+Value=12;THATCH/PALM LEAF
+Value=13;DUNG / MUD
+Value=21;CORRUGATED IRON
+Value=22;TIN CANS
+Value=31;ASBESTOS SHEET
+Value=32;CONCRETE
+Value=33;TILES
+Value=96;OTHER (SPECIFY)
+
+[Item]
+Label=(52) HH Characteristics: Other (Specify)
+Name=MATROOFOT
+Start=453
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(53) HH Characteristics
+Name=MATEXWALLS
+Start=553
+Len=2
+
+[ValueSet]
+Label=(53) HH Characteristics
+Name=MATEXWALLS_VS1
+Value=11;NO WALLS
+Value=12;CANE/PALM/TRUNKS
+Value=13;DUNG / MUD
+Value=21;BAMBOO WITH MUD
+Value=22;STONE WITH MUD
+Value=23;PLYWOOD/CARDBOARD
+Value=24;CARTON
+Value=25;REUSED WOOD
+Value=31;CEMENT
+Value=32;STONE WITH LIME/CEMENT
+Value=33;BRICKS
+Value=34;CEMENT BLOCKS
+Value=35;WOOD PLANKS/SHINGLES
+Value=96;OTHER (SPECIFY)
+
+[Item]
+Label=(53) HH Characteristics: Other (Specify)
+Name=MATEXWALLSOT
+Start=555
+Len=100
+DataType=Alpha
+
+[Item]
+Label=(54) HH Characteristics
+Name=ROOMSLEEP
+Start=655
+Len=2
+
+[Item]
+Label=(55) HH Characteristics
+Name=HHQOWN
+Start=657
+Len=7
+DataType=Alpha
+
+[ValueSet]
+Label=(55) HH Characteristics
+Name=HHQOWN_VS1
+Value='A      ';A BICYCLE
+Value='B      ';A WORKING MOTORCYCLE OR MOTOR SCOOTER
+Value='C      ';A WORKING CAR OR TRUCK
+Value='D      ';A WORKING BOAT WITH A MOTOR
+Value='E      ';NONE OF THE ABOVE
+Value='Y      ';DON'T KNOW
+Value='Z      ';REFUSED
+
+[Item]
+Label=(56) HH Characteristics
+Name=OWNCOWNUM
+Start=664
+Len=5
+
+[ValueSet]
+Label=(56) HH Characteristics
+Name=OWNCOWNUM_VS1
+Value=0:10000
+Value=-7;OWN BUT NOT SURE HOW MANY
+Value=-9;REFUSED
+
+[Item]
+Label=(57) HH Characteristics
+Name=OWNGOATNUM
+Start=669
+Len=5
+
+[ValueSet]
+Label=(57) HH Characteristics
+Name=OWNGOATNUM_VS1
+Value=0:10000
+Value=-7;OWN BUT NOT SURE HOW MANY
+Value=-9;REFUSED
+
+[Item]
+Label=(58) HH Characteristics
+Name=OWNCHIKNNUM
+Start=674
+Len=5
+
+[ValueSet]
+Label=(58) HH Characteristics
+Name=OWNCHIKNNUM_VS1
+Value=0:10000
+Value=-7;OWN BUT NOT SURE HOW MANY
+Value=-9;REFUSED
+
+[Item]
+Label=(59) HH Characteristics
+Name=OWNDOGNUM
+Start=679
+Len=5
+
+[ValueSet]
+Label=(59) HH Characteristics
+Name=OWNDOGNUM_VS1
+Value=0:10000
+Value=-7;OWN BUT NOT SURE HOW MANY
+Value=-9;REFUSED
+
+[Item]
+Label=(60) HH Characteristics
+Name=OWNHORSENUM
+Start=684
+Len=5
+
+[ValueSet]
+Label=(60) HH Characteristics
+Name=OWNHORSENUM_VS1
+Value=0:10000
+Value=-7;OWN BUT NOT SURE HOW MANY
+Value=-9;REFUSED
+
+[Item]
+Label=ECONOMIC SUPPORT
+Name=HHQECOINS
+Start=689
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=ECONOMIC SUPPORT
+Name=HHQECOINS_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(61) HH Economic Support
+Name=ECONSUP12
+Start=690
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=(61) HH Economic Support
+Name=ECONSUP12_VS1
+Value='A         ';NOTHING
+Value='B         ';CASH TRANSFER (E.G. PENSIONS, DISABILITY GRANTS, CHILD GRANT)
+Value='C         ';ASSISTANCE FOR SCHOOL FEES
+Value='D         ';MATERIAL SUPPORT FOR EDUCATION (E.G. UNIFORMS, SCHOOL BOOKS, EDUCATION, TUITION SUPPORT, BURSARIES)
+Value='E         ';INCOME GENERATION SUPPORT IN CASH OR KIND (E.G. AGRICULTURAL INPUTS)
+Value='F         ';FOOD ASSISTANCE PROVIDED AT THE HOUSEHOLD OR EXTERNAL INSTITUTION
+Value='G         ';MATERIAL OR FINANCIAL SUPPORT FOR SHELTER
+Value='H         ';SOCIAL PENSION
+Value='I         ';REMITTANCES
+Value='J         ';(INSERT SPECIFIC COUNTRY PROGRAMS OF INTEREST)
+Value='X         ';OTHER (SPECIFY)
+Value='Y         ';DON'T KNOW
+Value='Z         ';REFUSED
+
+[Item]
+Label=(61) HH Economic Support: Other (Specify)
+Name=ECONSUP12OT
+Start=700
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Deaths in the Household
+Name=SURVEYHHINT_DTH_IN_HHD
+RecordTypeValue='C'
+MaxRecords=10
+RecordLen=93
+
+[Item]
+Label=(42) HH Deaths
+Name=DIEDNAME
+Start=26
+Len=50
+DataType=Alpha
+
+[Item]
+Label=(42) HH Deaths: Don't Know/Refused
+Name=DIEDNAMEDKR
+Start=76
+Len=2
+
+[ValueSet]
+Label=(42) HH Deaths: Don't Know/Refused
+Name=DIEDNAMEDKR_VS1
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Day
+Name=DIEDDATED
+Start=78
+Len=2
+
+[ValueSet]
+Label=Day
+Name=DIEDDATED_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=-8;DON'T KNOW DAY
+Value=-9;REFUSED DAY
+
+[Item]
+Label=Month
+Name=DIEDDATEM
+Start=80
+Len=2
+
+[ValueSet]
+Label=Month
+Name=DIEDDATEM_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=-8;DON'T KNOW MONTH
+Value=-9;REFUSED MONTH
+
+[Item]
+Label=Year
+Name=DIEDDATEY
+Start=82
+Len=4
+
+[ValueSet]
+Label=Year
+Name=DIEDDATEY_VS1
+Value=2017;2017
+Value=2018;2018
+Value=2019;2019
+Value=-8;DON'T KNOW YEAR
+Value=-9;REFUSED YEAR
+
+[Item]
+Label=(44) HH Deaths
+Name=DIEDGEND
+Start=86
+Len=2
+
+[ValueSet]
+Label=(44) HH Deaths
+Name=DIEDGEND_VS1
+Value=1;MALE
+Value=2;FEMALE
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=Age
+Name=DIEDAGENUM
+Start=88
+Len=3
+
+[Item]
+Label=Units
+Name=DIEDAGE
+Start=91
+Len=1
+
+[ValueSet]
+Label=Units
+Name=DIEDAGE_VS1
+Value=1;DAYS
+Value=2;MONTHS
+Value=3;YEARS
+
+[Item]
+Label=(45) HH Deaths: Don't Know/Refused
+Name=DIEDAGEDK
+Start=92
+Len=2
+
+[ValueSet]
+Label=(45) HH Deaths: Don't Know/Refused
+Name=DIEDAGEDK_VS1
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=End of Household Form
+Name=SURVEYHHINT_END_OF_HH
+RecordTypeValue='9'
+RecordLen=345
+
+[Item]
+Label=END STATEMENT
+Name=HHQINSEND
+Start=26
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=END STATEMENT
+Name=HHQINSEND_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=HH FORM END DATE AND TIME
+Name=HHQENDDT
+Start=27
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Comments About Respondent
+Name=COMMENTRESP
+Start=44
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Comments about Specific Questions
+Name=COMMENTQUEST
+Start=144
+Len=100
+DataType=Alpha
+
+[Item]
+Label=General Questions
+Name=QUESTIONS
+Start=244
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Summary of Household Interview
+Name=HHQENDSUM
+Start=344
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Summary of Household Interview
+Name=HHQENDSUM_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=End of Household Interview
+Name=HHQENDCOPL
+Start=345
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=End of Household Interview
+Name=HHQENDCOPL_VS1
+Value='A';CONTINUE
+
+[Record]
+Label=Tablet Transfer and HH Member Assignment
+Name=SURVEYHHINT_IND_INT
+RecordTypeValue='8'
+RecordLen=426
+
+[Item]
+Label=Tablet Transfer and HH Member Assignment
+Name=HHQASSIGN_INST
+Start=26
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Tablet Transfer and HH Member Assignment
+Name=HHQASSIGN_INST_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=Select Individuals for Tablet Transfer
+Name=HHQASSIGN
+Start=27
+Len=198
+DataType=Alpha
+
+[Item]
+Label=Select Individuals for Tablet Transfer: Confirm
+Name=HHQASSIGNCONFIRM
+Start=225
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Select Individuals for Tablet Transfer: Confirm
+Name=HHQASSIGNCONFIRM_VS1
+Value='A';CONFIRM
+
+[Item]
+Label=Tablet Transfer
+Name=HHQTAPINST
+Start=226
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Tablet Transfer
+Name=HHQTAPINST_VS1
+Value='A';LAUNCH
+
+[Item]
+Label=Tablet Transfer: Confirm
+Name=HHQTABSUCC
+Start=227
+Len=1
+
+[ValueSet]
+Label=Tablet Transfer: Confirm
+Name=HHQTABSUCC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Individual Interviews for This Primary Tablet
+Name=HHQINDIC
+Start=228
+Len=1
+
+[ValueSet]
+Label=Individual Interviews for This Primary Tablet
+Name=HHQINDIC_VS1
+Value=1;CONFIRM: those individuals will be completed on this tablet
+Value=2;NEED TO REASSIGN: need to reassign individuals back to this tablet
+
+[Item]
+Label=Need to Reassign
+Name=HHQREASSIGN
+Start=229
+Len=198
+DataType=Alpha
+
+[Record]
+Label=End of Survey
+Name=SURVEYHHINT_END_OF_SURVEY
+RecordTypeValue='5'
+RecordLen=26
+
+[Item]
+Label=endsurvey
+Name=ENDSURVEY
+Start=26
+Len=1
+
+[Record]
+Label=Household Items
+Name=SURVEYHHINT_HH_QNR_HHITEMS
+RecordTypeValue='D'
+RecordLen=25

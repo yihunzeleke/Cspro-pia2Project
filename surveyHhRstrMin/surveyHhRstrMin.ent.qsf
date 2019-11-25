@@ -1,0 +1,214 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.2
+
+[LANGUAGES]
+EN=English
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.CHENSCH
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Is %dispName% currently enrolled in school?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.DADAIDS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Does %dispName%'s natural father have HIV/AIDS?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.DADALIVE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Is %dispName%'s natural father alive?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.DADHHM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Does %dispName%'s natural father usually live in this household or was a guest last night?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.DADMALENAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 PLEASE SELECT %dispName%'S NATURAL FATHER FROM THE LIST OF HOUSEHOLD MEMBERS BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.DADSICK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Has %dispName%'s natural father been very sick for at least 3 months during the past 12 months, that is he was too sick to work or do normal activities?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.FEMGUARDHHM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Does %dispName% have a female guardian who usually lives in this household or was a guest last night?\f1\fs24\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.HHCCONSEL
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 [INTERVIEWER: SELECT AN ADULT OR PARENT/GUARDIAN WHO CAN GIVE PERMISSION FOR %dispName% TO PARTICIPATE IN THE SURVEY.]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.HHEMANC
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 You said that there is no adult or parent/guardian in the household who can give permission for %dispName% to participate in the survey. Is this correct?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MALEGUARDHHM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Does %dispName% have a male guardian who usually lives in this household or was a guest last night?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MALEGUARDNAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 PLEASE SELECT %dispName%'S MALE GUARDIAN FROM THE LIST OF HOUSEHOLD MEMBERS BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MOMAIDS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Does %dispName%'s natural mother have HIV/AIDS?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MOMALIVE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Is %dispName%'s natural mother alive?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MOMFEMNAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 PLEASE SELECT %dispName%'S FEMALE GUARDIAN FROM THE LIST OF HOUSEHOLD MEMBERS BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MOMHHM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does %dispName%\rquote s natural mother usually live in this household or was a guest last night?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.MOMSICK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\f0\fs22 Has %dispName%'s natural mother been very sick for at least 3 months during the past 12 months, that is she was too sick to work or do normal activities?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.NATMOMNM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 PLEASE SELECT %dispName%'S NATURAL MOTHER FROM THE LIST OF HOUSEHOLD MEMBERS BELOW.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.OVC_SUPPORTN1
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 I would like to ask you about any formal, organized help or support for children that your household may have received for which you did not have to pay.  By formal, organized support, I mean help provided by someone working for a program.  This program could be government, private, religious, charity, or community-based.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTEMOT12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 In the last 12 months, has your household received any emotional or psychological support for %dispName%, such as companionship, counseling from a trained counselor, or spiritual support, which you received at home and for which you did not have to pay?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTEMOT3
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Did your household receive any of this emotional or psychological support for %dispName% in the past 3 months?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTMATER12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 In the last 12 months, has your household received any material support for %dispName%, such as clothing, food, or financial support, for which you did not have to pay?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTMATER3
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Did your household receive any of this material support for %dispName% in the past 3 months?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTMED12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 In the last 12 months, has your household received any medical support for %dispName%, such as medical care, supplies, or medicine, for which you did not have to pay?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTSCHOOL12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 In the last 12 months, has your household received any support for %dispName%\rquote s schooling, such as allowance, free admission, books, or supplies, for which you did not have to pay?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTSOCIAL12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 In the last 12 months, has your household received any social support for %dispName% such as help in household work, training for a caregiver, or legal services, for which you did not have to pay?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_RSTR_MIN_DICT.SUPPORTSOCIAL3
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Did your household receive any of this social support for %dispName% in the past 3 months?\par
+EN=}
+

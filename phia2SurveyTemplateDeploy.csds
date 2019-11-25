@@ -1,0 +1,107 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.2",
+  "name": "PHIA2 Survey Template - v112",
+  "description": "PHIA2 Survey Template - v112",
+  "files": [
+    {
+      "path": ".\\surveyHhInt\\surveyHhInt.ent"
+    },
+    {
+      "path": ".\\surveyMenu\\surveyMenu.ent"
+    },
+    {
+      "path": ".\\surveyHhRstr\\surveyHhRstr.ent"
+    },
+    {
+      "path": ".\\surveyHhRstrMin\\surveyHhRstrMin.ent"
+    },
+    {
+      "path": ".\\surveyIndInt\\surveyIndInt.ent"
+    },
+    {
+      "path": ".\\shared\\tmSurveySignatures.dcf"
+    },
+    {
+      "path": ".\\shared\\tmSurveyGeovars.dcf"
+    },
+    {
+      "path": ".\\shared\\tmSurveyGeovars.csdb"
+    },
+    {
+      "path": ".\\surveyMenu\\surveyMenu.pff"
+    },
+    {
+      "path": ".\\shared\\tmSurveyDataHub.dcf"
+    },
+    {
+      "path": ".\\shared\\consents\\Template_Appendix B5_Consent_Assent for Active LTC_tablet_r20190815.pdf"
+    },
+    {
+      "path": ".\\shared\\tmHhMemPass.dcf"
+    },
+    {
+      "path": ".\\shared\\consents\\Template_Appendix B4_Assent for Interview and Blood Draw_tablet_r20190815.pdf"
+    },
+    {
+      "path": ".\\shared\\consents\\Template_Appendix B3_Permission from Parents for Minors_tablet_r20190815.pdf"
+    },
+    {
+      "path": ".\\shared\\consents\\Template_Appendix B2_Consent for Int and Blood Draw_tablet_r20190815.pdf"
+    },
+    {
+      "path": ".\\shared\\consents\\Template_Appendix B1_Consent_for_HH_Interview_tablet_r20190815.pdf"
+    },
+    {
+      "path": ".\\shared\\tmBarcodeScans.dcf"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": ".\\surveyHhInt\\surveyHhInt.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\shared\\tmSurveyGeovars.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\shared\\tmSurveyDataHub.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\surveyIndInt\\surveyIndInt.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\shared\\tmSurveySignatures.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\shared\\tmHhMemPass.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\surveyMenu\\surveyMenu.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\surveyHhRstr\\surveyHhRstr.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\surveyHhRstrMin\\surveyHhRstrMin.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\shared\\tmBarcodeScans.dcf",
+      "uploadForSync": true
+    }
+  ],
+  "deployment": {
+    "type": "LocalFolder",
+    "cswebUrl": "https:\/\/csprostage.wesdemo.com\/api",
+    "ftpUrl": "ftp:\/\/",
+    "localFolderPath": ".\\deploy\\PHIA2SurveyTemplateV112"
+  }
+}

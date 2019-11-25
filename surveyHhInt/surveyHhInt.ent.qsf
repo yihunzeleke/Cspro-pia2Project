@@ -1,0 +1,1005 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.2
+
+[LANGUAGES]
+EN=English
+
+[QUESTION]
+Field=HHI_DIEDDATE_BLOCK
+Occurrences=1:10
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 When did %DIEDNAME% die? Please give your best guess.\par
+EN=}
+
+[QUESTION]
+Field=HHQITEMSG
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does your household have:\par
+EN=\par
+EN=(INTERVIEWER: READ ALL RESPONSES ALOUD.)\par
+EN=
+EN=\pard\par
+EN=}
+
+[QUESTION]
+Field=HHQOWNG
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does any member of your household own:\par
+EN=\par
+EN=(INTERVIEWER: READ ALL RESPONSES ALOUD.)\par
+EN=
+EN=\pard\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.COOKINGFUEL
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What type of fuel does your household mainly use for cooking?\par
+EN=\par
+EN=(INTERVIEWER: SELECT ONLY ONE RESPONSE.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.COOKINGFUELOT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What type of fuel does your household mainly use for cooking?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DEATHCOUNT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 How many usual household residents died since January 1, [INSERT CURRENT YEAR \f1\endash  2]?\f0\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DEATHS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Has any usual resident of your household died since January 1, [INSERT CURRENT YEAR \f1\endash  2]?  \f0\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDAGEDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 How old was %diedname% when (he/she) died?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDAGENUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 [INTERVIEWER: RECORD DAYS IF LESS THAN 1 MONTH, MONTHS IF LESS THAN 1 YEAR, AND COMPLETED YEARS IF 1 YEAR OR MORE.\par
+EN=\par
+EN=SWIPE FORWARD TO ENTER DON\rquote T KNOW OR REFUSED.]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDDATED
+Occurrences=1:10
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Day (1-31)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDDATEM
+Occurrences=1:10
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Month (1-12)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDDATEY
+Occurrences=1:10
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Year (1920-2020)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDGEND
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Was %DIEDNAME% male or female?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDNAME
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What was the name of the person who died [most recently/before him/her]?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.DIEDNAMEDKR
+Occurrences=1:10
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What was the name of the person who died [most recently/before him/her]?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.ECONSUP12
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Has your household received any of the following forms of external economic support in the last 12 months?\par
+EN=\par
+EN=(INTERVIEWER: READ THE RESPONSES ALOUD. SELECT UP TO THREE RESPONSES FOR THE MOST IMPORTANT SOURCES OF OUTSIDE SUPPORT.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.ECONSUP12OT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Has your household received any of the following forms of external economic support in the last 12 months?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.ENDSURVEY
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 You are at the end of [XPHIA]. Thank you for your time.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HAVEELECT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Electricity?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HAVEPHONE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working telephone/mobile telephone?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HAVERADIO
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working radio?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HAVEREFRIG
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working refrigerator?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HAVETELE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working television?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHAGEYEARS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 HOW OLD IS HEAD OF HOUSEHOLD?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCAGREE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Do you agree to do the household interview?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCAGRN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Then please state the following statement:\par
+EN=\par
+EN="I do not wish to take part in the household interview."\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCAGRY
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Then please state the following statement:\par
+EN=\par
+EN="I agree to take part in the household interview."\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCALTNT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Alternatives to taking part\par
+EN=\par
+EN=You can decide not to take part in this study; your taking part in this household interview is entirely voluntary. Your decision to take part or not take part will not affect your health care. You can leave the study at any time for any reason. If you decide to leave the study, no more information will be collected from you.  However, you will not be able to take back the information that has already been collected and shared.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCBNFT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Benefits \par
+EN=\par
+EN=There may be no direct benefit to you, but your taking part in the study is the chance to learn more about your health today. Additionally, the information you provide to us will be used to improve healthcare services in [ENTER COUNTRY].\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCCNFD1
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Confidentiality and access to your health information\par
+EN=\par
+EN=We will do everything we can to keep your answers private. The information we collect from you will be identified by a number and not by your name. Your name will not appear when we share study findings. The information we collect during the study will not be released outside of the study groups listed unless there is an issue of safety.\par
+EN=\par
+EN=The following individuals and/or agencies will be able to look at your interview records to help oversee the conduct of this study: \par
+EN=\par
+EN=[INTERVIEWER: INDICATE THE FOLLOWING INFORMATION TO THE PARTICIPANT- DO NOT READ ALOUD]\par
+EN=\par
+EN=\f1\bullet  Staff members from the Institutional Review Boards or Ethics Committees overseeing the conduct of this study to ensure that we are protecting your rights as a person taking part in a study, including: \par
+EN=\par
+EN=o [ENTER LOCAL IRB]\par
+EN=o The Centers for Disease Control and Prevention (CDC; Atlanta, GA, USA) \par
+EN=o Columbia University Medical Center\par
+EN=o Westat (a statistical study research organization)\par
+EN=\par
+EN=\bullet  The United States Office of Human Research Protections and other government agencies that oversee the safety of human subjects to ensure we are protecting your rights as a person taking part in this study\par
+EN=\par
+EN=\bullet  Selected study staff and study monitors.\par
+EN=\par
+EN=[INTERVIEWER: READ FROM HERE]\par
+EN=\par
+EN=This study has received approval from the [ENTER LOCAL IRB], The Centers for Disease Control and Prevention, and the Institutional Review Board of Columbia University Medical Center, and of WESTAT.\f0\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCCNFD2
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Calibri;}}
+EN={\colortbl ;\red0\green0\blue0;\red255\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Who should you contact if you have questions?\par
+EN=\par
+EN=If you would like to have more information about the study, you may contact: \par
+EN=\par
+EN=[INTERVIEWER: INDICATE THE FOLLOWING INFORMATION TO THE PARTICIPANT- DO NOT READ ALOUD]\par
+EN=\par
+EN=\cf2\f1\fs22 [CONTACT NAME OF LOCAL PI OR IRB]\cf1\f0\fs24\par
+EN=\cf2\f1\fs22 [TITLE], [ORGANIZATION]\cf1\f0\fs24\par
+EN=\cf2\f1\fs22 [NUMBER]\par
+EN=[E-MAIL]\par
+EN=\cf1\f0\fs24\par
+EN=[INTERVIEWER: READ FROM HERE]\par
+EN=\par
+EN=For questions about the process of agreeing to take part in this study or for more information about your rights as someone taking part in this study, you may contact:\par
+EN=\par
+EN=[INTERVIEWER: INDICATE THE FOLLOWING INFORMATION TO THE PARTICIPANT- DO NOT READ ALOUD]\par
+EN=\par
+EN=\cf2\f1\fs22 [CONTACT NAME OF LOCAL IRB]\par
+EN=[TITLE], [ORGANIZATION]\par
+EN=[NUMBER]\par
+EN=[E-MAIL]\par
+EN=\par
+EN=\cf1\f0\fs24 If you decide to leave the study, no more information will be collected from you.  However, you will not be able to take back the information that has already been collected and shared.\cf2\f1\fs22\par
+EN=\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCCONFIRM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 'To confirm, you have agreed to <INSERT ALL OPTIONS MARKED YES: HOUSEHOLD INTERVIEW>. Is this correct?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCEND
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Thank for you completing the household consent. The next step will be to complete the household roster.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCINST1
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 THE FIRST STEP WILL BE TO DETERMINE ELIGIBILITY FOR THE HEAD OF THE HOUSEHOLD.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCINTRO
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Title of Study: This study is called the [COUNTRY] Population-Based HIV Impact Assessment ([COUNTRY] PHIA)\par
+EN=\par
+EN=Interviewer reads:\par
+EN=\par
+EN=Hello. My name is___________. I would like to invite you to take part in this study about HIV in [ENTER COUNTRY]. The [ENTER ORGANIZATION] is leading this study and is conducting it with the United States Centers for Disease Control and Prevention and ICAP at Columbia University. \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCNST
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Consent Statement\par
+EN=\par
+EN=By answering the question below, you confirm that any questions you had have been answered satisfactorily and you have been offered a copy of this consent form.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCONF
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 [GEOLEVEL], [\'85], [EACODE], [HHSHH]\par
+EN=\par
+EN=Name of Household Head: [INSERT HH HEAD NAME]\par
+EN=Structure Serial Number: [INSERT STRUCTURE SERIAL NUMBER]\par
+EN=Structure Address/Description: [INSERT STRUCTURE ADDRESS]\par
+EN=Household Observations: [INSERT HH OBSERVATIONS]\par
+EN=\par
+EN=YOU HAVE SELECTED THE ABOVE HOUSEHOLD. IS THIS CORRECT?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCONSTAT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 [HHCONSTAT]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCONSTFID
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 EXAMPLE: XXS001\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCOST
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Costs for being in the study  \par
+EN=\par
+EN=There is no cost to you for being in the household interview, except for your time.  \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCPROC
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Study procedures\par
+EN=\par
+EN=\f1\bullet  If you join this study, we will ask you questions and your answers will be kept between us. In the household interview, we would like to ask you some questions about the people who live here and some of the things you have or own.   After the household interview, we will invite you and others living in your household to take part in individual interviews.  The questions will be about your age, what kind of work you do, whether you have had any experience with health services, and your social and sexual behavior. The interview will take about 45 minutes.\par
+EN=\par
+EN=\bullet  The information is collected on this tablet. The information is stored securely and can only be accessed by selected study staff. The interview will take place in private, here in your house, or an acceptable nearby private area of your choosing.  \par
+EN=\par
+EN=\bullet  We will ask each person to give permission to take part before joining the study. Study procedures also include blood draw, HIV testing, and storage of that blood for future testing if you agree to this. The testing and counseling will take about 45 minutes. If a household member does not take part in the study, he/she may still request HIV testing and counselling, if supplies are available.\f0\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCPRPS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Purpose of study\par
+EN=\par
+EN=HIV is a virus. Being infected with this can lead to a serious illness often called AIDS. This study will help us know how many people in [ENTER COUNTRY] have HIV and need health services. We expect about XX,000 men, women, over 15 years of age from XX,000 households throughout [ENTER COUNTRY] to take part in the study. If you take part, your taking part will help the Ministry of Health improve HIV services in the country. The study will also help us to estimate the number of people in [ENTER COUNTRY] that are living with HIV as well as better understand behaviors that put people at risk of acquiring HIV. \par
+EN=\par
+EN=This form might have some words in it that are not familiar to you. Please ask me to explain anything that you do not understand.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCQST
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Do you want to ask me anything about the study?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCRFWD
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Right to refuse or withdraw\par
+EN=\par
+EN=Your taking part in this household interview is entirely voluntary. If you choose to take part in the interview, you may change your mind at any time and stop taking part.  If you decide not to take part, it will not affect your healthcare in any way.  \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHCRSK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Risks\par
+EN=\par
+EN=The risks of taking part in the household interview are small. You may feel uncomfortable about some of the questions we will ask.  You can refuse to answer any question. We will do everything we can to keep your information private.  As with all studies, there is a chance that some could find out that you participated in the study. We are doing everything we can to minimize this risk. \par
+EN=\par
+EN=As with all studies, there is a chance that confidentiality could be compromised.  We will do everything we can to minimize this risk.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHECOGN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 IS THE HEAD OF THE HOUSEHOLD COGNITIVELY ABLE TO CONSENT?\par
+EN=\par
+EN=FOR EXAMPLE, CAN THE PARTICIPANT REPEAT OR SUMMARIZE THE MAIN POINTS OF THE PARAGRAPH?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHECONS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 NEXT, READ THE HOUSEHOLD CONSENT FROM THE TABLET AND ADDRESS ANY QUESTIONS FROM THE HEAD OF HOUSEHOLD. AFTER ADDRESSING ALL THE QUESTIONS, ASSESS COGNITIVE ABILITY BY ASKING THE HEAD OF HOUSEHOLD TO SUMMARIZE THEIR UNDERSTANDING OF THE SURVEY PROCEDURES AND WHAT IS REQUESTED FROM THEM.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHEHEARACM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 CAN THE SURVEY TEAM ACCOMMODATE THIS HEARING IMPAIRMENT?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHEHEARING
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 DOES HEAD OF HOUSEHOLD HAVE A HEARING IMPAIRMENT?\par
+EN=\par
+EN=FOR EXAMPLE, DOES THE HEAD OF HOUSEHOLD HAVE DIFFICULTY ENGAGING IN COVERSATION?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHELANG
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What language do you prefer for our discussion today?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHELANGACC
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 DOES THE HEAD OF THE HOUSEHOLD SPEAK AND UNDERSTAND ONE OF THE SURVEY LANGUAGES?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHELANGACM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 CAN THE SURVEY TEAM ACCOMMODATE THIS?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHEMANCMINOR
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 IS HEAD OF HOUSEHOLD AN EMANCIPATED MINOR?\par
+EN=\par
+EN=[INSERT COUNTRY DEFINITION OF EMANCIPATED MINOR]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHEPARAG
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 ASK THE HEAD OF THE HOUSEHOLD TO READ THE FOLLOWING PARAGRAPHS.  IF THE HEAD OF THE HOUSEHOLD IS UNABLE TO READ IT, OFFER TO READ IT TO HIM/HER.\par
+EN=\par
+EN=HIV is a virus. Being infected with this can lead to a serious illness often called AIDS. This study will help us know how many people in [ENTER COUNTRY] have HIV and need health services. We expect about XX,000 men, women, over 15 years of age from XX,000 households throughout [ENTER COUNTRY] to take part in the study. If you take part, your taking part will help the Ministry of Health improve HIV services in the country. The study will also help us to estimate the number of people in [ENTER COUNTRY] that are living with HIV as well as better understand behaviors that put people at risk of acquiring HIV. \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQ
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 HOUSEHOLD CHARACTERISTICS\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQASSIGN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Please select individuals from the below list for whom you wish to transfer forms to your team member's tablet:\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQASSIGN_INST
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 The next step will be to assign HH members to the tablets that will be used for the Individual Interviews.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQASSIGNCONFIRM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 The following individuals will be transferred:\par
+EN=\par
+EN=%confTabletCases%\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQDTHSINS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Now I would like to ask you some more questions about your household.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQECOINS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Now I will ask you questions on economic support you may have received.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQENDCOPL
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 The household interview has been completed.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQENDSUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Total persons in household\par
+EN=\par
+EN=Total eligible women (Adults 18+ and Emancipated Minors 15-17 yrs.):\par
+EN=\par
+EN=Total eligible men (Adults 18+ and Emancipated Minors 15-17 yrs.):\par
+EN=\par
+EN=Total eligible minors (15-17 yrs.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQINDIC
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 The following Individual Interviews have never been transferred to other tablets and should be completed on this tablet:\par
+EN=\par
+EN=[List of transfer-worthy filtered for transfer status TRANSFER NEVER ATTEMPTED and those reassigned back from 100(hhqreassign).  Don't show transfer statuses status on list]\par
+EN=\par
+EN=%mTabletCases%\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQINSHH
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Now I would like to ask you more questions about your household.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQITEMS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does your household have:\par
+EN=\par
+EN=[INTERVIEWER: READ ALL RESPONSES ALOUD. SELECT ALL THAT APPLY.]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQITEMS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does your household have:\par
+EN=\par
+EN=(INTERVIEWER: READ ALL RESPONSES ALOUD.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQOWN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Does any member of your household own:\par
+EN=\par
+EN=[INTERVIEWER: READ ALL RESPONSES ALOUD. SELECT ALL THAT APPLY.]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQOWN2
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many of the following animals do members of your household own? \par
+EN=\par
+EN=(INTERVIEWER: READ ALL RESPONSES ALOUD. CODE \lquote 0\rquote  IF NONE.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQREASSIGN
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Please select individuals below who should be reassigned back to this tablet:\par
+EN=[LIST OF TRANSFERRED INDIVIDUALS]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQTABSUCC
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Was transfer successfully completed for all tablets?\par
+EN=\par
+EN=Please open the form on all tablets to confirm that transfer was successful.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHQTAPINST
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 The next step will be to complete the transfer.\par
+EN=\par
+EN=Tap the button below to initialize transfer to your team member's tablet.\par
+EN=\par
+EN=After the transfer is complete, please repeat the process for all other tablets.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHSACT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 TEAM LEADER, DATA COLLECTION COULD NOT BE DONE FOR THIS HOUSEHOLD BECAUSE [INSERT RESPONSE FROM HHSREAS].\par
+EN=\par
+EN=HERE IS THE HOUSEHOLD INFORMATION:\par
+EN=\par
+EN=[GEOLEVEL], [\'85], [EACODE], [HHSHH]\par
+EN=\par
+EN=Name of Household Head: [INSERT HH HEAD NAME]\par
+EN=Structure Serial Number: [INSERT STRUCTURE SERIAL NUMBER]\par
+EN=Structure Address/Description: [INSERT STRUCTURE ADDRESS]\par
+EN=Household Observations: [INSERT HH OBSERVATIONS]\par
+EN=\par
+EN=WHAT ACTION DO YOU WISH TO PERFORM?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHSINSHH
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 THANK YOU FOR COMPLETING COLLECTION ON HH [HHSHH]. PLEASE PASS THE TABLET TO TEAM LEADER FOR UPLOAD.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.HHSSTART
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Appendix B1: Consent for Household Interview (Adults 18+ and Emancipated Minors XX-XX)\par
+EN=Version X.X Date\par
+EN=\par
+EN=Flesch-Kincaid: [ENTER LEVEL]\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.INELIGTHX
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 "I\rquote m sorry, but you and your household are not eligible to participate in this study. There are many possible reasons why people are not able to be in the study. The reasons were decided earlier by the people running the study. We appreciate your interest in this study and your willingness to help us in our research about HIV incidence and prevention in [COUNTRY].  We believe that it is important for everyone to protect themselves and their partners from HIV and other sexually transmitted infections. If you have any questions or would like additional information about HIV, you should talk with your health care provider. Thank you very much for taking the time to answer our questions."\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATEXWALLS
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF EXTERIOR WALLS\par
+EN=\par
+EN=(INTERVIEWER: RECORD OBSERVATION.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATEXWALLSOT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF EXTERIOR WALLS\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATFLOOR
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF FLOOR\par
+EN=\par
+EN=(INTERVIEWER: RECORD OBSERVATION.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATFLOOROT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF FLOOR\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATROOF
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF ROOF\par
+EN=\par
+EN=(INTERVIEWER: RECORD OBSERVATION.)\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.MATROOFOT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 MAIN MATERIAL OF ROOF\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNBIKE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A bicycle?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNBOAT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working boat with a motor?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNCAR
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working car or truck?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNCHIKNDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many CHICKENS do members of your household own? \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNCHIKNNUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many CHICKENS do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNCOWDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many COWS do members of your household own? \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNCOWNUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many COWS do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNDOGDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many DOGS do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNDOGNUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many DOGS do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNGOATDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many GOATS/SHEEP do members of your household own? \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNGOATNUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many GOATS/SHEEP do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNHORSEDK
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many HORSES do members of your household own? \par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNHORSENUM
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 Altogether, how many HORSES do members of your household own?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.OWNMOTO
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 A working motorcycle or motor scooter?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.RESULTNDT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 PLEASE SELECT THE REASON WHY DATA CANNOT BE COLLECTED FOR THE HOUSEHOLD.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.ROOMSLEEP
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 How many rooms are used for sleeping?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.ROSTER_MENU
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Please give me the names of the persons who usually live in your household and guests of the household who stayed here last night, starting with the head of the household.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.STAFFIDHH
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 EXAMPLE: XXS001\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.STARTINT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 CAN DATA BE COLLECTED FOR THE HOUSEHOLD?\par
+EN=\par
+EN=DO NOT RESPOND TO THIS QUESTION IF HOUSEHOLD IS TEMPORARILY UNAVAILABLE.\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.TOILETSHARE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17134}\viewkind4\uc1
+EN=\pard\cf1\fs24 Do you share this toilet facility with other households?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.TOILETTYPE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What kind of toilet facility do members of your household usually use?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.TOILETTYPEOT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What kind of toilet facility do members of your household usually use?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.WATERSOURCE
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What is the main source of drinking water for members of your household?\par
+EN=}
+
+[QUESTION]
+Field=TM_HH_INT_DICT.WATERSOURCEOT
+EN={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+EN={\colortbl ;\red0\green0\blue0;}
+EN={\*\generator Riched20 10.0.17763}\viewkind4\uc1
+EN=\pard\cf1\fs24 What is the main source of drinking water for members of your household?\par
+EN=}
+

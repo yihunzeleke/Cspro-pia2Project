@@ -1,0 +1,442 @@
+﻿[Dictionary]
+Version=CSPro 7.2
+Label=Template Household Roster for Minors
+Name=TM_HH_RSTR_MIN_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Template Household Roster for Minors Level
+Name=TM_HH_RSTR_MIN_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province Code (Province Name)
+Name=HHRM_PROVINCE
+Start=2
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=Province Code (Province Name)
+Name=HHRM_PROVINCE_VS1
+Value=1;1-Province A
+Value=2;2-Province B
+Value=3;3-Province C
+Value=4;4-Province D
+
+[Item]
+Label=District Code (District Name)
+Name=HHRM_DISTRICT
+Start=3
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Village Code (Village Name)
+Name=HHRM_VILLAGE
+Start=6
+Len=6
+DataType=Alpha
+
+[Item]
+Label=EA Code
+Name=HHRM_EACODE
+Start=12
+Len=9
+DataType=Alpha
+
+[Item]
+Label=Household ID
+Name=HHRM_SHH
+Start=21
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Team ID
+Name=HHRM_TEAM_ID
+Start=24
+Len=2
+DataType=Alpha
+
+[Item]
+Label=Household Member ID
+Name=HHRM_HHMEM_ID
+Start=26
+Len=2
+DataType=Alpha
+
+[Record]
+Label=Household Roster for Minors
+Name=SURVEYHHRSTRMIN
+RecordTypeValue='1'
+RecordLen=130
+
+[Item]
+Label=Hidden - HHI Start Date Passdown
+Name=HHRM_LISTINGFORMSDT
+Start=28
+Len=17
+DataType=Alpha
+
+[Item]
+Label=Hidden - HHI Level UUID Capture
+Name=HHRM_HHI_UUID
+Start=45
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Hidden - Device ID Capture
+Name=HHRM_DEVICEID
+Start=81
+Len=16
+DataType=Alpha
+
+[Item]
+Label=(15) HH Minors
+Name=CHENSCH
+Start=97
+Len=2
+
+[ValueSet]
+Label=(15) HH Minors
+Name=CHENSCH_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON’T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=CALC - Minors Roster DE Started Flag
+Name=HHRM_DE_START_FLAG
+Start=99
+Len=1
+
+[ValueSet]
+Label=CALC - Minors Roster DE Started Flag
+Name=HHRM_DE_START_FLAG_VS1
+Value=1;HH Minor Roster Data Entry Started
+
+[Item]
+Label=(16) HH Minors
+Name=MOMALIVE
+Start=100
+Len=2
+
+[ValueSet]
+Label=(16) HH Minors
+Name=MOMALIVE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(17) HH Minors
+Name=MOMHHM
+Start=102
+Len=2
+
+[ValueSet]
+Label=(17) HH Minors
+Name=MOMHHM_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(18) HH Minors
+Name=NATMOMNM
+Start=104
+Len=2
+DataType=Alpha
+
+[Item]
+Label=(19) HH Minors
+Name=FEMGUARDHHM
+Start=106
+Len=2
+
+[ValueSet]
+Label=(19) HH Minors
+Name=FEMGUARDHHM_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(20) HH Minors
+Name=MOMFEMNAME
+Start=108
+Len=2
+DataType=Alpha
+
+[Item]
+Label=(21) HH Minors
+Name=DADALIVE
+Start=110
+Len=2
+
+[ValueSet]
+Label=(21) HH Minors
+Name=DADALIVE_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(22) HH Minors
+Name=DADHHM
+Start=112
+Len=2
+
+[ValueSet]
+Label=(22) HH Minors
+Name=DADHHM_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(23) HH Minors
+Name=DADMALENAME
+Start=114
+Len=2
+DataType=Alpha
+
+[Item]
+Label=(24) HH Minors
+Name=MALEGUARDHHM
+Start=116
+Len=2
+
+[ValueSet]
+Label=(24) HH Minors
+Name=MALEGUARDHHM_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(25) HH Minors
+Name=MALEGUARDNAME
+Start=118
+Len=2
+DataType=Alpha
+
+[Item]
+Label=(26) HH Minors
+Name=HHCCONSEL
+Start=120
+Len=2
+DataType=Alpha
+
+[Item]
+Label=(27) HH Minors
+Name=HHEMANC
+Start=122
+Len=1
+
+[ValueSet]
+Label=(27) HH Minors
+Name=HHEMANC_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=(28) HH Sickness
+Name=MOMSICK
+Start=123
+Len=2
+
+[ValueSet]
+Label=(28) HH Sickness
+Name=MOMSICK_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(29) HH Sickness
+Name=MOMAIDS
+Start=125
+Len=2
+
+[ValueSet]
+Label=(29) HH Sickness
+Name=MOMAIDS_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(30) HH Sickness
+Name=DADSICK
+Start=127
+Len=2
+
+[ValueSet]
+Label=(30) HH Sickness
+Name=DADSICK_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(31) HH Sickness
+Name=DADAIDS
+Start=129
+Len=2
+
+[ValueSet]
+Label=(31) HH Sickness
+Name=DADAIDS_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Record]
+Label=OVC Support
+Name=OVC_SUPPORT
+RecordTypeValue='2'
+RecordLen=44
+
+[Item]
+Label=OVC Support
+Name=OVC_SUPPORTN1
+Start=28
+Len=1
+DataType=Alpha
+
+[ValueSet]
+Label=OVC Support
+Name=OVC_SUPPORTN1_VS1
+Value='A';CONTINUE
+
+[Item]
+Label=(32) HH OVC Support
+Name=SUPPORTMED12
+Start=29
+Len=2
+
+[ValueSet]
+Label=(32) HH OVC Support
+Name=SUPPORTMED12_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(33) HH OVC Support
+Name=SUPPORTEMOT12
+Start=31
+Len=2
+
+[ValueSet]
+Label=(33) HH OVC Support
+Name=SUPPORTEMOT12_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(34) HH OVC Support
+Name=SUPPORTEMOT3
+Start=33
+Len=2
+
+[ValueSet]
+Label=(34) HH OVC Support
+Name=SUPPORTEMOT3_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(35) HH OVC Support
+Name=SUPPORTMATER12
+Start=35
+Len=2
+
+[ValueSet]
+Label=(35) HH OVC Support
+Name=SUPPORTMATER12_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(36) HH OVC Support
+Name=SUPPORTMATER3
+Start=37
+Len=2
+
+[ValueSet]
+Label=(36) HH OVC Support
+Name=SUPPORTMATER3_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(37) HH OVC Support
+Name=SUPPORTSOCIAL12
+Start=39
+Len=2
+
+[ValueSet]
+Label=(37) HH OVC Support
+Name=SUPPORTSOCIAL12_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(38) HH OVC Support
+Name=SUPPORTSOCIAL3
+Start=41
+Len=2
+
+[ValueSet]
+Label=(38) HH OVC Support
+Name=SUPPORTSOCIAL3_VS1
+Value=1;YES
+Value=2;NO
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
+
+[Item]
+Label=(39) HH OVC Support
+Name=SUPPORTSCHOOL12
+Start=43
+Len=2
+
+[ValueSet]
+Label=(39) HH OVC Support
+Name=SUPPORTSCHOOL12_VS1
+Value=1;YES
+Value=2;NO, DID NOT RECEIVE SUPPORT
+Value=3;NO, CHILD DOES NOT ATTEND SCHOOL
+Value=-8;DON'T KNOW
+Value=-9;REFUSED
